@@ -187,10 +187,13 @@ body {
                         //     left: 29px;
                         // }
                         ul#top_nav_menu {
-                            display: flex;
+                            display: flex !important;
                             list-style-type: none;
 
                             align-items: center;
+                            justify-content: flex-end;
+                            width: auto !important;
+                            text-align: center !important;
                             @media (max-width: 1200px) {
                                 position: fixed;
                                 z-index: 100;
