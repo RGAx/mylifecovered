@@ -3,17 +3,6 @@ $red: #ff3e3a;
 
 body {
     background: $gray;
-    section#top-header {
-        a.open-home-page-copy {
-            width: 243px;
-            padding: 3px 0 12px 13px !important;
-            line-height: 1;
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
     div.remodal-wrapper {
         div.remodal {
             width: 100%;
@@ -172,7 +161,7 @@ body {
             padding: 200px 0 50px;
         }
         &#top-header {
-            padding: 10px 0;
+            padding: 30px 0;
             div.container {
                 div.row {
                     div.col-md-12 {
@@ -180,12 +169,18 @@ body {
 
                         justify-content: space-between;
                         align-items: center;
-                        // a#tel_link {
-                        //     font-weight: bold;
-                        //     position: absolute;
-                        //     top: 32px;
-                        //     left: 29px;
-                        // }
+                        a.open-home-page-copy {
+                            width: 250px;
+                            padding: 0 0 0 20px !important;
+                            line-height: 1;
+                            img.logo {
+                                width: 100%;
+                                height: auto;
+                            }
+                            span.logo-phno {
+                                display: none;
+                            }
+                        }
                         ul#top_nav_menu {
                             display: flex !important;
                             list-style-type: none;
@@ -221,12 +216,12 @@ body {
                             li {
                                 a {
                                     font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
-                                    font-size: 18px;
+                                    font-size: 19px;
                                     display: block;
-                                    margin: 0 13px;
+                                    margin: 0 20px;
                                     padding: 0 2px;
                                     transition: all .3s ease;
-                                    letter-spacing: .025em;
+                                    letter-spacing: .02px;
                                     color: white;
                                     border-top: 2px solid transparent;
                                     border-bottom: 2px solid transparent;
