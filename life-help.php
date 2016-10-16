@@ -37,13 +37,13 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
-    				<a href="#" id="blood" class="tile active">
+    				<a href="blood.php" id="blood" class="tile">
     					<h3>Athletic Blood Profile</h3>
     				</a>
     				<a href="#" id="genome" class="tile">
     					<h3>Genome Profile of an Athlete</h3>
     				</a>
-    				<a href="#" id="life" class="tile">
+    				<a href="life-help.php" id="life" class="tile active">
     					<h3>Life Insurance for the Healthy</h3>
     				</a>
     				<a href="#" id="emergency" class="tile">

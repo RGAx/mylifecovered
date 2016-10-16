@@ -412,15 +412,16 @@ body {
             body section.tiles div.container div.row div.col-md-12 a.tile#genome, body section.tiles div.container div.row div.col-md-12 a.tile#emergency {
               display: none; }
             body section.tiles div.container div.row div.col-md-12 a.tile:hover, body section.tiles div.container div.row div.col-md-12 a.tile.active {
+              opacity: 1;
+              color: white;
               background: #ff3e3e !important; }
-              body section.tiles div.container div.row div.col-md-12 a.tile:hover h3, body section.tiles div.container div.row div.col-md-12 a.tile.active h3 {
-                color: white; }
             body section.tiles div.container div.row div.col-md-12 a.tile h3 {
               font-size: 30px;
               font-weight: normal;
               line-height: 1.07;
               margin: 0;
-              letter-spacing: .3px; }
+              letter-spacing: .3px;
+              color: white; }
               @media (max-width: 768px) {
                 body section.tiles div.container div.row div.col-md-12 a.tile h3 {
                   font-size: 23px;

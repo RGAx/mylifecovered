@@ -24,7 +24,7 @@
     					<h3>Genome Profile of an Athlete</h3>
     					<p>Learn if you’re fast or  slow twitch, high or low VO2 max, the kind of diet your body responds to and more.</p>
     				</a>
-    				<a href="#" id="life" class="tile">
+    				<a href="life-help.php" id="life" class="tile">
     					<h3>Life Insurance for the Healthy</h3>
     					<p>Learn how you might qualify for life insurance that costs on average 40% less than the Average Joe.</p>
     				</a>
