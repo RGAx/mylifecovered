@@ -28,9 +28,12 @@ textarea {
   outline: none; }
 
 body {
+  font-weight: normal;
+  background: #353535;
   font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  background: #353535; }
+  font-style: normal;
+  font-variant: normal; }
   body div.background-wrap {
     background-repeat: no-repeat;
     background-position: top center;
@@ -42,6 +45,19 @@ body {
           background-position: 70% 100%; } }
     body div.background-wrap#blood {
       background-image: url("../images/weightbelt.jpg"); }
+    body div.background-wrap.life-landing {
+      background-image: url("../images/pullup.jpg");
+      background-position: 0 100%; }
+      @media (max-width: 530px) {
+        body div.background-wrap.life-landing {
+          background-position: 10% 100%; } }
+      body div.background-wrap.life-landing section.cover div.col-md-12:first-of-type {
+        max-width: 850px !important; }
+        body div.background-wrap.life-landing section.cover div.col-md-12:first-of-type h2 {
+          display: block;
+          width: 100%;
+          max-width: 620px;
+          margin: 0 auto 40px; }
   body section {
     padding: 0;
     background: initial; }
@@ -113,7 +129,6 @@ body {
                 pointer-events: initial;
                 opacity: 1; } }
           body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li a {
-            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
             font-size: 19px;
             display: block;
             margin: 0 20px;
@@ -123,7 +138,11 @@ body {
             letter-spacing: .02px;
             color: white;
             border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent; }
+            border-bottom: 2px solid transparent;
+            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal; }
             @media (min-width: 1201px) {
               body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li a:hover, body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li a.active {
                 border-bottom: 2px solid #ff3e3e; } }
@@ -167,6 +186,14 @@ body {
     body section.cover {
       padding-top: 290px;
       padding-bottom: 190px; }
+      @media (max-width: 768px) {
+        body section.cover {
+          padding-top: 218px;
+          padding-bottom: 143px; } }
+      @media (max-width: 500px) {
+        body section.cover {
+          padding-top: 164px;
+          padding-bottom: 107px; } }
       body section.cover div.col-md-12 {
         float: none;
         width: 100%;
@@ -208,6 +235,138 @@ body {
               margin-top: 19px;
               padding: 17px 34px;
               letter-spacing: .225px; } }
+        body section.cover div.col-md-12 div.form-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+          background: #3b3c3e;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          body section.cover div.col-md-12 div.form-wrapper div.primary-container {
+            width: 100%;
+            padding: 30px 40px;
+            border-bottom: solid 2px #9b9b9b; }
+            @media (max-width: 768px) {
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container {
+                padding: 23px 30px; } }
+            body section.cover div.col-md-12 div.form-wrapper div.primary-container h4 {
+              font-size: 48px;
+              font-weight: normal;
+              line-height: .92;
+              letter-spacing: .4px;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container h4 {
+                  font-size: 36px;
+                  letter-spacing: .3px; } }
+            body section.cover div.col-md-12 div.form-wrapper div.primary-container p {
+              font-size: 16px;
+              line-height: 1;
+              margin: 0;
+              letter-spacing: .2px; }
+              @media (max-width: 768px) {
+                body section.cover div.col-md-12 div.form-wrapper div.primary-container p {
+                  font-size: 12px;
+                  letter-spacing: .15px; } }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container p a {
+                text-decoration: underline; }
+            body section.cover div.col-md-12 div.form-wrapper div.primary-container form {
+              margin-top: 20px; }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form ::-webkit-input-placeholder {
+                color: #9b9b9b; }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form :-moz-placeholder {
+                color: #9b9b9b; }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form ::-moz-placeholder {
+                color: #9b9b9b; }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form :-ms-input-placeholder {
+                color: #9b9b9b; }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form input {
+                font-size: 24px;
+                font-weight: normal;
+                line-height: 1;
+                height: 50px;
+                padding: 12.5px;
+                letter-spacing: .3px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+                font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none; }
+                @media (max-width: 768px) {
+                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form input {
+                    font-size: 18px;
+                    height: 37.5px;
+                    padding: 9.375px;
+                    letter-spacing: .225px; } }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='text'] {
+                width: 200px;
+                color: #222223;
+                background: white; }
+                @media (max-width: 768px) {
+                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='text'] {
+                    width: 150px; } }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='submit'] {
+                width: 50px;
+                margin-left: 20px;
+                background: #ff3e3e; }
+                @media (max-width: 768px) {
+                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='submit'] {
+                    width: 37.5px;
+                    margin-left: 15px; } }
+          body section.cover div.col-md-12 div.form-wrapper a.secondary-container {
+            display: block;
+            width: 50%;
+            padding: 10px 45px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease; }
+            @media (max-width: 768px) {
+              body section.cover div.col-md-12 div.form-wrapper a.secondary-container {
+                padding: 10px 34px; } }
+            @media (max-width: 450px) {
+              body section.cover div.col-md-12 div.form-wrapper a.secondary-container {
+                width: 100%;
+                padding: 15px; } }
+            body section.cover div.col-md-12 div.form-wrapper a.secondary-container:first-of-type {
+              border-right: 1px solid #9b9b9b; }
+              @media (max-width: 450px) {
+                body section.cover div.col-md-12 div.form-wrapper a.secondary-container:first-of-type {
+                  border-right: none;
+                  border-bottom: 2px solid #9b9b9b; } }
+            body section.cover div.col-md-12 div.form-wrapper a.secondary-container:last-of-type {
+              border-left: 1px solid #9b9b9b; }
+              @media (max-width: 450px) {
+                body section.cover div.col-md-12 div.form-wrapper a.secondary-container:last-of-type {
+                  border-left: none; } }
+            body section.cover div.col-md-12 div.form-wrapper a.secondary-container:hover {
+              background: #ff3e3e; }
+            body section.cover div.col-md-12 div.form-wrapper a.secondary-container h5 {
+              font-size: 24px;
+              font-style: normal;
+              line-height: 1.13;
+              margin: 0;
+              letter-spacing: .3px;
+              color: white;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body section.cover div.col-md-12 div.form-wrapper a.secondary-container h5 {
+                  font-size: 18px;
+                  letter-spacing: .225px; } }
     @media (max-width: 768px) {
       body section#landing_hero {
         padding-top: 218px;
@@ -356,19 +515,25 @@ body {
           padding-top: 10px;
           text-align: center; }
           body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper sup {
-            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
             font-size: 48px;
             top: -1em;
             letter-spacing: .5px;
-            color: #ff3e3e; }
+            color: #ff3e3e;
+            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal; }
             @media (max-width: 667px) {
               body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper sup {
                 font-size: 36px; } }
           body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
-            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
             font-size: 120px;
             letter-spacing: 1.3px;
-            color: #ff3e3e; }
+            color: #ff3e3e;
+            font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal; }
             @media (max-width: 667px) {
               body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
                 font-size: 90px; } }
@@ -443,10 +608,13 @@ body {
                     body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column span {
                       font-size: 18px; } }
                 body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
-                  font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
                   font-size: 54px;
                   letter-spacing: .6px;
-                  color: #ff3e3e; }
+                  color: #ff3e3e;
+                  font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-variant: normal; }
                   @media (max-width: 667px) {
                     body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
                       font-size: 41px; } }
@@ -463,7 +631,6 @@ body {
               padding: 35px 0 50px;
               text-align: center; }
               body section#recommended.i-know-what-i-need div.container div.column.online div.row div#apply_button button {
-                font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
                 font-size: 28px;
                 display: inline-block;
                 width: 150px;
@@ -476,6 +643,10 @@ body {
                 outline: none;
                 background-color: #ff3e3e;
                 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+                font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
                 -webkit-appearance: none;
                    -moz-appearance: none;
                         appearance: none; }
@@ -511,10 +682,13 @@ body {
                   body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column:first-of-type {
                     margin-bottom: 40px; } }
               body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column h6 {
-                font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
                 font-size: 36px;
                 letter-spacing: .4px;
-                color: #faf7fc; }
+                color: #faf7fc;
+                font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal; }
                 @media (max-width: 667px) {
                   body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column h6 {
                     font-size: 27px; } }
@@ -600,10 +774,13 @@ body {
             body section#range_sliders div.slider-wrapper span.slider-label {
               font-size: 12px; } }
         body section#range_sliders div.slider-wrapper h4 {
-          font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
           font-size: 36px;
           letter-spacing: .4px;
-          color: white; }
+          color: white;
+          font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-variant: normal; }
           @media (max-width: 729px) {
             body section#range_sliders div.slider-wrapper h4 {
               font-size: 27px; } }
