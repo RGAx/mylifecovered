@@ -506,11 +506,12 @@ body {
                 flex-wrap: wrap; }
             body section.quote-facts div.container div.row div.col-md-12 form {
               width: calc(50% - 25px);
-              margin: 0 auto; }
+              margin: 0; }
               @media (max-width: 830px) {
                 body section.quote-facts div.container div.row div.col-md-12 form {
                   width: 100%;
-                  max-width: 500px; } }
+                  max-width: 500px;
+                  margin: 0 auto; } }
               body section.quote-facts div.container div.row div.col-md-12 form div.inline-text,
               body section.quote-facts div.container div.row div.col-md-12 form div.inline-select {
                 display: -webkit-box;
@@ -637,13 +638,13 @@ body {
                     letter-spacing: .225px; } }
             body section.quote-facts div.container div.row div.col-md-12 div#disclaimers {
               width: calc(50% - 25px);
-              margin: 0 auto;
+              margin: 0;
               padding: 0; }
               @media (max-width: 830px) {
                 body section.quote-facts div.container div.row div.col-md-12 div#disclaimers {
                   width: 100%;
                   max-width: 500px;
-                  margin-bottom: 74px; } }
+                  margin: 0 auto 74px; } }
     body section.tiles div.container {
       width: 100%;
       padding: 0; }

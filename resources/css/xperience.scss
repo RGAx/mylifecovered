@@ -563,10 +563,11 @@ body {
                         flex-wrap: wrap;
                         form {
                             width: calc(50% - 25px);
-                            margin: 0 auto;
+                            margin: 0;
                             @media (max-width: 830px) {
                                 width: 100%;
                                 max-width: 500px;
+                                margin: 0 auto;
                             }
                             div.inline-text,
                             div.inline-select {
@@ -687,12 +688,12 @@ body {
                         }
                         div#disclaimers {
                             width: calc(50% - 25px);
-                            margin: 0 auto;
+                            margin: 0;
                             padding: 0;
                             @media (max-width: 830px) {
                                 width: 100%;
                                 max-width: 500px;
-                                margin-bottom: 74px;
+                                margin: 0 auto 74px;
                             }
                         }
                     }
