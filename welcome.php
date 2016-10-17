@@ -2,7 +2,7 @@
 
 <div id="landing" class="background-wrap">
 	<section id="landing_hero" class="cover text-center">
-        <!-- <div class="overlay"></div> -->
+        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

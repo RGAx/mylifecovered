@@ -29,30 +29,32 @@ textarea {
 
 body {
   font-weight: normal;
-  background: #303032;
+  background: #3b3c3e;
   font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-variant: normal; }
-  body div#body_wrapper {
-    min-height: calc(100vh - 151.85px); }
-    @media (max-width: 1200px) {
-      body div#body_wrapper {
-        min-height: calc(100vh - 186.84px); } }
-    @media (max-width: 995px) {
-      body div#body_wrapper {
-        min-height: calc(100vh - 361.84px); } }
   body div.background-wrap {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; }
+    body div.background-wrap#quote_form, body div.background-wrap#quote_recommended, body div.background-wrap#calculator {
+      background: #303032; }
+      body div.background-wrap#quote_form div.overlay, body div.background-wrap#quote_recommended div.overlay, body div.background-wrap#calculator div.overlay {
+        display: none; }
     body div.background-wrap#landing {
       background-image: url("../images/deadlift-2.jpg"); }
       @media (max-width: 530px) {
         body div.background-wrap#landing {
           background-position: 70% 100%; } }
+      body div.background-wrap#landing div.overlay {
+        display: none; }
+    body div.background-wrap#life_help div.overlay, body div.background-wrap#life_need div.overlay, body div.background-wrap#life_afford div.overlay {
+      display: none; }
     body div.background-wrap#blood {
       background-image: url("../images/weightbelt.jpg"); }
+      body div.background-wrap#blood div.overlay {
+        display: none; }
     body div.background-wrap.life-landing {
       background-image: url("../images/pullup.jpg");
       background-position: 0 100%; }
@@ -556,7 +558,7 @@ body {
         body section.main-section {
           padding: 100px 0; } }
       body section.main-section div.overlay {
-        background: #353535 !important; }
+        background: #3b3c3e !important; }
       body section.main-section div.container div.row div.margin-bottom-m {
         margin-bottom: 35px; }
       body section.main-section div.container div.row div.col-md-5 h2 {
@@ -1048,7 +1050,7 @@ body {
             font-weight: normal;
             font-style: normal;
             font-variant: normal; }
-            @media (max-width: 667px) {
+            @media (max-width: 1200px) {
               body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper sup {
                 font-size: 36px; } }
           body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
@@ -1059,7 +1061,7 @@ body {
             font-weight: normal;
             font-style: normal;
             font-variant: normal; }
-            @media (max-width: 667px) {
+            @media (max-width: 1200px) {
               body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
                 font-size: 90px; } }
             @media (max-width: 414px) {
@@ -1075,9 +1077,16 @@ body {
             text-align: center;
             letter-spacing: .3px;
             color: #9b9b9b; }
-            @media (max-width: 667px) {
+            @media (max-width: 1200px) {
               body section#recommended.i-know-what-i-need div.container div.column div.comparison h5 {
                 font-size: 18px; } }
+            body section#recommended.i-know-what-i-need div.container div.column div.comparison h5 output {
+              font-family: inherit;
+              font-size: inherit;
+              line-height: inherit;
+              display: inline;
+              letter-spacing: inherit;
+              color: inherit; }
         body section#recommended.i-know-what-i-need div.container div.column.online {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1087,9 +1096,6 @@ body {
               -ms-flex-direction: column;
                   flex-direction: column; }
           @media (max-width: 991px) {
-            body section#recommended.i-know-what-i-need div.container div.column.online {
-              margin-bottom: 75px; } }
-          @media (max-width: 667px) {
             body section#recommended.i-know-what-i-need div.container div.column.online {
               margin-bottom: 56px; } }
           @media (max-width: 991px) {
@@ -1106,7 +1112,7 @@ body {
               text-align: center;
               letter-spacing: .4px;
               color: white; }
-              @media (max-width: 667px) {
+              @media (max-width: 1200px) {
                 body section#recommended.i-know-what-i-need div.container div.column.online div.row div#class_category h3 {
                   font-size: 27px; } }
             body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term {
@@ -1117,7 +1123,7 @@ body {
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
                       justify-content: space-between; }
-              @media (max-width: 667px) {
+              @media (max-width: 1200px) {
                 body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term {
                   margin-top: 23px; } }
               body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column {
@@ -1129,7 +1135,7 @@ body {
                   line-height: 1;
                   letter-spacing: .3px;
                   color: #9b9b9b; }
-                  @media (max-width: 667px) {
+                  @media (max-width: 1200px) {
                     body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column span {
                       font-size: 18px; } }
                 body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
@@ -1140,12 +1146,19 @@ body {
                   font-weight: normal;
                   font-style: normal;
                   font-variant: normal; }
-                  @media (max-width: 667px) {
+                  @media (max-width: 1200px) {
                     body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
                       font-size: 41px; } }
                   @media (max-width: 400px) {
                     body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
                       font-size: 31px; } }
+                  body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 output {
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    display: inline;
+                    letter-spacing: inherit;
+                    color: inherit; }
             body section#recommended.i-know-what-i-need div.container div.column.online div.row div#transamerica_logo {
               width: 250px;
               margin: 0 auto; }
@@ -1193,7 +1206,7 @@ body {
                     justify-content: space-between;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
-            @media (max-width: 667px) {
+            @media (max-width: 1200px) {
               body section#recommended.i-know-what-i-need div.container div.column.call div.row {
                 margin-bottom: 15px; } }
             body section#recommended.i-know-what-i-need div.container div.column.call div.row:last-of-type {
@@ -1214,7 +1227,7 @@ body {
                 font-weight: normal;
                 font-style: normal;
                 font-variant: normal; }
-                @media (max-width: 667px) {
+                @media (max-width: 1200px) {
                   body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column h6 {
                     font-size: 27px; } }
                 body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column h6 sup {
@@ -1228,21 +1241,28 @@ body {
                 margin: 0;
                 letter-spacing: .2px;
                 color: #9b9b9b; }
-                @media (max-width: 667px) {
+                @media (max-width: 1200px) {
                   body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column p {
                     font-size: 15px; } }
+                body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column p output {
+                  font-family: inherit;
+                  font-size: inherit;
+                  line-height: inherit;
+                  display: inline;
+                  letter-spacing: inherit;
+                  color: inherit; }
               body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper {
                 margin-top: -20px;
                 padding-top: 0; }
                 body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper span {
                   font-size: 72px; }
-                  @media (max-width: 667px) {
+                  @media (max-width: 1200px) {
                     body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper span {
                       font-size: 54px; } }
                 body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper sup {
                   font-size: 24px;
                   top: -1.3em; }
-                  @media (max-width: 667px) {
+                  @media (max-width: 1200px) {
                     body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper sup {
                       font-size: 18px; } }
               body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.comparison {
@@ -1250,10 +1270,17 @@ body {
                 max-width: 115px; }
                 body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.comparison h5 {
                   font-size: 20px; }
-                  @media (max-width: 667px) {
+                  @media (max-width: 1200px) {
                     body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.comparison h5 {
                       font-size: 15px;
                       margin: -10px 0 0; } }
+                  body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.comparison h5 output {
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    display: inline;
+                    letter-spacing: inherit;
+                    color: inherit; }
         body section#recommended.i-know-what-i-need div.container div.column h2 {
           font-size: 48px;
           line-height: 1.46;
@@ -1301,6 +1328,7 @@ body {
               font-size: 12px; } }
         body section#range_sliders div.slider-wrapper h4 {
           font-size: 36px;
+          line-height: 1;
           letter-spacing: .4px;
           color: white;
           font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
@@ -1310,6 +1338,13 @@ body {
           @media (max-width: 729px) {
             body section#range_sliders div.slider-wrapper h4 {
               font-size: 27px; } }
+          body section#range_sliders div.slider-wrapper h4 output {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            display: inline;
+            letter-spacing: inherit;
+            color: inherit; }
         body section#range_sliders div.slider-wrapper span.range-slider {
           position: relative;
           display: inline-block;
@@ -1343,7 +1378,7 @@ body {
             position: absolute;
             z-index: 3;
             top: 50%;
-            left: 8.5px;
+            left: 9px;
             display: inline-block;
             box-sizing: border-box;
             width: calc(100% - 25px);
@@ -1411,8 +1446,7 @@ body {
       font-size: 12px;
       line-height: 20px; }
   body footer {
-    background-color: #3b3c3e;
-    box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, 0.5); }
+    background-color: #3b3c3e; }
     body footer div.container div.row {
       display: -webkit-box;
       display: -ms-flexbox;

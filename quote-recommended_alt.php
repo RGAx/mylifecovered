@@ -8,18 +8,18 @@
 	            <h2>Apply Online</h2>
 	            <div class="row">
 	                <div class="price-wrapper">
-	                    <sup>$</sup><span>58</span><sup>/mo</sup>
+	                    <span>$700,000</span>
 	                </div>
 	                <div id="class_category">
 	                    <h3>Preferred Plus Class</h3>
 	                </div>
 	                <div class="comparison">
-	                    <h5>Compare to <output>$52</output>/mo Standard Non-Smoker</h5>
+	                    <h5>Compare to <output>$425,000</output> Standard Non-Smoker</h5>
 	                </div>
 	                <div id="coverage_and_term">
 	                    <div class="column">
-	                        <span>Coverage</span>
-	                        <h4 class="coverage-amount"><output>$700,000</output></h4>
+	                        <span>Rate</span>
+	                        <h4 class="coverage-amount"><output>$58</output>/MO</h4>
 	                    </div>
 	                    <div class="column">
 	                        <span>Term</span>
@@ -39,7 +39,7 @@
 	            <div class="row">
 	                <div class="column">
 	                    <h6>Metlife<sup>TM</sup></h6>
-	                    <p>Coverage: <span class="coverage-amount"><output>$700,000</output></span></p>
+	                    <p>Rate: <span class="coverage-amount"><output>$58</output>/month</span></p>
 	                    <p>Term: <span class="coverage-term"><output>10</output> years</span></p>
 	                    <p>Call <a href="tel:18005491664">1-800-549-1664</a></p>
 	                </div>
@@ -48,55 +48,55 @@
 	                        <sup>$</sup><span>52</span><sup>/mo</sup>
 	                    </div>
 	                    <div class="comparison">
-	                        <h5>Compare to <output>$52</output>/mo</h5>
+	                        <h5>Compare to <output>$650,000</output></h5>
 	                    </div>
 	                </div>
 	            </div>
 	            <div class="row">
 	                <div class="column">
 	                    <h6>Banner Life<sup>TM</sup></h6>
-	                    <p>Coverage: <span class="coverage-amount"><output>$700,000</output></span></p>
+	                    <p>Rate: <span class="coverage-amount"><output>$58</output>/month</span></p>
 	                    <p>Term: <span class="coverage-term"><output>10</output> years</span></p>
 	                    <p>Call <a href="tel:18005491664">1-800-549-1664</a></p>
 	                </div>
 	                <div class="column">
 	                    <div class="price-wrapper">
-	                        <sup>$</sup><span>56</span><sup>/mo</sup>
+	                        <span>$715,000</span>
 	                    </div>
 	                    <div class="comparison">
-	                        <h5>Compare to <output>$52</output>/mo</h5>
+	                        <h5>Compare to <output>$650,000</output></h5>
 	                    </div>
 	                </div>
 	            </div>
 	            <div class="row">
 	                <div class="column">
 	                    <h6>AIG Life<sup>TM</sup></h6>
-	                    <p>Coverage: <span class="coverage-amount"><output>$700,000</output></span></p>
+	                    <p>Rate: <span class="coverage-amount"><output>$58</output>/month</span></p>
 	                    <p>Term: <span class="coverage-term"><output>10</output> years</span></p>
 	                    <p>Call <a href="tel:18005491664">1-800-549-1664</a></p>
 	                </div>
 	                <div class="column">
 	                    <div class="price-wrapper">
-	                        <sup>$</sup><span>61</span><sup>/mo</sup>
+	                        <span>$695,000</span>
 	                    </div>
 	                    <div class="comparison">
-	                        <h5>Compare to <output>$52</output>/mo</h5>
+	                        <h5>Compare to <output>$650,000</output></h5>
 	                    </div>
 	                </div>
 	            </div>
 	            <div class="row">
 	                <div class="column">
 	                    <h6>Aflac<sup>TM</sup></h6>
-	                    <p>Coverage: <span class="coverage-amount"><output>$700,000</output></span></p>
+	                    <p>Rate: <span class="coverage-amount"><output>$58</output>/month</span></p>
 	                    <p>Term: <span class="coverage-term"><output>10</output> years</span></p>
 	                    <p>Call <a href="tel:18005491664">1-800-549-1664</a></p>
 	                </div>
 	                <div class="column">
 	                    <div class="price-wrapper">
-	                        <sup>$</sup><span>59</span><sup>/mo</sup>
+	                        <span>$687,000</span>
 	                    </div>
 	                    <div class="comparison">
-	                        <h5>Compare to <output>$52</output>/mo</h5>
+	                        <h5>Compare to <output>$650,000</output></h5>
 	                    </div>
 	                </div>
 	            </div>
@@ -105,9 +105,9 @@
 	</section>
 	<section id="range_sliders">
 	    <div class="slider-wrapper">
-	        <span class="slider-label">Amount of Coverage</span>
-	        <h4 class="coverage-amount"><output>$700,000</output></h4>
-	        <input id="coverage" class="slider_one" value="700000" min="400000" max="1000000" step="100000" name="rangeslider" type="range">
+	        <span class="slider-label">Monthly Premium</span>
+	        <h4 class="coverage-amount"><output>$58</output></h4>
+	        <input id="coverage" class="slider_one" value="58" min="40" max="100" step="1" name="rangeslider" type="range">
 	    </div>
 	    <div class="slider-wrapper">
 	        <span class="slider-label">Number of Years to Maintain Coverage</span>

@@ -20,6 +20,36 @@ function commaSeparateNumber(val){
     return val;
 }
 
+
+
+$("document").ready(function() {
+    $(".slider_one").rangeslider_one();
+    $(".slider_two").rangeslider_two();
+});
+
+
+
+$.fn.rangeslider_one = function(options) {
+    var obj = this;
+    var defautValue = obj.attr("value");
+    obj.wrap("<span class='range-slider'></span>");
+    obj.after("<span class='slider-container'><span class='bar'><span></span></span><span class='bar-btn'></span></span>");
+    obj.attr("oninput", "updateSlider_one(this)");
+    updateSlider_one(this);
+    return obj;
+};
+$.fn.rangeslider_two = function(options) {
+    var obj = this;
+    var defautValue = obj.attr("value");
+    obj.wrap("<span class='range-slider'></span>");
+    obj.after("<span class='slider-container'><span class='bar'><span></span></span><span class='bar-btn'></span></span>");
+    obj.attr("oninput", "updateSlider_two(this)");
+    updateSlider_two(this);
+    return obj;
+};
+
+
+
 function updateSlider_one(passObj) {
     var obj = $(passObj);
     var value = obj.val();
@@ -30,7 +60,7 @@ function updateSlider_one(passObj) {
     var nextObj = obj.next();
     nextObj.find("span.bar-btn").css("left", percentage + "%");
     nextObj.find("span.bar > span").css("width", percentage + "%");
-    $(".coverage-amount").text('$'+commaSeparateNumber(value));
+    $(".coverage-amount output").text('$'+commaSeparateNumber(value));
 };
 function updateSlider_two(passObj) {
     var obj = $(passObj);
@@ -42,5 +72,5 @@ function updateSlider_two(passObj) {
     var nextObj = obj.next();
     nextObj.find("span.bar-btn").css("left", percentage + "%");
     nextObj.find("span.bar > span").css("width", percentage + "%");
-    $(".coverage-term").text(commaSeparateNumber(value)+' years');
+    $(".coverage-term output").text(commaSeparateNumber(value));
 };

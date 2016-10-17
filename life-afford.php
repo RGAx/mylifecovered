@@ -2,7 +2,7 @@
 
 <div id="life_afford" class="background-wrap child-landing life-landing">
 	<section id="life_afford_hero" class="cover text-center">
-        <!-- <div class="overlay"></div> -->
+        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

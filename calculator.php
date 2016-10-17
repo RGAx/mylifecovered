@@ -1,5 +1,6 @@
 <?php require_once('header.html'); ?>
 
+<div id="calculator" class="background-wrap">
     <section class="quote-header text-center">
         <div class="container">
             <div class="row">
@@ -91,5 +92,6 @@
             </div>
         </div>
     </section>
+</div>
 
 <?php require_once('footer.html'); ?>
