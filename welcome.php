@@ -7,7 +7,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Physically Prepared for the Unknown or Unknowable?</h1>
-                    <p>Get informed and become finacially prepared as well.</p>
+                    <p>Of course you are. But are you financially fit, too?</p>
+                    <p>With <strong>MY LIFE COVERED<sup>TM</sup></strong>, you can take the next step toward becoming informed and prepared for whatever comes.</p>
                 </div>
             </div>
         </div>

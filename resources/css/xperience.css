@@ -242,16 +242,16 @@ body {
             font-size: 25px;
             display: block; }
     body section.cover {
-      padding-top: 290px;
-      padding-bottom: 190px; }
+      padding-top: 250px;
+      padding-bottom: 125px; }
       @media (max-width: 768px) {
         body section.cover {
-          padding-top: 218px;
-          padding-bottom: 143px; } }
+          padding-top: 188px;
+          padding-bottom: 94px; } }
       @media (max-width: 500px) {
         body section.cover {
-          padding-top: 164px;
-          padding-bottom: 107px; } }
+          padding-top: 141px;
+          padding-bottom: 70px; } }
       body section.cover div.col-md-12 {
         float: none;
         width: 100%;
@@ -263,6 +263,7 @@ body {
         body section.cover div.col-md-12 h1 {
           font-size: 72px;
           line-height: .97;
+          margin-bottom: 30px;
           letter-spacing: .8px; }
           @media (max-width: 768px) {
             body section.cover div.col-md-12 h1 {
@@ -282,9 +283,11 @@ body {
               font-size: 21px;
               margin-bottom: 15px;
               letter-spacing: .225px; } }
-        @media (max-width: 530px) {
-          body section.cover div.col-md-12 p br {
-            display: none; } }
+          @media (max-width: 530px) {
+            body section.cover div.col-md-12 p br {
+              display: none; } }
+          body section.cover div.col-md-12 p strong {
+            letter-spacing: -.03em; }
         body section.cover div.col-md-12 a.btn {
           font-size: 28px;
           font-weight: normal;
