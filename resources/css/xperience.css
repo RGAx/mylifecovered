@@ -29,7 +29,7 @@ textarea {
 
 body {
   font-weight: normal;
-  background: #353535;
+  background: #303032;
   font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -87,6 +87,17 @@ body {
     background: initial; }
     body section#top-header {
       padding: 30px 0; }
+      @media (max-width: 768px) {
+        body section#top-header {
+          padding: 20px 15px; } }
+      @media (max-width: 768px) {
+        body section#top-header div.container {
+          margin: 0;
+          padding: 0; } }
+      @media (max-width: 768px) {
+        body section#top-header div.container div.row {
+          margin: 0;
+          padding: 0; } }
       body section#top-header div.container div.row div.col-md-12 {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -97,10 +108,18 @@ body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        @media (max-width: 768px) {
+          body section#top-header div.container div.row div.col-md-12 {
+            margin: 0;
+            padding: 0; } }
         body section#top-header div.container div.row div.col-md-12 a.open-home-page-copy {
           line-height: 1;
           width: 250px;
           padding: 0 0 0 20px !important; }
+          @media (max-width: 768px) {
+            body section#top-header div.container div.row div.col-md-12 a.open-home-page-copy {
+              width: 230px;
+              padding: 0 !important; } }
           body section#top-header div.container div.row div.col-md-12 a.open-home-page-copy img.logo {
             width: 100%;
             height: auto; }
@@ -179,7 +198,11 @@ body {
           @media (max-width: 1200px) {
             body section#top-header div.container div.row div.col-md-12 a#open_menu {
               display: block;
-              padding: 15px; }
+              padding: 15px; } }
+  @media (max-width: 1200px) and (max-width: 768px) {
+    body section#top-header div.container div.row div.col-md-12 a#open_menu {
+      margin-right: -15px; } }
+          @media (max-width: 1200px) {
               body section#top-header div.container div.row div.col-md-12 a#open_menu:hover {
                 color: white; }
               body section#top-header div.container div.row div.col-md-12 a#open_menu i {
@@ -189,8 +212,8 @@ body {
         body section#top-header div.container div.row div.col-md-12 a#close_menu {
           position: fixed;
           z-index: 101;
-          top: 8px;
-          right: 12px;
+          top: 17px;
+          right: 0;
           padding: 15px;
           -webkit-transition: all .5s ease;
           transition: all .5s ease;
@@ -395,6 +418,232 @@ body {
       body section#landing_hero {
         padding-top: 218px;
         padding-bottom: 143px; } }
+    body section.quote-header {
+      margin-bottom: 20px;
+      padding-top: 135px; }
+      @media (max-width: 768px) {
+        body section.quote-header {
+          margin-bottom: 15px;
+          padding-top: 101px; } }
+      body section.quote-header div.container div.row div.col-md-12 h1 {
+        font-size: 48px;
+        line-height: 1.46;
+        margin: 0;
+        letter-spacing: .5px; }
+        @media (max-width: 768px) {
+          body section.quote-header div.container div.row div.col-md-12 h1 {
+            font-size: 36px;
+            letter-spacing: .375px; } }
+      body section.quote-header div.container div.row div.col-md-12 p {
+        font-size: 20px;
+        letter-spacing: .2px; }
+        @media (max-width: 768px) {
+          body section.quote-header div.container div.row div.col-md-12 p {
+            font-size: 15px;
+            letter-spacing: .15px; } }
+    body section.quote-tabs {
+      width: 100%;
+      max-width: 530px;
+      margin: 0 auto 20px;
+      padding: 0 15px; }
+      body section.quote-tabs div.container {
+        width: 100%;
+        padding: 0; }
+        body section.quote-tabs div.container div.row {
+          margin: 0; }
+          body section.quote-tabs div.container div.row div.col-md-12 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            float: none;
+            padding: 0;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            body section.quote-tabs div.container div.row div.col-md-12 a.tab {
+              font-size: 28px;
+              line-height: 1;
+              width: calc(50% - 1.25px);
+              padding: 11px;
+              -webkit-transition: all .3s ease;
+              transition: all .3s ease;
+              text-align: center;
+              letter-spacing: .3px;
+              color: white;
+              background: #222223;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body section.quote-tabs div.container div.row div.col-md-12 a.tab {
+                  font-size: 21px;
+                  letter-spacing: .225px; } }
+              body section.quote-tabs div.container div.row div.col-md-12 a.tab:hover, body section.quote-tabs div.container div.row div.col-md-12 a.tab.active {
+                background: #3b3c3e; }
+    body section.quote-facts {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 15px; }
+      body section.quote-facts div.container {
+        width: 100%;
+        padding: 0; }
+        body section.quote-facts div.container div.row {
+          margin: 0; }
+          body section.quote-facts div.container div.row div.col-md-12 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            float: none;
+            padding: 0;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            body section.quote-facts div.container div.row div.col-md-12 form {
+              width: calc(50% - 25px);
+              margin: 0 auto; }
+              @media (max-width: 830px) {
+                body section.quote-facts div.container div.row div.col-md-12 form {
+                  width: 100%;
+                  max-width: 500px; } }
+              body section.quote-facts div.container div.row div.col-md-12 form div.inline-text,
+              body section.quote-facts div.container div.row div.col-md-12 form div.inline-select {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin: 0;
+                padding: 10px 0 10px 12px;
+                border-bottom: 2px dotted #9b9b9b;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
+                @media (max-width: 768px) {
+                  body section.quote-facts div.container div.row div.col-md-12 form div.inline-text,
+                  body section.quote-facts div.container div.row div.col-md-12 form div.inline-select {
+                    padding: 9px 0 9px 9px; } }
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-text.required:before,
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-select.required:before {
+                  top: calc(50% - 1px);
+                  left: 0;
+                  -webkit-transform: translateY(-50%);
+                          transform: translateY(-50%); }
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-text input[type='text'],
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-select input[type='text'] {
+                  font-size: 18px;
+                  font-weight: normal;
+                  line-height: 1;
+                  float: right;
+                  width: 192px;
+                  padding: 4px 12px;
+                  text-align: right;
+                  letter-spacing: .2px;
+                  color: #4a4a4a;
+                  border: none;
+                  border-radius: 5px;
+                  outline: none;
+                  background: white;
+                  -webkit-box-ordinal-group: 3;
+                      -ms-flex-order: 2;
+                          order: 2;
+                  -webkit-appearance: none;
+                     -moz-appearance: none;
+                          appearance: none; }
+                  @media (max-width: 768px) {
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-text input[type='text'],
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-select input[type='text'] {
+                      font-size: 14px;
+                      width: 144px;
+                      padding: 3px 8px;
+                      letter-spacing: .15px; } }
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-text span.select-wrapper,
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-select span.select-wrapper {
+                  float: right;
+                  -webkit-box-ordinal-group: 3;
+                      -ms-flex-order: 2;
+                          order: 2; }
+                  @media (max-width: 768px) {
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-text span.select-wrapper:after,
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-select span.select-wrapper:after {
+                      font-size: 11px;
+                      top: 8px; } }
+                  body section.quote-facts div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
+                  body section.quote-facts div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {
+                    margin: 0; }
+                    @media (max-width: 768px) {
+                      body section.quote-facts div.container div.row div.col-md-12 form div.inline-text span.select-wrapper select,
+                      body section.quote-facts div.container div.row div.col-md-12 form div.inline-select span.select-wrapper select {
+                        font-size: 11px; } }
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-text label,
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-select label {
+                  font-size: 16px;
+                  font-weight: normal;
+                  line-height: 1;
+                  position: relative;
+                  bottom: auto;
+                  left: auto;
+                  float: left;
+                  margin: 0;
+                  letter-spacing: .2px;
+                  -webkit-box-ordinal-group: 2;
+                      -ms-flex-order: 1;
+                          order: 1; }
+                  @media (max-width: 768px) {
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-text label,
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-select label {
+                      font-size: 12px;
+                      letter-spacing: .15px; } }
+              body section.quote-facts div.container div.row div.col-md-12 form div.inline-checkbox {
+                font-size: 14px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; }
+                @media (max-width: 768px) {
+                  body section.quote-facts div.container div.row div.col-md-12 form div.inline-checkbox {
+                    font-size: 11px; } }
+                body section.quote-facts div.container div.row div.col-md-12 form div.inline-checkbox label {
+                  font-size: 16px;
+                  width: 21px; }
+                  @media (max-width: 768px) {
+                    body section.quote-facts div.container div.row div.col-md-12 form div.inline-checkbox label {
+                      font-size: 12px;
+                      width: 16px; } }
+              body section.quote-facts div.container div.row div.col-md-12 form div.text-center input[type='button'] {
+                font-size: 28px;
+                font-weight: normal;
+                line-height: 1;
+                width: 200px;
+                margin-top: 28px;
+                margin-bottom: 74px;
+                padding: 11px;
+                letter-spacing: .3px;
+                border-radius: 5px; }
+                @media (max-width: 830px) {
+                  body section.quote-facts div.container div.row div.col-md-12 form div.text-center input[type='button'] {
+                    margin-bottom: 25px; } }
+                @media (max-width: 768px) {
+                  body section.quote-facts div.container div.row div.col-md-12 form div.text-center input[type='button'] {
+                    font-size: 21px;
+                    width: 150px;
+                    margin-top: 21px;
+                    padding: 8px;
+                    letter-spacing: .225px; } }
+            body section.quote-facts div.container div.row div.col-md-12 div#disclaimers {
+              width: calc(50% - 25px);
+              margin: 0 auto;
+              padding: 0; }
+              @media (max-width: 830px) {
+                body section.quote-facts div.container div.row div.col-md-12 div#disclaimers {
+                  width: 100%;
+                  max-width: 500px;
+                  margin-bottom: 74px; } }
     body section.tiles div.container {
       width: 100%;
       padding: 0; }
@@ -983,6 +1232,9 @@ body {
               -webkit-box-direction: normal;
                   -ms-flex-direction: column;
                       flex-direction: column; } }
+          @media (max-width: 1200px) {
+            body footer div.container div.row div.col-md-6 ul li {
+              margin: 0; } }
           body footer div.container div.row div.col-md-6 ul li a {
             -webkit-transition: all .3s ease;
             transition: all .3s ease;
