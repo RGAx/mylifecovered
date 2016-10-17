@@ -21,7 +21,7 @@
                 </div>
             </div>
         </section>
-        <section class="quote-facts">
+        <section id="calculator-report" class="quote">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
