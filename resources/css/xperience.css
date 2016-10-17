@@ -58,6 +58,30 @@ body {
           width: 100%;
           max-width: 620px;
           margin: 0 auto 40px; }
+    body div.background-wrap#life_afford form input[type='text'] {
+      width: 136px; }
+      @media (max-width: 768px) {
+        body div.background-wrap#life_afford form input[type='text'] {
+          width: 102px; } }
+    body div.background-wrap#life_afford form span {
+      font-size: 24px;
+      margin-left: 4px;
+      letter-spacing: .3px;
+      color: #9b9b9b;
+      font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-variant: normal; }
+      @media (max-width: 768px) {
+        body div.background-wrap#life_afford form span {
+          font-size: 18px;
+          margin-left: 3px;
+          letter-spacing: .225px; } }
+    body div.background-wrap#life_afford form input[type='submit'] {
+      margin-left: 15px; }
+      @media (max-width: 768px) {
+        body div.background-wrap#life_afford form input[type='submit'] {
+          margin-left: 11px; } }
   body section {
     padding: 0;
     background: initial; }

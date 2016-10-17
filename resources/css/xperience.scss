@@ -101,6 +101,35 @@ body {
                 }
             }
         }
+        &#life_afford {
+            form {
+                input[type='text'] {
+                    width: 136px;
+                    @media (max-width: 768px) {
+                        width: 102px;
+                    }
+                }
+                span {
+                    font-size: 24px;
+                    margin-left: 4px;
+                    letter-spacing: .3px;
+                    color: $lightgrey;
+
+                    @include Bebas();
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        margin-left: 3px;
+                        letter-spacing: .225px;
+                    }
+                }
+                input[type='submit'] {
+                    margin-left: 15px;
+                    @media (max-width: 768px) {
+                        margin-left: 11px;
+                    }
+                }
+            }
+        }
     }
     section {
         padding: 0;
