@@ -34,6 +34,10 @@ body {
   font-weight: normal;
   font-style: normal;
   font-variant: normal; }
+  body form#comparison-quote-form {
+    background: #303032; }
+    body form#comparison-quote-form div.overlay {
+      display: none; }
   body div.background-wrap {
     background-repeat: no-repeat;
     background-position: top center;
@@ -1041,10 +1045,10 @@ body {
             width: 100%; } }
         body section#recommended.i-know-what-i-need div.container div.column div.row {
           margin: 0; }
-        body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper {
+        body section#recommended.i-know-what-i-need div.container div.column div.best-class {
           padding-top: 10px;
           text-align: center; }
-          body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper sup {
+          body section#recommended.i-know-what-i-need div.container div.column div.best-class sup {
             font-size: 48px;
             top: -1em;
             letter-spacing: .5px;
@@ -1054,9 +1058,9 @@ body {
             font-style: normal;
             font-variant: normal; }
             @media (max-width: 1200px) {
-              body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper sup {
+              body section#recommended.i-know-what-i-need div.container div.column div.best-class sup {
                 font-size: 36px; } }
-          body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
+          body section#recommended.i-know-what-i-need div.container div.column div.best-class span {
             font-size: 120px;
             letter-spacing: 1.3px;
             color: #ff3e3e;
@@ -1065,11 +1069,26 @@ body {
             font-style: normal;
             font-variant: normal; }
             @media (max-width: 1200px) {
-              body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
+              body section#recommended.i-know-what-i-need div.container div.column div.best-class span {
                 font-size: 90px; } }
             @media (max-width: 414px) {
-              body section#recommended.i-know-what-i-need div.container div.column div.price-wrapper span {
+              body section#recommended.i-know-what-i-need div.container div.column div.best-class span {
                 font-size: 67px; } }
+            body section#recommended.i-know-what-i-need div.container div.column div.best-class span.currency, body section#recommended.i-know-what-i-need div.container div.column div.best-class span.freq {
+              font-size: 48px;
+              top: -1em;
+              letter-spacing: .5px;
+              color: #ff3e3e;
+              line-height: 0;
+              position: relative;
+              vertical-align: baseline;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 1200px) {
+                body section#recommended.i-know-what-i-need div.container div.column div.best-class span.currency, body section#recommended.i-know-what-i-need div.container div.column div.best-class span.freq {
+                  font-size: 36px; } }
         body section#recommended.i-know-what-i-need div.container div.column div.comparison {
           width: 240px;
           margin: 0 auto; }
@@ -1109,39 +1128,46 @@ body {
             -webkit-box-flex: 2;
                 -ms-flex-positive: 2;
                     flex-grow: 2; }
-            body section#recommended.i-know-what-i-need div.container div.column.online div.row div#class_category h3 {
+            body section#recommended.i-know-what-i-need div.container div.column.online div.row div#class_category span.rate-name {
               font-family: Lato, Helvetica, Arial, sans-serif;
               font-size: 36px;
               text-align: center;
               letter-spacing: .4px;
-              color: white; }
+              color: white;
+              display: block; }
               @media (max-width: 1200px) {
-                body section#recommended.i-know-what-i-need div.container div.column.online div.row div#class_category h3 {
+                body section#recommended.i-know-what-i-need div.container div.column.online div.row div#class_category span.rate-name {
                   font-size: 27px; } }
-            body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term {
+            body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
               margin-top: 30px;
               -webkit-box-pack: justify;
                   -ms-flex-pack: justify;
-                      justify-content: space-between; }
+                      justify-content: space-between;
+              background: transparent;
+              box-shadow: none; }
               @media (max-width: 1200px) {
-                body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term {
+                body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage {
                   margin-top: 23px; } }
-              body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column {
+              body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 {
                 width: calc(50% - 10px);
                 text-align: center; }
-                body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column span {
-                  font-family: Lato, Helvetica, Arial, sans-serif;
+                body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
+                  font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-variant: normal;
                   font-size: 24px;
                   line-height: 1;
                   letter-spacing: .3px;
-                  color: #9b9b9b; }
+                  color: #9b9b9b;
+                  text-transform: none; }
                   @media (max-width: 1200px) {
-                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column span {
+                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
                       font-size: 18px; } }
-                body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
+                body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                   font-size: 54px;
                   letter-spacing: .6px;
                   color: #ff3e3e;
@@ -1150,12 +1176,12 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
+                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                       font-size: 41px; } }
                   @media (max-width: 400px) {
-                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 {
+                    body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                       font-size: 31px; } }
-                  body section#recommended.i-know-what-i-need div.container div.column.online div.row div#coverage_and_term div.column h4 output {
+                  body section#recommended.i-know-what-i-need div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 output {
                     font-family: inherit;
                     font-size: inherit;
                     line-height: inherit;
@@ -1171,7 +1197,7 @@ body {
             body section#recommended.i-know-what-i-need div.container div.column.online div.row div#apply_button {
               padding: 35px 0 50px;
               text-align: center; }
-              body section#recommended.i-know-what-i-need div.container div.column.online div.row div#apply_button button {
+              body section#recommended.i-know-what-i-need div.container div.column.online div.row div#apply_button a.btn {
                 font-size: 28px;
                 display: inline-block;
                 width: 150px;
@@ -1254,19 +1280,35 @@ body {
                   display: inline;
                   letter-spacing: inherit;
                   color: inherit; }
-              body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper {
+              body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class {
                 margin-top: -20px;
-                padding-top: 0; }
-                body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper span {
-                  font-size: 72px; }
+                padding-top: 0;
+                text-align: center; }
+                body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span {
+                  font-size: 72px;
+                  letter-spacing: .8px;
+                  color: #ff3e3e;
+                  font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper span {
+                    body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span {
                       font-size: 54px; } }
-                body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper sup {
+                  body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span.freq {
+                    font-size: 24px;
+                    top: -1.3em;
+                    line-height: 0;
+                    position: relative;
+                    vertical-align: baseline; }
+                    @media (max-width: 1200px) {
+                      body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class span.freq {
+                        font-size: 18px; } }
+                body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class sup {
                   font-size: 24px;
                   top: -1.3em; }
                   @media (max-width: 1200px) {
-                    body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.price-wrapper sup {
+                    body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.multicarrier-class sup {
                       font-size: 18px; } }
               body section#recommended.i-know-what-i-need div.container div.column.call div.row div.column div.comparison {
                 width: 100%;
@@ -1305,57 +1347,62 @@ body {
       background: #222223;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-      body section#range_sliders div.slider-wrapper {
+      body section#range_sliders div.sliders {
         width: 50%;
         padding: 20px 25px 25px;
         text-align: center; }
         @media (max-width: 729px) {
-          body section#range_sliders div.slider-wrapper {
+          body section#range_sliders div.sliders {
             padding: 15px 20px 20px; } }
         @media (max-width: 503px) {
-          body section#range_sliders div.slider-wrapper {
+          body section#range_sliders div.sliders {
             width: 100%; } }
-        body section#range_sliders div.slider-wrapper:first-of-type {
+        body section#range_sliders div.sliders:first-of-type {
           border-right: 1px solid #3b3c3e; }
           @media (max-width: 503px) {
-            body section#range_sliders div.slider-wrapper:first-of-type {
+            body section#range_sliders div.sliders:first-of-type {
               border-right: none;
               border-bottom: 1px solid #3b3c3e; } }
-        body section#range_sliders div.slider-wrapper span.slider-label {
+        body section#range_sliders div.sliders span.slider-label {
           font-family: 'Lato';
           font-size: 18px;
           letter-spacing: .2px;
           color: #9b9b9b; }
           @media (max-width: 729px) {
-            body section#range_sliders div.slider-wrapper span.slider-label {
+            body section#range_sliders div.sliders span.slider-label {
               font-size: 12px; } }
-        body section#range_sliders div.slider-wrapper h4 {
+        body section#range_sliders div.sliders span.quote-coverage,
+        body section#range_sliders div.sliders span.quote-term {
+          display: block;
           font-size: 36px;
           line-height: 1;
           letter-spacing: .4px;
           color: white;
+          margin-bottom: 25px;
           font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
           font-weight: normal;
           font-style: normal;
           font-variant: normal; }
           @media (max-width: 729px) {
-            body section#range_sliders div.slider-wrapper h4 {
+            body section#range_sliders div.sliders span.quote-coverage,
+            body section#range_sliders div.sliders span.quote-term {
               font-size: 27px; } }
-          body section#range_sliders div.slider-wrapper h4 output {
+          body section#range_sliders div.sliders span.quote-coverage output,
+          body section#range_sliders div.sliders span.quote-term output {
             font-family: inherit;
             font-size: inherit;
             line-height: inherit;
             display: inline;
             letter-spacing: inherit;
             color: inherit; }
-        body section#range_sliders div.slider-wrapper span.range-slider {
+        body section#range_sliders div.sliders span.range-slider {
           position: relative;
           display: inline-block;
           overflow: auto;
           box-sizing: border-box;
           width: 100%;
           padding: 12px 0; }
-          body section#range_sliders div.slider-wrapper span.range-slider input {
+          body section#range_sliders div.sliders span.range-slider input {
             position: relative;
             z-index: 5;
             width: 100%;
@@ -1365,7 +1412,7 @@ body {
             -webkit-appearance: none;
                -moz-appearance: none;
                     appearance: none; }
-            body section#range_sliders div.slider-wrapper span.range-slider input::-webkit-slider-thumb {
+            body section#range_sliders div.sliders span.range-slider input::-webkit-slider-thumb {
               position: relative;
               z-index: 100;
               width: 25px;
@@ -1374,10 +1421,10 @@ body {
               -webkit-appearance: none;
                       appearance: none; }
               @media (max-width: 729px) {
-                body section#range_sliders div.slider-wrapper span.range-slider input::-webkit-slider-thumb {
+                body section#range_sliders div.sliders span.range-slider input::-webkit-slider-thumb {
                   width: 20px;
                   height: 20px; } }
-          body section#range_sliders div.slider-wrapper span.range-slider span.slider-container {
+          body section#range_sliders div.sliders span.range-slider span.slider-container {
             position: absolute;
             z-index: 3;
             top: 50%;
@@ -1387,7 +1434,7 @@ body {
             width: calc(100% - 25px);
             -webkit-transform: translateY(-50%);
                     transform: translateY(-50%); }
-            body section#range_sliders div.slider-wrapper span.range-slider span.slider-container span.bar {
+            body section#range_sliders div.sliders span.range-slider span.slider-container span.bar {
               z-index: 1;
               display: inline-block;
               overflow: hidden;
@@ -1395,13 +1442,13 @@ body {
               height: 4px;
               border-radius: 10px;
               background-color: #979797; }
-              body section#range_sliders div.slider-wrapper span.range-slider span.slider-container span.bar span {
+              body section#range_sliders div.sliders span.range-slider span.slider-container span.bar span {
                 display: inline-block;
                 float: left;
                 width: 0;
                 height: 11px;
                 background: #ff3e3e; }
-            body section#range_sliders div.slider-wrapper span.range-slider span.slider-container span.bar-btn {
+            body section#range_sliders div.sliders span.range-slider span.slider-container span.bar-btn {
               position: absolute;
               z-index: 3;
               top: 50%;
@@ -1415,10 +1462,18 @@ body {
               border-radius: 100%;
               background-color: #ff3e3e; }
               @media (max-width: 729px) {
-                body section#range_sliders div.slider-wrapper span.range-slider span.slider-container span.bar-btn {
+                body section#range_sliders div.sliders span.range-slider span.slider-container span.bar-btn {
                   width: 20px;
                   height: 20px;
                   margin-left: -6.5px; } }
+        body section#range_sliders div.sliders div.ui-slider {
+          border: none;
+          background: #979797;
+          height: 4px;
+          padding: 0;
+          border-radius: 10px; }
+          body section#range_sliders div.sliders div.ui-slider span.ui-slider-handle {
+            background: #ff3e3e; }
     body section#calculator-report.i-know-what-i-need div#calculator-demographics form div.inline-text {
       text-align: right;
       border-bottom: 2px dotted rgba(255, 255, 255, 0.35); }

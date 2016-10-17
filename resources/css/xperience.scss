@@ -77,6 +77,12 @@ body {
         //     min-height: calc(100vh - 361.84px);
         // }
     }
+    form#comparison-quote-form {
+        background: $grey;
+        div.overlay {
+            display: none;
+        }
+    }
     div.background-wrap {
         background-repeat: no-repeat;
         background-position: top center;
@@ -1238,7 +1244,7 @@ body {
                     div.row {
                         margin: 0;
                     }
-                    div.price-wrapper {
+                    div.best-class {
                         padding-top: 10px;
                         text-align: center;
                         sup {
@@ -1263,6 +1269,21 @@ body {
                             }
                             @media (max-width: 414px) {
                                 font-size: 67px;
+                            }
+                            &.currency,
+                            &.freq {
+                                font-size: 48px;
+                                top: -1em;
+                                letter-spacing: .5px;
+                                color: $red;
+                                line-height: 0;
+                                position: relative;
+                                vertical-align: baseline;
+
+                                @include Bebas();
+                                @media (max-width: 1200px) {
+                                    font-size: 36px;
+                                }
                             }
                         }
                     }
@@ -1306,39 +1327,43 @@ body {
 
                             flex-grow: 2;
                             div#class_category {
-                                h3 {
+                                span.rate-name {
                                     font-family: Lato, Helvetica, Arial, sans-serif;
                                     font-size: 36px;
                                     text-align: center;
                                     letter-spacing: .4px;
                                     color: white;
+                                    display: block;
                                     @media (max-width: 1200px) {
                                         font-size: 27px;
                                     }
                                 }
                             }
-                            div#coverage_and_term {
+                            div.recommended-coverage {
                                 display: flex;
                                 margin-top: 30px;
 
                                 justify-content: space-between;
+                                background: transparent;
+                                box-shadow: none;
                                 @media (max-width: 1200px) {
                                     margin-top: 23px;
                                 }
-                                div.column {
+                                div.col-md-6 {
                                     width: calc(50% - 10px);
                                     text-align: center;
-                                    span {
-                                        font-family: Lato, Helvetica, Arial, sans-serif;
+                                    h4 {
+                                        @include Lato();
                                         font-size: 24px;
                                         line-height: 1;
                                         letter-spacing: .3px;
                                         color: $lightgrey;
+                                        text-transform: none;
                                         @media (max-width: 1200px) {
                                             font-size: 18px;
                                         }
                                     }
-                                    h4 {
+                                    h3 {
                                         font-size: 54px;
                                         letter-spacing: .6px;
                                         color: $red;
@@ -1372,7 +1397,7 @@ body {
                             div#apply_button {
                                 padding: 35px 0 50px;
                                 text-align: center;
-                                button {
+                                a.btn {
                                     font-size: 28px;
                                     display: inline-block;
                                     width: 150px;
@@ -1450,13 +1475,29 @@ body {
                                         color: inherit;
                                     }
                                 }
-                                div.price-wrapper {
+                                div.multicarrier-class {
                                     margin-top: -20px;
                                     padding-top: 0;
+                                    text-align: center;
                                     span {
                                         font-size: 72px;
+                                        letter-spacing: .8px;
+                                        color: $red;
+
+                                        @include Bebas();
                                         @media (max-width: 1200px) {
                                             font-size: 54px;
+                                        }
+                                        &.currency,
+                                        &.freq {
+                                            font-size: 24px;
+                                            top: -1.3em;
+                                            line-height: 0;
+                                            position: relative;
+                                            vertical-align: baseline;
+                                            @media (max-width: 1200px) {
+                                                font-size: 18px;
+                                            }
                                         }
                                     }
                                     sup {
@@ -1515,7 +1556,7 @@ body {
             background: #222223;
 
             flex-wrap: wrap;
-            div.slider-wrapper {
+            div.sliders {
                 width: 50%;
                 padding: 20px 25px 25px;
                 text-align: center;
@@ -1541,11 +1582,14 @@ body {
                         font-size: 12px;
                     }
                 }
-                h4 {
+                span.quote-coverage,
+                span.quote-term {
+                    display: block;
                     font-size: 36px;
                     line-height: 1;
                     letter-spacing: .4px;
                     color: white;
+                    margin-bottom: 25px;
 
                     @include Bebas();
                     @media (max-width: 729px) {
@@ -1633,6 +1677,16 @@ body {
                                 margin-left: -6.5px;
                             }
                         }
+                    }
+                }
+                div.ui-slider {
+                    border: none;
+                    background: #979797;
+                    height: 4px;
+                    padding: 0;
+                    border-radius: 10px;
+                    span.ui-slider-handle {
+                        background: $red;
                     }
                 }
             }
