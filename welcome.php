@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Physically Prepared for the Unknown or Unknowable?</h1>
-                    <h2>Get informed and become finacially prepared as well.</h2>
+                    <p>Get informed and become finacially prepared as well.</p>
                 </div>
             </div>
         </div>

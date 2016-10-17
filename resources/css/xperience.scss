@@ -68,6 +68,15 @@ body {
     background: $gray;
 
     @include Lato();
+    div#body_wrapper {
+        min-height: calc(100vh - 151.85px);
+        @media (max-width: 1200px) {
+            min-height: calc(100vh - 186.84px);
+        }
+        @media (max-width: 995px) {
+            min-height: calc(100vh - 361.84px);
+        }
+    }
     div.background-wrap {
         background-repeat: no-repeat;
         background-position: top center;
@@ -163,7 +172,7 @@ body {
                             width: 250px;
                             padding: 0 0 0 20px !important;
                             @media (max-width: 768px) {
-                                width: 230px;
+                                width: 200px !important;
                                 padding: 0 !important;
                             }
                             img.logo {
@@ -171,7 +180,9 @@ body {
                                 height: auto;
                             }
                             span.logo-phno {
-                                display: none;
+                                @media (max-width: 768px) {
+                                    font-size: 15px;
+                                }
                             }
                         }
                         ul#top_nav_menu {
@@ -303,8 +314,13 @@ body {
                         font-size: 54px;
                         letter-spacing: .6px;
                     }
+                    br {
+                        @media (max-width: 530px) {
+                            display: none;
+                        }
+                    }
                 }
-                h2 {
+                p {
                     font-family: Lato, Helvetica, Arial, sans-serif;
                     font-size: 28px;
                     line-height: 1.25;
@@ -314,6 +330,13 @@ body {
                         font-size: 21px;
                         margin-bottom: 15px;
                         letter-spacing: .225px;
+                    }
+                }
+                p {
+                    br {
+                        @media (max-width: 530px) {
+                            display: none;
+                        }
                     }
                 }
                 a.btn {
@@ -330,12 +353,27 @@ body {
                         padding: 17px 34px;
                         letter-spacing: .225px;
                     }
+                    &#how_much_do_i_need {
+                        width: 285px;
+                        @media (max-width: 768px) {
+                            width: 220px;
+                        }
+                        @media (max-width: 483px) {
+                            margin-right: 0;
+                        }
+                    }
+                    &#i_know_what_i_need {
+                        width: 285px;
+                        @media (max-width: 768px) {
+                            width: 220px;
+                        }
+                    }
                 }
                 div.form-wrapper {
                     display: flex;
                     width: 100%;
                     max-width: 500px;
-                    margin: 0 auto;
+                    margin: 20px auto 0;
                     background: $midgrey;
                     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .3);
 
@@ -464,6 +502,175 @@ body {
                 }
             }
         }
+        &#calculateneed_hero,
+        &#iknowwhatiwant_hero {
+            background-image: url('../images/bg-pylo-color.jpg');
+            background-position: top center;
+            div.overlay {
+                background: rgba(40, 44, 49, .75);
+            }
+            div.col-md-12 {
+                max-width: 1130px;
+            }
+        }
+        &#affordability_hero {
+            background-image: url('../images/warmup-set.jpg');
+            background-position: top center;
+            div.overlay {
+                background: rgba(40, 44, 49, .75);
+            }
+            div.col-md-12 {
+                max-width: 1130px;
+            }
+        }
+        &#calculateneed_hero {
+            p.heading {
+                br {
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &#iknowwhatiwant_hero {
+            div.col-md-12 {
+                form#select-coverage-form {
+                    display: flex;
+                    margin-top: 40px;
+                    #hero_select_wrapper {
+                        position: relative;
+                        float: left;
+                        margin: 15px 0;
+                        padding: 0;
+                        &:after {
+                            font-family: FontAwesome;
+                            font-size: 20px;
+                            position: absolute;
+                            top: 42%;
+                            right: 12px;
+                            content: '\f0d7';
+                            transform: translateY(-50%);
+                            pointer-events: none;
+                            color: $darkgrey;
+                        }
+                        select {
+                            font-size: 24px;
+                            font-weight: normal;
+                            line-height: 1;
+                            height: 50px;
+                            padding: 12.5px;
+                            letter-spacing: .3px;
+                            color: $darkgrey;
+                            border: none;
+                            border-radius: 5px;
+                            outline: none;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                            @include Bebas();
+                            appearance: none;
+                            @media (max-width: 768px) {
+                                font-size: 18px;
+                                height: 37.5px;
+                                padding: 9.375px;
+                                letter-spacing: .225px;
+                            }
+                        }
+                    }
+                    div.col-md-4 {
+                        &:last-of-type {
+                            width: 202px;
+                            margin: 15px 0 0 15px;
+                            padding: 0;
+                        }
+                        input.btn {
+                            font-size: 24px;
+                            font-weight: normal;
+                            line-height: 1;
+                            height: 50px;
+                            padding: 12.5px;
+                            letter-spacing: .3px;
+                            border: none;
+                            border-radius: 5px;
+                            outline: none;
+                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                            @include Bebas();
+                            appearance: none;
+                            @media (max-width: 768px) {
+                                font-size: 18px;
+                                height: 37.5px;
+                                padding: 9.375px;
+                                letter-spacing: .225px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#red-banner {
+            position: relative;
+            display: none;
+            padding: 10px 0;
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+                white-space: initial;
+                @media (max-width: 1200px) {
+                    width: 75%;
+                    margin: 0 auto;
+                }
+                @media (max-width: 542px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        &.main-section {
+            padding: 150px 0;
+            // border-top: 2px solid $lightgrey;
+            @media (max-width: 768px) {
+                padding: 100px 0;
+            }
+            div.overlay {
+                background: #353535 !important;
+            }
+            div.container {
+                div.row {
+                    div.margin-bottom-m {
+                        margin-bottom: 35px;
+                    }
+                    div.col-md-5 {
+                        h2 {
+                            font-size: 34px;
+                            font-weight: normal;
+                            line-height: 1.2;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            a {
+                                text-decoration: underline;
+                            }
+                        }
+                        a.btn {
+                            font-size: 28px;
+                            font-weight: normal;
+                            line-height: 1;
+                            margin-top: 25px;
+                            padding: 22.5px 45.24px;
+                            letter-spacing: .3px;
+                            opacity: 1;
+                            @media (max-width: 768px) {
+                                font-size: 21px;
+                                margin-top: 19px;
+                                padding: 17px 34px;
+                                letter-spacing: .225px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &#landing_hero {
             @media (max-width: 768px) {
                 padding-top: 218px;
@@ -471,11 +678,11 @@ body {
             }
         }
         &.quote-header {
-            margin-bottom: 20px;
             padding-top: 135px;
+            padding-bottom: 20px;
             @media (max-width: 768px) {
-                margin-bottom: 15px;
                 padding-top: 101px;
+                padding-bottom: 15px;
             }
             div.container {
                 div.row {
@@ -505,8 +712,8 @@ body {
         &.quote-tabs {
             width: 100%;
             max-width: 530px;
-            margin: 0 auto 20px;
-            padding: 0 15px;
+            margin: 0 auto;
+            padding: 0 15px 20px;
             div.container {
                 width: 100%;
                 padding: 0;
@@ -555,7 +762,7 @@ body {
                         form {
                             width: calc(50% - 25px);
                             div.inline-text {
-                                input[type="text"] {
+                                input[type='text'] {
                                     width: 192px;
                                     @media (max-width: 768px) {
                                         width: 144px;
@@ -586,7 +793,7 @@ body {
                             max-width: 560px;
                             margin: 0 auto;
                             div.inline-text {
-                                input[type="text"] {
+                                input[type='text'] {
                                     width: 132px;
                                     @media (max-width: 768px) {
                                         width: 100px;
@@ -605,10 +812,10 @@ body {
                                     padding: 9px 0 9px 9px;
                                 }
                                 span {
-                                    position: relative;
                                     font-size: 16px;
                                     font-weight: normal;
                                     line-height: 1;
+                                    position: relative;
                                     position: relative;
                                     bottom: auto;
                                     left: auto;
@@ -620,13 +827,21 @@ body {
                                         letter-spacing: .15px;
                                     }
                                     @media (max-width: 480px) {
+                                        padding-top: 0;
                                         text-align: left;
                                     }
                                 }
                                 div.text-right {
+                                    @media (max-width: 480px) {
+                                        width: 150px;
+                                    }
                                     input {
                                         line-height: 1;
                                         height: 30px;
+                                        @media (max-width: 480px) {
+                                            font-size: 25px;
+                                            height: 23px;
+                                        }
                                     }
                                 }
                             }
@@ -644,10 +859,10 @@ body {
                                     }
                                     p {
                                         span {
-                                            position: relative;
                                             font-size: 16px;
                                             font-weight: normal;
                                             line-height: 1;
+                                            position: relative;
                                             position: relative;
                                             bottom: auto;
                                             left: auto;
@@ -671,8 +886,8 @@ body {
                                             }
                                         }
                                         select {
-                                            margin: 0;
                                             width: 160px;
+                                            margin: 0;
                                             @media (max-width: 768px) {
                                                 font-size: 11px;
                                                 width: 130px;
@@ -822,6 +1037,9 @@ body {
                                         padding: 8px;
                                         letter-spacing: .225px;;
                                     }
+                                    &:hover {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -865,7 +1083,6 @@ body {
         //                     border: 1px solid rgba(255,255,255,.25);
         //                     border-bottom: 2px dotted rgba(255, 255, 255, .35);
         //                     background: rgba(black,.25);
-
         //                     appearance: none;
         //                 }
         //             }
@@ -994,6 +1211,9 @@ body {
                     width: calc(50% - 25px);
                     @media (max-width: 991px) {
                         width: 100%;
+                    }
+                    div.row {
+                        margin: 0;
                     }
                     div.price-wrapper {
                         padding-top: 10px;
@@ -1171,6 +1391,7 @@ body {
                                     }
                                     sup {
                                         font-size: 59%;
+                                        top: -.45em;
                                         padding-left: 1px;
                                     }
                                 }
@@ -1463,7 +1684,10 @@ body {
                             flex-direction: column;
                         }
                         li {
-                            @media (max-width: 1200px) {
+                            &:last-of-type {
+                                margin-right: 0;
+                            }
+                            @media (max-width: 995px) {
                                 margin: 0;
                             }
                             a {

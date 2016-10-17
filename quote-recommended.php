@@ -106,12 +106,28 @@
 	    <div class="slider-wrapper">
 	        <span class="slider-label">Amount of Coverage</span>
 	        <h4 class="coverage-amount">$700,000</h4>
-	        <input id="coverage" class="slider_one" value="700000" min="400000" max="1000000" step="100000" name="rangeslider" type="range" />
+	        <span class="range-slider">
+	        	<input id="coverage" class="slider_one" value="700000" min="400000" max="1000000" step="100000" name="rangeslider" type="range" oninput="updateSlider_one(this)">
+	        	<span class="slider-container">
+	        		<span class="bar">
+	        			<span style="width: 50%;"></span>
+	        		</span>
+	        		<span class="bar-btn" style="left: 50%;"></span>
+	        	</span>
+	        </span>
 	    </div>
 	    <div class="slider-wrapper">
 	        <span class="slider-label">Number of Years to Maintain Coverage</span>
 	        <h4 class="term-amount">10 years</h4>
-	        <input id="term" class="slider_two" value="10" min="5" max="50" step="5" name="rangeslider" type="range" />
+	        <span class="range-slider">
+	        	<input id="term" class="slider_two" value="10" min="5" max="50" step="5" name="rangeslider" type="range" oninput="updateSlider_two(this)">
+	        	<span class="slider-container">
+	        		<span class="bar">
+	        			<span style="width: 11%;"></span>
+	        		</span>
+	        		<span class="bar-btn" style="left: 11%;"></span>
+	        	</span>
+	        </span>
 	    </div>
 	</section>
 

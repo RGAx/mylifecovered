@@ -14,7 +14,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#" class="tab">Quick Facts</a>
+                    <a href="quote-form.php" class="tab">Quick Facts</a>
                     <a href="calculator.php" class="tab active">Full Calculator</a>
                 </div>
             </div>

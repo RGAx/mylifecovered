@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>SAVE UP TO 5O% ON YOUR PREMIUM.</h1>
-                    <h2>Life insurance is often significantly less expensive for healthy people like you.</h2>
+                    <p>Life insurance is often significantly less expensive for healthy people like you.</p>
                 </div>
             </div>
             <div class="row">
@@ -22,10 +22,10 @@
             					<input type="submit" value="Go">
             				</form>
             			</div>
-            			<a href="#" class="secondary-container">
+            			<a href="life-help.php" class="secondary-container">
             				<h5>Help Me Determine <br>My Coverage</h5>
             			</a>
-            			<a href="#" class="secondary-container">
+            			<a href="life-afford.php" class="secondary-container">
             				<h5>I Know What <br>I Can Afford</h5>
             			</a>
             		</div>

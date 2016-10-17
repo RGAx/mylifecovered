@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Not Your Average <br>Blood Test</h1>
-                    <h2>Take your nutrition and workout program to the next level with data and insights critical for personalized health.</h2>
+                    <p>Take your nutrition and workout program to the next level with data and insights critical for personalized health.</p>
                     <a href="https://www.wellnessfx.com/my-life-covered" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
