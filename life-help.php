@@ -40,14 +40,8 @@
     				<a href="blood.php" id="blood" class="tile">
     					<h3>Athletic Blood Profile</h3>
     				</a>
-    				<a href="#" id="genome" class="tile">
-    					<h3>Genome Profile of an Athlete</h3>
-    				</a>
     				<a href="life-help.php" id="life" class="tile active">
     					<h3>Life Insurance for the Healthy</h3>
-    				</a>
-    				<a href="#" id="emergency" class="tile">
-    					<h3>Emergency Planning</h3>
     				</a>
     			</div>
     		</div>
