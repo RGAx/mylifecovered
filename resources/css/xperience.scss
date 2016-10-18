@@ -446,7 +446,8 @@ body {
                             @include placeholder {
                                 color: $lightgrey;
                             }
-                            input {
+                            input,
+                            select {
                                 font-size: 24px;
                                 font-weight: normal;
                                 line-height: 1;
@@ -466,6 +467,12 @@ body {
                                     padding: 9.375px;
                                     letter-spacing: .225px;
                                 }
+                            }
+                            select {
+                                width: 200px;
+                                background: white;
+                                display: inline;
+                                color: $lightgrey;
                             }
                             input[type='text'] {
                                 width: 200px;
@@ -1225,7 +1232,7 @@ body {
                 }
             }
         }
-        &#recommended {
+        &#quote-page {
             padding: 150px 0 0;
             div.container {
                 position: relative;

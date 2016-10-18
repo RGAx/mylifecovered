@@ -374,7 +374,8 @@ body {
                 color: #9b9b9b; }
               body section.cover div.col-md-12 div.form-wrapper div.primary-container form :-ms-input-placeholder {
                 color: #9b9b9b; }
-              body section.cover div.col-md-12 div.form-wrapper div.primary-container form input {
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form input,
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
                 font-size: 24px;
                 font-weight: normal;
                 line-height: 1;
@@ -393,11 +394,17 @@ body {
                    -moz-appearance: none;
                         appearance: none; }
                 @media (max-width: 768px) {
-                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form input {
+                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form input,
+                  body section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
                     font-size: 18px;
                     height: 37.5px;
                     padding: 9.375px;
                     letter-spacing: .225px; } }
+              body section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
+                width: 200px;
+                background: white;
+                display: inline;
+                color: #9b9b9b; }
               body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='text'] {
                 width: 200px;
                 color: #222223;
@@ -1026,9 +1033,9 @@ body {
             @media (max-width: 768px) {
               body section#landing_tiles div.container div.col-md-12 a.tile h3 {
                 padding-bottom: 11px; } }
-    body section#recommended {
+    body section#quote-page {
       padding: 150px 0 0; }
-      body section#recommended div.container {
+      body section#quote-page div.container {
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1041,14 +1048,14 @@ body {
                 align-items: stretch;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        body section#recommended div.container:before, body section#recommended div.container:after {
+        body section#quote-page div.container:before, body section#quote-page div.container:after {
           display: none; }
-        body section#recommended div.container div.column {
+        body section#quote-page div.container div.column {
           width: calc(50% - 25px); }
           @media (max-width: 991px) {
-            body section#recommended div.container div.column {
+            body section#quote-page div.container div.column {
               width: 100%; } }
-          body section#recommended div.container div.column form {
+          body section#quote-page div.container div.column form {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -1060,17 +1067,17 @@ body {
             -webkit-box-flex: 2;
                 -ms-flex-positive: 2;
                     flex-grow: 2; }
-            body section#recommended div.container div.column form div.row {
+            body section#quote-page div.container div.column form div.row {
               margin: 0;
               padding: 20px;
               background-color: #3b3c3e;
               box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3); }
-              body section#recommended div.container div.column form div.row:before, body section#recommended div.container div.column form div.row:after {
+              body section#quote-page div.container div.column form div.row:before, body section#quote-page div.container div.column form div.row:after {
                 display: none; }
-              body section#recommended div.container div.column form div.row div.best-class {
+              body section#quote-page div.container div.column form div.row div.best-class {
                 padding-top: 10px;
                 text-align: center; }
-                body section#recommended div.container div.column form div.row div.best-class sup {
+                body section#quote-page div.container div.column form div.row div.best-class sup {
                   font-size: 48px;
                   top: -1em;
                   letter-spacing: .5px;
@@ -1080,9 +1087,9 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended div.container div.column form div.row div.best-class sup {
+                    body section#quote-page div.container div.column form div.row div.best-class sup {
                       font-size: 36px; } }
-                body section#recommended div.container div.column form div.row div.best-class span {
+                body section#quote-page div.container div.column form div.row div.best-class span {
                   font-size: 120px;
                   letter-spacing: 1.3px;
                   color: #ff3e3e;
@@ -1091,12 +1098,12 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended div.container div.column form div.row div.best-class span {
+                    body section#quote-page div.container div.column form div.row div.best-class span {
                       font-size: 90px; } }
                   @media (max-width: 414px) {
-                    body section#recommended div.container div.column form div.row div.best-class span {
+                    body section#quote-page div.container div.column form div.row div.best-class span {
                       font-size: 67px; } }
-                  body section#recommended div.container div.column form div.row div.best-class span.currency, body section#recommended div.container div.column form div.row div.best-class span.freq {
+                  body section#quote-page div.container div.column form div.row div.best-class span.currency, body section#quote-page div.container div.column form div.row div.best-class span.freq {
                     font-size: 48px;
                     line-height: 0;
                     position: relative;
@@ -1109,15 +1116,15 @@ body {
                     font-style: normal;
                     font-variant: normal; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column form div.row div.best-class span.currency, body section#recommended div.container div.column form div.row div.best-class span.freq {
+                      body section#quote-page div.container div.column form div.row div.best-class span.currency, body section#quote-page div.container div.column form div.row div.best-class span.freq {
                         font-size: 36px; } }
                     @media (max-width: 414px) {
-                      body section#recommended div.container div.column form div.row div.best-class span.currency, body section#recommended div.container div.column form div.row div.best-class span.freq {
+                      body section#quote-page div.container div.column form div.row div.best-class span.currency, body section#quote-page div.container div.column form div.row div.best-class span.freq {
                         font-size: 27px; } }
-              body section#recommended div.container div.column form div.row div.comparison {
+              body section#quote-page div.container div.column form div.row div.comparison {
                 width: 240px;
                 margin: 0 auto; }
-                body section#recommended div.container div.column form div.row div.comparison h5 {
+                body section#quote-page div.container div.column form div.row div.comparison h5 {
                   font-size: 24px;
                   line-height: 1.21;
                   text-align: center;
@@ -1128,16 +1135,16 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended div.container div.column form div.row div.comparison h5 {
+                    body section#quote-page div.container div.column form div.row div.comparison h5 {
                       font-size: 18px; } }
-                  body section#recommended div.container div.column form div.row div.comparison h5 output {
+                  body section#quote-page div.container div.column form div.row div.comparison h5 output {
                     font-family: inherit;
                     font-size: inherit;
                     line-height: inherit;
                     display: inline;
                     letter-spacing: inherit;
                     color: inherit; }
-          body section#recommended div.container div.column.online {
+          body section#quote-page div.container div.column.online {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -1146,19 +1153,19 @@ body {
                 -ms-flex-direction: column;
                     flex-direction: column; }
             @media (max-width: 991px) {
-              body section#recommended div.container div.column.online {
+              body section#quote-page div.container div.column.online {
                 -webkit-box-ordinal-group: 2;
                     -ms-flex-order: 1;
                         order: 1; } }
             @media (max-width: 991px) {
-              body section#recommended div.container div.column.online h2 {
+              body section#quote-page div.container div.column.online h2 {
                 height: auto; } }
-            body section#recommended div.container div.column.online div.row {
+            body section#quote-page div.container div.column.online div.row {
               width: 100%;
               -webkit-box-flex: 2;
                   -ms-flex-positive: 2;
                       flex-grow: 2; }
-              body section#recommended div.container div.column.online div.row div#class_category span.rate-name {
+              body section#quote-page div.container div.column.online div.row div#class_category span.rate-name {
                 font-size: 36px;
                 display: block;
                 text-align: center;
@@ -1169,9 +1176,9 @@ body {
                 font-style: normal;
                 font-variant: normal; }
                 @media (max-width: 1200px) {
-                  body section#recommended div.container div.column.online div.row div#class_category span.rate-name {
+                  body section#quote-page div.container div.column.online div.row div#class_category span.rate-name {
                     font-size: 27px; } }
-              body section#recommended div.container div.column.online div.row div.recommended-coverage {
+              body section#quote-page div.container div.column.online div.row div.recommended-coverage {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -1182,12 +1189,12 @@ body {
                     -ms-flex-pack: justify;
                         justify-content: space-between; }
                 @media (max-width: 1200px) {
-                  body section#recommended div.container div.column.online div.row div.recommended-coverage {
+                  body section#quote-page div.container div.column.online div.row div.recommended-coverage {
                     margin-top: 23px; } }
-                body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 {
+                body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 {
                   width: calc(50% - 10px);
                   text-align: center; }
-                  body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
+                  body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
                     font-size: 24px;
                     line-height: 1;
                     letter-spacing: .3px;
@@ -1198,9 +1205,9 @@ body {
                     font-style: normal;
                     font-variant: normal; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
+                      body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h4 {
                         font-size: 18px; } }
-                  body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
+                  body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                     font-size: 54px;
                     letter-spacing: .6px;
                     color: #ff3e3e;
@@ -1209,34 +1216,34 @@ body {
                     font-style: normal;
                     font-variant: normal; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
+                      body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                         font-size: 41px; } }
                     @media (max-width: 500px) {
-                      body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
+                      body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 {
                         font-size: 31px; } }
-                    body section#recommended div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 output {
+                    body section#quote-page div.container div.column.online div.row div.recommended-coverage div.col-md-6 h3 output {
                       font-family: inherit;
                       font-size: inherit;
                       line-height: inherit;
                       display: inline;
                       letter-spacing: inherit;
                       color: inherit; }
-              body section#recommended div.container div.column.online div.row div#transamerica_logo {
+              body section#quote-page div.container div.column.online div.row div#transamerica_logo {
                 width: 250px;
                 margin: 0 auto; }
-                body section#recommended div.container div.column.online div.row div#transamerica_logo img {
+                body section#quote-page div.container div.column.online div.row div#transamerica_logo img {
                   display: block;
                   width: 100%; }
-              body section#recommended div.container div.column.online div.row div#apply_button {
+              body section#quote-page div.container div.column.online div.row div#apply_button {
                 padding: 35px 0 50px;
                 text-align: center; }
                 @media (max-width: 1200px) {
-                  body section#recommended div.container div.column.online div.row div#apply_button {
+                  body section#quote-page div.container div.column.online div.row div#apply_button {
                     padding: 35px 0 15px; } }
                 @media (max-width: 991px) {
-                  body section#recommended div.container div.column.online div.row div#apply_button {
+                  body section#quote-page div.container div.column.online div.row div#apply_button {
                     padding: 35px 0 50px; } }
-                body section#recommended div.container div.column.online div.row div#apply_button a.btn {
+                body section#quote-page div.container div.column.online div.row div#apply_button a.btn {
                   font-size: 28px;
                   display: inline;
                   width: 150px;
@@ -1256,7 +1263,7 @@ body {
                   -webkit-appearance: none;
                      -moz-appearance: none;
                           appearance: none; }
-          body section#recommended div.container div.column.call {
+          body section#quote-page div.container div.column.call {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -1265,11 +1272,11 @@ body {
                 -ms-flex-direction: column;
                     flex-direction: column; }
             @media (max-width: 991px) {
-              body section#recommended div.container div.column.call {
+              body section#quote-page div.container div.column.call {
                 -webkit-box-ordinal-group: 4;
                     -ms-flex-order: 3;
                         order: 3; } }
-            body section#recommended div.container div.column.call div.row {
+            body section#quote-page div.container div.column.call div.row {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -1280,19 +1287,19 @@ body {
               -ms-flex-wrap: wrap;
                   flex-wrap: wrap; }
               @media (max-width: 1200px) {
-                body section#recommended div.container div.column.call div.row {
+                body section#quote-page div.container div.column.call div.row {
                   margin-bottom: 15px; } }
-              body section#recommended div.container div.column.call div.row:last-of-type {
+              body section#quote-page div.container div.column.call div.row:last-of-type {
                 margin-bottom: 0; }
-              body section#recommended div.container div.column.call div.row div.column {
+              body section#quote-page div.container div.column.call div.row div.column {
                 width: calc(50% - 10px); }
                 @media (max-width: 414px) {
-                  body section#recommended div.container div.column.call div.row div.column {
+                  body section#quote-page div.container div.column.call div.row div.column {
                     width: 100%;
                     text-align: center; }
-                    body section#recommended div.container div.column.call div.row div.column:first-of-type {
+                    body section#quote-page div.container div.column.call div.row div.column:first-of-type {
                       margin-bottom: 40px; } }
-                body section#recommended div.container div.column.call div.row div.column h6 {
+                body section#quote-page div.container div.column.call div.row div.column h6 {
                   font-size: 36px;
                   letter-spacing: .4px;
                   color: #faf7fc;
@@ -1301,13 +1308,13 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended div.container div.column.call div.row div.column h6 {
+                    body section#quote-page div.container div.column.call div.row div.column h6 {
                       font-size: 27px; } }
-                  body section#recommended div.container div.column.call div.row div.column h6 sup {
+                  body section#quote-page div.container div.column.call div.row div.column h6 sup {
                     font-size: 59%;
                     top: -.45em;
                     padding-left: 1px; }
-                body section#recommended div.container div.column.call div.row div.column p {
+                body section#quote-page div.container div.column.call div.row div.column p {
                   font-size: 20px;
                   line-height: 1.4;
                   margin: 0;
@@ -1318,20 +1325,20 @@ body {
                   font-style: normal;
                   font-variant: normal; }
                   @media (max-width: 1200px) {
-                    body section#recommended div.container div.column.call div.row div.column p {
+                    body section#quote-page div.container div.column.call div.row div.column p {
                       font-size: 15px; } }
-                  body section#recommended div.container div.column.call div.row div.column p output {
+                  body section#quote-page div.container div.column.call div.row div.column p output {
                     font-family: inherit;
                     font-size: inherit;
                     line-height: inherit;
                     display: inline;
                     letter-spacing: inherit;
                     color: inherit; }
-                body section#recommended div.container div.column.call div.row div.column div.multicarrier-class {
+                body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class {
                   margin-top: -20px;
                   padding-top: 0;
                   text-align: center; }
-                  body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span {
+                  body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span {
                     font-size: 72px;
                     letter-spacing: .8px;
                     color: #ff3e3e;
@@ -1340,62 +1347,62 @@ body {
                     font-style: normal;
                     font-variant: normal; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span {
+                      body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span {
                         font-size: 54px; } }
-                    body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span.freq {
+                    body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span.freq {
                       font-size: 24px;
                       line-height: 0;
                       position: relative;
                       top: -1.3em;
                       vertical-align: baseline; }
                       @media (max-width: 1200px) {
-                        body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#recommended div.container div.column.call div.row div.column div.multicarrier-class span.freq {
+                        body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span.currency, body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class span.freq {
                           font-size: 18px; } }
-                  body section#recommended div.container div.column.call div.row div.column div.multicarrier-class sup {
+                  body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class sup {
                     font-size: 24px;
                     top: -1.3em; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column.call div.row div.column div.multicarrier-class sup {
+                      body section#quote-page div.container div.column.call div.row div.column div.multicarrier-class sup {
                         font-size: 18px; } }
-                body section#recommended div.container div.column.call div.row div.column div.comparison {
+                body section#quote-page div.container div.column.call div.row div.column div.comparison {
                   width: 100%;
                   max-width: 115px; }
-                  body section#recommended div.container div.column.call div.row div.column div.comparison h5 {
+                  body section#quote-page div.container div.column.call div.row div.column div.comparison h5 {
                     font-size: 20px; }
                     @media (max-width: 1200px) {
-                      body section#recommended div.container div.column.call div.row div.column div.comparison h5 {
+                      body section#quote-page div.container div.column.call div.row div.column div.comparison h5 {
                         font-size: 15px;
                         margin: -10px 0 0; } }
-                    body section#recommended div.container div.column.call div.row div.column div.comparison h5 output {
+                    body section#quote-page div.container div.column.call div.row div.column div.comparison h5 output {
                       font-family: inherit;
                       font-size: inherit;
                       line-height: inherit;
                       display: inline;
                       letter-spacing: inherit;
                       color: inherit; }
-          body section#recommended div.container div.column h2 {
+          body section#quote-page div.container div.column h2 {
             font-size: 48px;
             line-height: 1.46;
             width: 100%;
             text-align: center;
             letter-spacing: .5px;
             color: white; }
-        body section#recommended div.container div#legal_policy {
+        body section#quote-page div.container div#legal_policy {
           padding: 15px 0 20px; }
           @media (max-width: 991px) {
-            body section#recommended div.container div#legal_policy {
+            body section#quote-page div.container div#legal_policy {
               padding: 10px 0 30px;
               -webkit-box-ordinal-group: 3;
                   -ms-flex-order: 2;
                       order: 2; } }
-          body section#recommended div.container div#legal_policy a {
+          body section#quote-page div.container div#legal_policy a {
             letter-spacing: .1px;
             color: #9b9b9b;
             font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: normal; }
-            body section#recommended div.container div#legal_policy a i.fa {
+            body section#quote-page div.container div#legal_policy a i.fa {
               font-size: 20px;
               padding-left: 3px;
               -webkit-transform: translateY(2px);
