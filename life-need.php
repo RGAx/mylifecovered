@@ -18,7 +18,17 @@
             				<p>Experts recommened 8x your salary for optimal coverage.</p>
             				<p>See our full <a href="calculator.php">Calculator</a>.</p>
             				<form>
-            					<input type="text" placeholder="Total Coverage">
+            					<select name="coverageAmount" id="coverageAmount" class="coverageamt-select">
+                                    <option value="">Total Coverage</option>
+                                    <option value="100000">$100,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                </select>
             					<input type="submit" value="Go">
             				</form>
             			</div>
