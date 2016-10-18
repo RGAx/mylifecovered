@@ -127,7 +127,7 @@
 	        <div id="comparison-coverage" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
                 <div class="ui-slider-range ui-widget-header ui-corner-all ">
                 </div>
-                <span class="ui-slider-handle ui-state-default ui-corner-all upd-cov-slider-range" tabindex="0" style="left: 9.090909090909092%;"></span>
+                <span class="ui-slider-handle ui-state-default ui-corner-all upd-cov-slider-range" tabindex="0" style="left: 0%;"></span>
             </div>
 	    </div>
 	    <div class="sliders">
@@ -136,7 +136,7 @@
 	        <div id="comparison-term" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
                 <div class="ui-slider-range ui-widget-header ui-corner-all ">
                 </div>
-                <span class="ui-slider-handle ui-state-default ui-corner-all upd-term-slider-range" tabindex="0" style="left: 50%;"></span>
+                <span class="ui-slider-handle ui-state-default ui-corner-all upd-term-slider-range" tabindex="0" style="left: 0%;"></span>
             </div>
 	    </div>
 	</section>

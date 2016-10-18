@@ -401,10 +401,10 @@ body {
                     padding: 9.375px;
                     letter-spacing: .225px; } }
               body section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
-                width: 200px;
-                background: white;
                 display: inline;
-                color: #9b9b9b; }
+                width: 200px;
+                color: #9b9b9b;
+                background: white; }
               body section.cover div.col-md-12 div.form-wrapper div.primary-container form input[type='text'] {
                 width: 200px;
                 color: #222223;
