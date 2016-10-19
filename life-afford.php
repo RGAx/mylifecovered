@@ -6,16 +6,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>SAVE UP TO 5O% ON YOUR PREMIUM.</h1>
-                    <p>Life insurance is often significantly less expensive for healthy people like you.</p>
+                    <h1>YOU COULD QUALIFY TO GET SIGNIFICANTLY MORE COVERAGE FOR YOUR PREMIUM DOLLAR. DO YOU QUALIFY?</h1>
+                    <p>Fit and healthy people often get more coverage for the same price as standard rated individuals. Find out how much more.</p>
                 </div>
             </div>
             <div class="row">
             	<div class="col-md-12">
             		<div class="form-wrapper">
             			<div class="primary-container">
-            				<h4>I know how much I need</h4>
-            				<p>Experts recommened 8x your salary for optimal coverage.</p>
+            				<h4>I know how much I can afford</h4>
             				<p>See our full <a href="calculator.php">Calculator</a>.</p>
             				<form>
             					<input type="text" placeholder="Amount">

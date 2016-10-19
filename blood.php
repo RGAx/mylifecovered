@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Not Your Average <br>Blood Test</h1>
-                    <p>Take your nutrition and workout program to the next level with data and insights critical for personalized health.</p>
+                    <p>You are uniquely you. Make your nutrition and workout programs work for you by understanding your body’s markers and gain strategies to capitalize on them.</p>
                     <a href="https://www.wellnessfx.com/my-life-covered" class="btn btn-primary">Learn More</a>
                 </div>
             </div>

@@ -123,21 +123,21 @@ body {
             @media (max-width: 530px) {
                 background-position: 10% 100%;
             }
+        }
+        &#life_afford {
             section.cover {
                 div.col-md-12 {
                     &:first-of-type {
-                        max-width: 850px !important;
-                        h2 {
+                        max-width: 970px !important;
+                        p {
                             display: block;
                             width: 100%;
-                            max-width: 620px;
+                            max-width: 800px;
                             margin: 0 auto 40px;
                         }
                     }
                 }
             }
-        }
-        &#life_afford {
             form {
                 input[type='text'] {
                     width: 136px;
@@ -713,6 +713,15 @@ body {
                 padding-top: 218px;
                 padding-bottom: 143px;
             }
+            div.col-md-12 {
+                max-width: 1040px !important;
+                p {
+                    display: block;
+                    max-width: 800px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
         }
         &.quote-header {
             padding-top: 135px;
@@ -1139,7 +1148,7 @@ body {
 
                         justify-content: center;
                         align-items: stretch;
-                        @media (max-width: 500px) {
+                        @media (max-width: 620px) {
                             flex-wrap: wrap;
                         }
                         a.tile {
@@ -1178,6 +1187,9 @@ body {
                                 @media (max-width: 768px) {
                                     font-size: 23px;
                                     letter-spacing: .225px;
+                                    br {
+                                        display: none;
+                                    }
                                 }
                             }
                             p {
@@ -1196,9 +1208,9 @@ body {
             }
         }
         &#landing_tiles {
-            padding-bottom: 75px;
+            padding: 0 20px 75px;
             @media (max-width: 768px) {
-                padding-bottom: 56px;
+                padding: 0 20px 56px;
             }
             div.container {
                 width: 100%;
@@ -1208,7 +1220,8 @@ body {
                         width: 275px;
                         background: $midgrey;
                         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
-                        @media (max-width: 500px) {
+                        @media (max-width: 620px) {
+                            width: 100%;
                             max-width: 350px;
                             margin-bottom: 20px;
                         }
@@ -1217,7 +1230,7 @@ body {
                             @media (max-width: 768px) {
                                 margin-right: 20px;
                             }
-                            @media (max-width: 500px) {
+                            @media (max-width: 620px) {
                                 margin-right: 0;
                             }
                         }
