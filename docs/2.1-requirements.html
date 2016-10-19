@@ -51,6 +51,8 @@
 <li>Taking any action inside these landing pages will take the user into the new experience</li>
 <li>All markup stays the same, but a few styles are adjusted/improved</li>
 <li>Red banners are removed</li>
+<li>Print ads also carry different phone numbers, which are associated with each landing page.</li>
+<li>Mindtree should continue dynamically changing the phone number below the logo to match the phone numbers in the URL.</li>
 <li>Staging/preview links:</li>
 <li>Affordability ($25 per month)
 
@@ -77,7 +79,7 @@
 <li>12 Common Misconceptions</li>
 <li>Fitness For Life (blog category)</li>
 <li>Life Prepared (blog category)</li>
-<li>If the user is not within the Life Insuranne view/path, only the following links are visible</li>
+<li>If the user is not within the Life Insurance view/path, only the following links are visible</li>
 <li>Fitness For Life (blog category)</li>
 <li>Life Prepared (blog category)</li>
 <li>The link to Get A Quote, currently shown in Zeplin, should go away in all scenarios</li>
@@ -107,6 +109,16 @@
 <li>https://app.zeplin.io/project.html#pid=57e5a7c6548a300073ddf6c1&amp;sid=57e935b7819aaad308ac788b</li>
 </ul>
 
+<h3 id="athleticbloodprofile">Athletic Blood Profile</h3>
+
+<blockquote>
+<p>https://app.zeplin.io/project.html#pid=57e5a7c6548a300073ddf6c1&amp;sid=57e935bbc5397afa2c5b177b</p>
+</blockquote>
+
+<ul>
+<li>Clicking on the <strong>Learn More</strong> button will take the user to https://www.wellnessfx.com/my-life-covered</li>
+</ul>
+
 <h3 id="lifeinsurancechild-levellanding">Life Insurance Child-Level Landing</h3>
 
 <ul>
@@ -130,7 +142,13 @@
 <li>Inputting amount/month and clicking <strong>GO</strong> takes the user to the Quote page with premium amount (instead of coverage amount) pre-populated in the form</li>
 </ul></li>
 <li>For all inputs, the Mindtree team needs to be sure to strip the input to get rid of any dollar signs or commas typed by the user before passing the integer through to the quote page</li>
-<li>Clicking the link from <strong>See our full <strong>Calculator</strong></strong> takes the user to the existing calculator page</li>
+<li>For all to the three quoting options, there is a link to the OLD calculator in text, just above the data entry area. This is titled: “See our full Calculator”. While obscure, it allows a person to go the long way to get to a quote.</li>
+</ul>
+
+<h3 id="calculator">Calculator</h3>
+
+<ul>
+<li>Need to ensure that, if a user clicks the “Calculate Need” heading and goes to the full calculator, if they think in their head, “Oops, I don’t want to do that”, and they hit the back function of the browser, that they are returned to their quote calculator page, in its previous state with no revision or loss of data.</li>
 </ul>
 
 <h3 id="getaquote-form">Get A Quote - Form</h3>
@@ -140,7 +158,11 @@
 </blockquote>
 
 <ul>
-<li>The screen in Zeplin does not show a coverage amount / premium amount field; it needs to be included in the markup</li>
+<li>The screen in Zeplin does not show a coverage amount / premium amount field; it needs to be included in the markup. The screen shows annual income, which should only be visible if they entered income. Here is what we want:</li>
+<li>User enters annual income: Show Annual Income &amp; Coverage Amount</li>
+<li>User enters coverage amount: Show only Coverage Amount</li>
+<li>User enters premium amount: Show only Premium Amount</li>
+<li>Fields that would be blank, should be hidden to avoid the user typing something in and confusing the quoting process.</li>
 <li>To the right of the form, disclaimer text will be displayed in the same manor/style as the current iteration:</li>
 <li>https://www.mylifecovered.net/myLifeCovered/quote.do</li>
 <li>Clicking the <strong>Full Calculator</strong> tab at the top loads the calculator in the same manor/style as the current iteration:</li>
@@ -155,6 +177,7 @@
 
 <ul>
 <li>User arrives at this quote if he/she followed the &#8220;Help Me Determine My Coverage&#8221; or &#8220;I Know How Much I Need&#8221; path</li>
+<li>The user should also end up with this quote if they entered the OLD long needs calculator process.</li>
 <li>Clicking the <strong>Apply Now</strong> button takes the user into the Rgility fulfillment system</li>
 <li>Dragging the sliders at the bottom of the page adjusts the coverage amount and the term length</li>
 <li>Carriers other than Transamerica are not clickable; user will call the number displayed on the screen</li>
@@ -181,8 +204,9 @@
 <li>The most recent article is always featured first at the top of the left main column</li>
 <li>Yesterday&#8217;s featured article, and the featured article from the day prior to that, are featured in the right sidebar column</li>
 <li>Below the main featured article is a running list, in reverse chronological order, of all articles</li>
-<li>After a set number of articles, pagination will be displayed at the bottom of the page for the user to navigate backward through time</li>
+<li>After 10 articles, pagination will be displayed at the bottom of the page for the user to navigate backward through time to the previous 10 articles</li>
 <li>Switzer will build a WordPress theme with all content structure and style included; this can be uploaded and activated on the WordPress install that Mindtree sets up</li>
+<li>There should be a search function on the blog where a person could enter text and see all articles matching in a results list (Should probably look like the articles beyond the 3 featured on the regular blog page, without the featured three of course</li>
 </ul>
 
 <h3 id="responsivenessmobile">Responsiveness / Mobile</h3>
@@ -216,6 +240,19 @@
 </ul></li>
 </ul>
 
+<h3 id="athleticbloodprofile">Athletic Blood Profile</h3>
+
+<ul>
+<li>Staging/preview link:</li>
+<li>http://mylifecovered.switzercreative.com/blood.php</li>
+<li>User choices/actions:</li>
+<li>Clicking the <strong>Learn More</strong> button takes the user off-site to the WellnessFX page:
+
+<ul>
+<li>https://www.wellnessfx.com/my-life-covered</li>
+</ul></li>
+</ul>
+
 <h3 id="lifeinsurancechild-levellandinghelpmedeterminemycoverage">Life Insurance Child-Level Landing (Help Me Determine My Coverage)</h3>
 
 <ul>
@@ -237,7 +274,7 @@
 <ul>
 <li>http://mylifecovered.switzercreative.com/life-need.php</li>
 </ul></li>
-<li>Clicking the <strong>I Know What I Can Afford</strong> buttont takes the user to the Insurance Child-Level Landing page with the <strong>I Know What I Can Afford</strong> option showcased:
+<li>Clicking the <strong>I Know What I Can Afford</strong> button takes the user to the Insurance Child-Level Landing page with the <strong>I Know What I Can Afford</strong> option showcased:
 
 <ul>
 <li>http://mylifecovered.switzercreative.com/life-afford.php</li>
@@ -265,7 +302,7 @@
 <ul>
 <li>http://mylifecovered.switzercreative.com/life-help.php</li>
 </ul></li>
-<li>Clicking the <strong>I Know What I Can Afford</strong> buttont takes the user to the Insurance Child-Level Landing page with the <strong>I Know What I Can Afford</strong> option showcased:
+<li>Clicking the <strong>I Know What I Can Afford</strong> button takes the user to the Insurance Child-Level Landing page with the <strong>I Know What I Can Afford</strong> option showcased:
 
 <ul>
 <li>http://mylifecovered.switzercreative.com/life-afford.php</li>
