@@ -6,9 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Physically Prepared for the Unknown or Unknowable?</h1>
-                    <p>Of course you are. But are you financially fit, too?</p>
-                    <p>With <strong>MY LIFE COVERED<sup>TM</sup></strong>, you can take the next step toward becoming informed and prepared for whatever comes.</p>
+                    <h1>Work Hard. Be Rewarded. <br>Know Yourself & Protect Those You Love.</h1>
+                    <p>Learn how to maximize the value of your fitness routine and how to protect your family if you can't.</p>
                 </div>
             </div>
         </div>
@@ -22,8 +21,8 @@
     					<p>Knowledge is power. Learn how over 50 health markers can improve your performance.</p>
     				</a>
     				<a href="life-help.php" id="life" class="tile">
-    					<h3>Life Insurance for the Healthy</h3>
-    					<p>Learn how you might qualify for life insurance that costs on average 40% less than the Average Joe.</p>
+    					<h3>Term Life <br>Insurance</h3>
+    					<p>Learn how your healthy and fit lifestyle could qualify you for up to 50% lower life insurance premiums.</p>
     				</a>
     			</div>
     		</div>

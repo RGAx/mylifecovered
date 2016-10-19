@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>SAVE UP TO 5O% ON YOUR PREMIUM.</h1>
-                    <p>Life insurance is often significantly less expensive for healthy people like you.</p>
+                    <h1>YOU COULD SAVE UP TO <br>5O% ON YOUR PREMIUM.</h1>
+                    <p>Life insurance can often be significantly less expensive for healthy and fit people. Do you measure up?</p>
                 </div>
             </div>
             <div class="row">
@@ -15,7 +15,7 @@
             		<div class="form-wrapper">
             			<div class="primary-container">
             				<h4>I know how much I need</h4>
-            				<p>Experts recommened 8x your salary for optimal coverage.</p>
+            				<p>We recommened 8-10x your salary for optimal coverage.</p>
             				<p>See our full <a href="calculator.php">Calculator</a>.</p>
             				<form>
             					<select name="coverageAmount" id="coverageAmount" class="coverageamt-select">
