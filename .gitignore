@@ -2,3 +2,6 @@
 *.scssc
 *.DS_Store
 deploy.php
+blog/wp-content/uploads/*
+blog/wp-config.local.php
+.htaccess
