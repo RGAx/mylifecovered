@@ -59,15 +59,15 @@ function optionsframework_options() {
 
 // App: Twitter
 	$options[] = array(
-		'name' => __('App: Twitter Card', 'html5reset'),
-		'desc' => __('twitter:site (@username of website)', 'html5reset'),
-		'id' => 'meta_app_twt_site',
+		'name' => __('', 'html5reset'),
+		'desc' => __("twitter:title (the site name)", 'html5reset'),
+		'id' => 'meta_app_twt_title',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
 		'name' => __('', 'html5reset'),
-		'desc' => __("twitter:title (the user's Twitter ID)", 'html5reset'),
-		'id' => 'meta_app_twt_title',
+		'desc' => __("twitter:creator (the user's Twitter ID, or what comes after the @ symbol)", 'html5reset'),
+		'id' => 'meta_app_twt_creator',
 		'std' => '',
 		'type' => 'text');
 	$options[] = array(
@@ -96,12 +96,6 @@ function optionsframework_options() {
 		'id' => 'meta_app_fb_description',
 		'std' => '',
 		'type' => 'textarea');
-	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('og:url', 'html5reset'),
-		'id' => 'meta_app_fb_url',
-		'std' => '',
-		'type' => 'text');
 	$options[] = array(
 		'name' => __('', 'html5reset'),
 		'desc' => __('og:image', 'html5reset'),

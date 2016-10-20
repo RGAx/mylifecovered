@@ -34,6 +34,10 @@ body {
   font-weight: normal;
   font-style: normal;
   font-variant: normal; }
+  body.blog div#body_wrapper div#blog_landing {
+    background-image: url("../images/rings.jpg"); }
+    body.blog div#body_wrapper div#blog_landing div.overlay {
+      display: none; }
   body form#original-quote-form {
     background: #303032; }
     body form#original-quote-form div.overlay {

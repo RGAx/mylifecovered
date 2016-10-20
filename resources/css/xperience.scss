@@ -68,14 +68,17 @@ body {
     background: $midgrey;
 
     @include Lato();
-    div#body_wrapper {
-        // min-height: calc(100vh - 151.85px);
-        // @media (max-width: 1200px) {
-        //     min-height: calc(100vh - 186.84px);
-        // }
-        // @media (max-width: 995px) {
-        //     min-height: calc(100vh - 361.84px);
-        // }
+
+    // blog styles start here
+    &.blog {
+        div#body_wrapper {
+            div#blog_landing {
+                background-image: url('../images/rings.jpg');
+                div.overlay {
+                    display: none;
+                }
+            }
+        }
     }
     form#original-quote-form {
         background: $grey;

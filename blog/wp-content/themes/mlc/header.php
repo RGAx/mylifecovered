@@ -38,27 +38,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Core Meta Data -->
-	<meta name="author" content="Switzer Creative">
-	<meta name="keywords" content="henderson, trucking, earl henderson, freight, truck driver, drivers, driving">
+	<meta name="author" content="My Life Covered">
 
 	<!-- Open Graph Meta Data -->
-	<meta property="og:description" content="<?=of_get_option('meta_app_fb_description');?>">
-	<meta property="og:image" content="<?=of_get_option('meta_app_fb_image');?>">
-	<meta property="og:site_name" content="<?php wp_title( '|', true, 'right' ); ?>">
-	<meta property="og:title" content="<?=of_get_option('meta_app_fb_title');?>">
+	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>">
+	<?php
+	if(is_single()) {
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' );
+		if($image[0] != '') $image = $image[0];
+		else $image = of_get_option('meta_app_fb_image');
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		$excerpt = get_the_excerpt();
+		endwhile; endif;
+	} else {
+		$image = of_get_option('meta_app_fb_image');
+		$excerpt = of_get_option('meta_app_fb_description');
+	}
+	?>
+	<meta property="og:description" content="<?=$excerpt;?>">
+	<meta property="og:image" content="<?=$image;?>">
+	<meta property="og:url" content="<?=the_permalink();?>">
+	<meta property="og:site_name" content="Ultra Modern Pool & Patio">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="<?=site_url();?>">
 
 	<!-- Twitter Card Meta Data -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="<?=of_get_option('meta_app_twt_site');?>">
-	<meta name="twitter:creator" content="@ryan_haider">
-	<meta name="twitter:title" content="<?=of_get_option('meta_app_twt_title');?>">
-	<meta name="twitter:description" content="<?=of_get_option('meta_app_twt_description');?>">
-	<meta name="twitter:image" content="<?=of_get_option('meta_app_twt_image');?>">
-
-	<!-- Favicon -->
-
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="<?php wp_title( '|', true, 'right' ); ?>">
+	<?php
+	if(is_single()) {
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' );
+		if($image[0] != '') $image = $image[0];
+		else $image = of_get_option('meta_app_twt_image');
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
+		$excerpt = get_the_excerpt();
+		endwhile; endif;
+	} else {
+		$image = of_get_option('meta_app_twt_image');
+		$excerpt = of_get_option('meta_app_twt_description');
+	}
+	?>
+	<meta name="twitter:description" content="<?=$excerpt;?>">
+	<meta name="twitter:image" content="<?=$image;?>">
+	<meta name="twitter:image:alt" content="<?php wp_title( '|', true, 'right' ); ?>">
+	<meta name="twitter:site" content="<?=site_url();?>">
+	<meta name="twitter:creator" content="@<?=of_get_option('meta_app_twt_creator');?>">
 
 	<?php
 		if (true == of_get_option('meta_author'))
@@ -73,7 +96,24 @@
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-	<link rel="stylesheet" href="<?=get_template_directory_uri(); ?>/_/css/styles.css" />
+	<link rel="stylesheet" href="../resources/css/jquery-ui.css">
+    <link rel="stylesheet" href="../resources/css/myLifeCoveredRGility.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="../resources/css/mylifecovered-metcon.min.css">
+    <link rel="stylesheet" href="../resources/css/xperience.css?v=2.1.1">
+    <!--[if IE 9]>
+        <link rel="stylesheet" href="resources/css/ie9.css">
+        <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- <script src="https://use.typekit.net/qns3hng.js"></script> -->
+    <script src="https://use.typekit.net/cws2ybo.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: false
+        });
+    } catch (e) {}
+    </script>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -82,16 +122,41 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
-	<div id="wrapper">
-
-		<header id="header" role="banner">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<div class="description"><?php bloginfo( 'description' ); ?></div>
-		</header>
-
-		<nav id="nav" role="navigation">
-			<?php wp_nav_menu( array('menu' => 'primary') ); ?>
-		</nav>
-
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="body_wrapper">
+        <div id="wOverlayId" class="whiteOverlay"></div>
+        <div id="loading" class="loading"><img src="../resources/images/loading_spinner.svg" width="70" height="70" alt="Loading"></div>
+        <section id="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a id="#myLifeCoveredHeader" href="welcome.php?phoneNo=866-515-8992&amp;src=calculateneed" class="open-home-page-copy">
+    						<img class="logo" src="../resources/images/logo.svg" alt="">
+    						<span class="logo-phno">866-248-6037</span>
+    					</a>
+                        <ul id="top_nav_menu">
+                            <li>
+                                <a href="basics.php">Insurance Basics</a>
+                            </li>
+                            <li>
+                                <a href="misconceptions.php">12 Common Misconceptions</a>
+                            </li>
+                            <li>
+                                <a href="#">Fitness for Life</a>
+                            </li>
+                            <li>
+                                <a href="#">Life Prepared</a>
+                            </li>
+                        </ul>
+                        <a href="#" id="open_menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" id="close_menu">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
