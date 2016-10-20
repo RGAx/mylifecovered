@@ -2,6 +2,7 @@ $lightgrey: #9b9b9b;
 $grey: #303032;
 $midgrey: #3b3c3e;
 $darkgrey: #222223;
+$textgrey: #4a4a4a;
 $red: #ff3e3e;
 
 @mixin placeholder {
@@ -68,14 +69,182 @@ body {
     background: $midgrey;
 
     @include Lato();
-
     // blog styles start here
     &.blog {
         div#body_wrapper {
             div#blog_landing {
+                padding: 150px 0;
                 background-image: url('../images/rings.jpg');
                 div.overlay {
                     display: none;
+                }
+                div.container {
+                    padding: 0 35px;
+                    @media (max-width: 768px) {
+                        padding: 0 15px;
+                    }
+                    div.row {
+                        div.col-md-8 {
+                            h1 {
+                                font-size: 64px;
+                                line-height: 1.09;
+                                padding-bottom: 20px;
+                                text-indent: -4px;
+                                letter-spacing: .7px;
+
+                                @include Lato();
+                                @media (max-width: 768px) {
+                                    font-size: 48px;
+                                    padding-bottom: 15px;
+                                    text-indent: -3px;
+                                    letter-spacing: .525px;
+                                }
+                            }
+                            article.featured-post {
+                                position: relative;
+                                img {
+                                    font-family: 'object-fit: cover';
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                    min-height: 250px;
+
+                                    object-fit: cover;
+                                }
+                                div.content-wrapper {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    padding: 30px;
+                                    &:before {
+                                        position: absolute;
+                                        z-index: 0;
+                                        top: 0;
+                                        right: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        padding-bottom: 31.6%;
+                                        content: '';
+                                        background: linear-gradient(to bottom, rgba(black, .4), rgba(#d8d8d8, 0));
+                                    }
+                                    h2 {
+                                        font-size: 64px;
+                                        line-height: .97;
+                                        position: relative;
+                                        margin: 0;
+                                        padding: 0;
+                                        letter-spacing: .7px;
+                                        color: white;
+                                        text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+                                        @include Bebas();
+                                        @media (max-width: 768px) {
+                                            font-size: 48px;
+                                            letter-spacing: .525px;
+                                            text-shadow: 0 0 7.5px rgba(0, 0, 0, .5);
+                                        }
+                                        a {
+                                            line-height: inherit;
+                                            color: inherit;
+                                        }
+                                    }
+                                    div.entry {
+                                        position: relative;
+                                        display: none;
+                                        p {
+                                            font-size: 18px;
+                                            letter-spacing: .2px;
+                                            color: white;
+
+                                            @include Lato();
+                                            a {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    a.btn {
+                                        font-size: 24px;
+                                        line-height: 1;
+                                        position: relative;
+                                        width: 150px;
+                                        height: 50px;
+                                        margin-top: 25px;
+                                        padding: 12.5px;
+                                        letter-spacing: .3px;
+                                        opacity: 1;
+                                        border: none;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                                        @include Bebas();
+                                        appearance: none;
+                                        @media (max-width: 768px) {
+                                            font-size: 18px;
+                                            width: 113px;
+                                            height: 37.5px;
+                                            margin-top: 19px;
+                                            padding: 9.375px;
+                                            letter-spacing: .225px;
+                                        }
+                                    }
+                                }
+                            }
+                            div.other-articles {
+                                padding: 30px;
+                                background: rgba(white,.8);
+                                article.standard-post {
+                                    padding-bottom: 30px;
+                                    &:last-of-type {
+                                        padding-bottom: 0;
+                                    }
+                                    h2 {
+                                        font-size: 48px;
+                                        line-height: .97;
+                                        margin: 0;
+                                        padding: 0;
+                                        letter-spacing: .5px;
+                                        color: $textgrey;
+
+                                        @include Bebas();
+                                        a {
+                                            line-height: inherit;
+                                            color: inherit;
+                                        }
+                                    }
+                                    p.publish-details {
+                                        font-size: 16px;
+                                        letter-spacing: .2px;
+                                        color: $textgrey;
+                                        a {
+                                            color: inherit;
+                                        }
+                                    }
+                                    div.entry {
+                                        p {
+                                            font-size: 18px;
+                                            letter-spacing: .2px;
+                                            color: $textgrey;
+                                            a {
+                                                text-decoration: underline;
+                                                color: black;
+                                                &.read-more {
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        div.col-md-4 {
+                            padding-left: 35px;
+                            @media (max-width: 1200px) {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -420,7 +589,6 @@ body {
                         }
                         h4 {
                             font-size: 48px;
-                            font-weight: normal;
                             line-height: .92;
                             letter-spacing: .4px;
 
@@ -452,7 +620,6 @@ body {
                             input,
                             select {
                                 font-size: 24px;
-                                font-weight: normal;
                                 line-height: 1;
                                 height: 50px;
                                 padding: 12.5px;
@@ -595,7 +762,6 @@ body {
                         }
                         select {
                             font-size: 24px;
-                            font-weight: normal;
                             line-height: 1;
                             height: 50px;
                             padding: 12.5px;
@@ -624,11 +790,11 @@ body {
                         }
                         input.btn {
                             font-size: 24px;
-                            font-weight: normal;
                             line-height: 1;
                             height: 50px;
                             padding: 12.5px;
                             letter-spacing: .3px;
+                            opacity: 1;
                             border: none;
                             border-radius: 5px;
                             outline: none;
@@ -1456,6 +1622,7 @@ body {
                                     height: 50px;
                                     text-align: center;
                                     letter-spacing: .3px;
+                                    opacity: 1;
                                     color: white;
                                     border: none;
                                     border-radius: 5px;
