@@ -742,11 +742,11 @@ body {
             width: 150px; } }
         body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer div.text-right input {
           line-height: 1;
-          height: 30px; }
+          height: 33px; }
           @media (max-width: 480px) {
             body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer div.text-right input {
               font-size: 25px;
-              height: 23px; } }
+              height: 25px; } }
       body section#needs-calculator div.container div.row div.col-md-12 form div#children div.child {
         display: -webkit-box;
         display: -ms-flexbox;
