@@ -73,7 +73,7 @@ body {
     &.blog {
         div#body_wrapper {
             div#blog_landing {
-                padding: 150px 0;
+                padding: 150px 0 95px;
                 background-image: url('../images/rings.jpg');
                 div.overlay {
                     display: none;
@@ -159,7 +159,9 @@ body {
 
                                             @include Lato();
                                             a {
-                                                display: none;
+                                                &.read-more {
+                                                    display: none;
+                                                }
                                             }
                                         }
                                     }
@@ -231,6 +233,9 @@ body {
                                                 color: black;
                                                 &.read-more {
                                                     text-decoration: none;
+                                                    &:hover {
+                                                        text-decoration: underline;
+                                                    }
                                                 }
                                             }
                                         }
