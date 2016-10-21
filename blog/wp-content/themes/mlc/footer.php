@@ -5,20 +5,43 @@
  * @since HTML5 Reset 2.0
  */
 ?>
-		<footer id="footer" class="source-org vcard copyright" role="contentinfo">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
-
 	</div>
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                      <li><a id="mylifeCoveredHome" href="welcome.php?phoneNo=866-515-8992&src=calculateneed" wpvalue="home">Home</a></li>
+                      <li><a id="mylifeCoveredaboutUS" href="aboutus.php" wpvalue="about">About Us</a></li>
+                      <li><a id="mylifeCovered-contactUs" href="contactus.php" wpvalue="contact">Contact Us</a></li>
+                      <li><a id="mylifeCovered-privacyPolicy" href="privacypolicy.php" wpvalue="privacy_policy">Privacy Policy</a></li>
+                      <li><a id="mylifeCoveredTerms" href="terms.php" wpvalue="terms">Terms</a></li>
+                      <li><a id="mylifeCoveredLegalInformation" href="legalInformation.php" wpvalue="legalInfromation">Legal Information</a></li>
+                      <li><a id="mylifeCoveredPolicyForms" href="policyForms.php" wpvalue="policyForms">Policy Forms</a></li>
+                      <li><a id="mylifeCoveredFinancialRatings" href="financialRatings.php" wpvalue="financialRatings">Financial Ratings</a></li>
+                  </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="welcome.html" class="main_logo">
+                    <img src='../resources/images/logo.svg' /></a>
+                </a>
+                <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
+                <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> RGAx. All rights reserved.</small>
+            </div>
+        </div>
+    </div>
+  </footer>
 
-	<?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
 
 <!-- jQuery is called via the WordPress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/_/js/min/main-min.js"></script>
+<script src="../resources/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../resources/js/xperience.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/_/js/ofi.browser.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
 <!-- FontAwesome -->
 <script src="https://use.fontawesome.com/354e418e10.js"></script>
 
