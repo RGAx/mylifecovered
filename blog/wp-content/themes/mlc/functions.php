@@ -184,7 +184,7 @@
 	    $text = str_replace('\]\]\>', ']]&gt;', $text);
 	    $text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
 	    $text = strip_tags($text, '<p>');
-	    $excerpt_length = 50;
+	    $excerpt_length = 49;
 	    $words = explode(' ', $text, $excerpt_length + 1);
 	    if (count($words)> $excerpt_length) {
 	      array_pop($words);

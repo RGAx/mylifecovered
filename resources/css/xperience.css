@@ -177,17 +177,26 @@ body {
             color: #4a4a4a; }
             body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a {
               color: inherit; }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
-            font-size: 18px;
-            letter-spacing: .2px;
-            color: #4a4a4a; }
-            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a {
-              text-decoration: underline;
-              color: black; }
-              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a.read-more {
-                text-decoration: none; }
-                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a.read-more:hover {
-                  text-decoration: underline; }
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry {
+            overflow: auto; }
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
+              font-size: 18px;
+              width: calc(100% - 182px);
+              letter-spacing: .2px;
+              color: #4a4a4a; }
+              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a {
+                text-decoration: underline;
+                color: black; }
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a.read-more {
+                  text-decoration: none; }
+                  body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a.read-more:hover {
+                    text-decoration: underline; }
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img {
+              display: block;
+              float: right;
+              width: 167px;
+              height: auto;
+              margin: 5px 0 0 15px; }
       body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 {
         padding-left: 35px; }
         @media (max-width: 1200px) {

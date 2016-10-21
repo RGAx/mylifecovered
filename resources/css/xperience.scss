@@ -224,8 +224,10 @@ body {
                                         }
                                     }
                                     div.entry {
+                                        overflow: auto;
                                         p {
                                             font-size: 18px;
+                                            width: calc(100% - 182px);
                                             letter-spacing: .2px;
                                             color: $textgrey;
                                             a {
@@ -238,6 +240,13 @@ body {
                                                     }
                                                 }
                                             }
+                                        }
+                                        img {
+                                            display: block;
+                                            float: right;
+                                            width: 167px;
+                                            height: auto;
+                                            margin: 5px 0 0 15px;
                                         }
                                     }
                                 }

@@ -13,10 +13,10 @@
  	        	<?php
  	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
  	        	$featured_post = $featured_posts[0];
- 	        	$image_array = wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
+ 	        	$featured_post_img= wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
  	        	?>
 				<article class="featured-post" id="post-<?=$featured_post->ID; ?>">
-					<img src="<?=$image_array[0];?>">
+					<img src="<?=$featured_post_img[0];?>">
 					<div class="content-wrapper">
 						<h2><a href="<?=get_the_permalink($featured_post->ID) ?>"><?=$featured_post->post_title;?></a></h2>
 						<div class="entry">
@@ -31,6 +31,12 @@
 						<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 						<p class='publish-details'><?php echo get_the_date(); ?> Author: <a class="" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></p>
 						<div class="entry">
+							<?php $other_post_img = wp_get_attachment_image_src( get_post_thumbnail_id( ), 'full' ); ?>
+							<?php
+								if ($other_post_img) {
+							?>
+							<img src="<?=$other_post_img[0];?>">
+							<?php } ?>
 							<?=the_excerpt(); ?>
 						</div>
 					</article>
