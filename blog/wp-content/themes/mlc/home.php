@@ -13,7 +13,7 @@
  	        	<?php
  	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
  	        	$featured_post = $featured_posts[0];
- 	        	$featured_post_img= wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
+ 	        	$featured_post_img = wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
  	        	?>
 				<article class="featured-post" id="post-<?=$featured_post->ID; ?>">
 					<img src="<?=$featured_post_img[0];?>">
@@ -45,12 +45,15 @@
 				</div>
 			</div>
 			<div class="col-md-4">
+				<?php get_search_form(); ?>
 				<?php
 				$sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>1, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
 				foreach($sidebar_posts as $sidebar) {
+					$featured_post_old_img = wp_get_attachment_image_src( get_post_thumbnail_id( $sidebar ), 'full' );
 				?>
-					<article class="featured-post" id="post-<?=$sidebar->ID; ?>">
+					<article class="featured-post-old" id="post-<?=$sidebar->ID; ?>">
 						<h2><a href="<?=get_the_permalink($sidebar->ID) ?>"><?=$sidebar->post_title;?></a></h2>
+						<img src="<?=$featured_post_old_img[0];?>">
 						<div class="entry">
 							<?=the_excerpt(); ?>
 						</div>
