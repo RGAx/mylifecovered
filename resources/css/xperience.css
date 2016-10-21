@@ -844,6 +844,11 @@ body {
       background: initial; }
     body section#calculator-report div.container div.row div.col-md-12 form {
       width: calc(50% - 25px); }
+      @media (max-width: 830px) {
+        body section#calculator-report div.container div.row div.col-md-12 form {
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto 74px; } }
       body section#calculator-report div.container div.row div.col-md-12 form div.inline-text input[type='text'] {
         width: 192px; }
         @media (max-width: 768px) {

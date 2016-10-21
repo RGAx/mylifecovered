@@ -990,6 +990,11 @@ body {
                     div.col-md-12 {
                         form {
                             width: calc(50% - 25px);
+                            @media (max-width: 830px) {
+                                width: 100%;
+                                max-width: 500px;
+                                margin: 0 auto 74px;
+                            }
                             div.inline-text {
                                 input[type='text'] {
                                     width: 192px;
