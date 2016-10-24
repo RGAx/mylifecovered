@@ -44,6 +44,69 @@ body {
       @media (max-width: 768px) {
         body.blog div#body_wrapper div#blog_landing div.container {
           padding: 0 15px; } }
+      body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform {
+        position: relative;
+        width: 100%;
+        margin-bottom: 45px; }
+        @media (max-width: 768px) {
+          body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform {
+            margin-bottom: 34px; } }
+        body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform:after {
+          font-family: FontAwesome;
+          font-size: 21px;
+          position: absolute;
+          top: 50%;
+          right: 12.5px;
+          content: '\f002';
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          pointer-events: none;
+          color: #222223; }
+          @media (max-width: 768px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform:after {
+              font-size: 15.75px;
+              right: 9.375px; } }
+        body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform label[for='s'] {
+          display: none; }
+        body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform input#s {
+          font-size: 24px;
+          line-height: 1;
+          width: 100%;
+          height: 50px;
+          padding: 12.5px 45px 12px 12px;
+          letter-spacing: .3px;
+          color: #222223;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-variant: normal;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none; }
+          @media (max-width: 768px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform input#s {
+              font-size: 18px;
+              height: 37.5px;
+              padding: 9.375px 33.75px 9.375px 9.375px;
+              letter-spacing: .225px; } }
+        body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform input#searchsubmit {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 45px;
+          height: 50px;
+          opacity: 0;
+          background: transparent; }
+          @media (max-width: 768px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row form#searchform input#searchsubmit {
+              width: 33.75px;
+              height: 37.5px; } }
+      @media (max-width: 768px) {
+        body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 {
+          margin-bottom: 55px; } }
       body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 h1 {
         font-size: 64px;
         line-height: 1.09;
@@ -60,6 +123,11 @@ body {
             padding-bottom: 15px;
             text-indent: -3px;
             letter-spacing: .525px; } }
+      body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 form#searchform {
+        display: none; }
+        @media (max-width: 991px) {
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 form#searchform {
+            display: block; } }
       body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 article.featured-post {
         position: relative; }
         body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 article.featured-post img {
@@ -76,6 +144,9 @@ body {
           left: 0;
           width: 100%;
           padding: 30px; }
+          @media (max-width: 768px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 article.featured-post div.content-wrapper {
+              padding: 20px; } }
           body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 article.featured-post div.content-wrapper:before {
             position: absolute;
             z-index: 0;
@@ -153,6 +224,9 @@ body {
       body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles {
         padding: 30px;
         background: rgba(255, 255, 255, 0.8); }
+        @media (max-width: 768px) {
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles {
+            padding: 20px; } }
         body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post {
           padding-bottom: 30px; }
           body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type {
@@ -168,13 +242,23 @@ body {
             font-weight: normal;
             font-style: normal;
             font-variant: normal; }
+            @media (max-width: 768px) {
+              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post h2 {
+                font-size: 36px;
+                letter-spacing: .375px; } }
             body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post h2 a {
               line-height: inherit;
               color: inherit; }
           body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details {
             font-size: 16px;
+            margin-bottom: 10px;
             letter-spacing: .2px;
             color: #4a4a4a; }
+            @media (max-width: 768px) {
+              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details {
+                font-size: 12px;
+                margin-bottom: 7px;
+                letter-spacing: .15px; } }
             body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a {
               color: inherit; }
           body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry {
@@ -184,6 +268,14 @@ body {
               width: calc(100% - 182px);
               letter-spacing: .2px;
               color: #4a4a4a; }
+              @media (max-width: 768px) {
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
+                  font-size: 14px;
+                  margin: 10px 0 0;
+                  letter-spacing: .15px; } }
+              @media (max-width: 667px) {
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
+                  width: 100%; } }
               body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p a {
                 text-decoration: underline;
                 color: black; }
@@ -197,80 +289,71 @@ body {
               width: 167px;
               height: auto;
               margin: 5px 0 0 15px; }
+              @media (max-width: 667px) {
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img {
+                  float: none;
+                  width: 100%;
+                  margin: 5px 0 5px; } }
       body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 {
         padding-left: 35px; }
         @media (max-width: 1200px) {
           body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 {
             padding-left: 15px; } }
         body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform {
-          position: relative;
-          width: 100%;
-          margin-bottom: 45px; }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform:after {
-            font-family: FontAwesome;
-            font-size: 21px;
-            position: absolute;
-            top: 50%;
-            right: 12.5px;
-            content: '\f002';
-            -webkit-transform: translateY(-50%);
-                    transform: translateY(-50%);
-            pointer-events: none;
-            color: #222223; }
-            @media (max-width: 768px) {
-              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform:after {
-                font-size: 15.75px;
-                right: 9.375px; } }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform label[for='s'] {
-            display: none; }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform input#s {
-            font-size: 24px;
-            line-height: 1;
-            width: 100%;
-            height: 50px;
-            padding: 12.5px 45px 12px 12px;
-            letter-spacing: .3px;
-            color: #222223;
-            border: none;
-            border-radius: 5px;
-            outline: none;
+          display: block; }
+          @media (max-width: 991px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform {
+              display: none; } }
+        body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old {
+          margin-bottom: 55px; }
+          @media (max-width: 768px) {
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old {
+              margin-bottom: 41px; } }
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old:last-of-type {
+            margin-bottom: 0; }
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old h2 {
+            font-size: 36px;
+            line-height: .97;
+            margin-bottom: 25px;
+            letter-spacing: .4px;
+            color: white;
             font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
             font-weight: normal;
             font-style: normal;
-            font-variant: normal;
-            -webkit-appearance: none;
-               -moz-appearance: none;
-                    appearance: none; }
+            font-variant: normal; }
             @media (max-width: 768px) {
-              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform input#s {
-                font-size: 18px;
-                height: 37.5px;
-                padding: 9.375px 33.75px 9.375px 9.375px;
-                letter-spacing: .225px; } }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform input#searchsubmit {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 45px;
-            height: 50px;
-            opacity: 0;
-            background: transparent; }
-            @media (max-width: 768px) {
-              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 form#searchform input#searchsubmit {
-                width: 33.75px;
-                height: 37.5px; } }
-        body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old h2 {
-          font-size: 36px;
-          line-height: .97;
-          letter-spacing: .4px;
-          color: white;
-          font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
-          font-weight: normal;
-          font-style: normal;
-          font-variant: normal; }
-          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old h2 a {
-            line-height: inherit;
-            color: inherit; }
+              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old h2 {
+                font-size: 27px;
+                margin-bottom: 19px;
+                letter-spacing: .3px; } }
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old h2 a {
+              line-height: inherit;
+              color: inherit; }
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old img {
+            display: block;
+            width: 100%;
+            height: auto; }
+          body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old div.entry {
+            width: 100%;
+            padding: 20px;
+            background: #3b3c3e; }
+            body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old div.entry p {
+              font-size: 16px;
+              letter-spacing: .2px;
+              color: #9b9b9b;
+              font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old div.entry p {
+                  font-size: 14px;
+                  letter-spacing: .15px; } }
+              body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old div.entry p a {
+                text-decoration: underline;
+                color: white; }
+                body.blog div#body_wrapper div#blog_landing div.container div.row div.col-md-4 article.featured-post-old div.entry p a.read-more {
+                  display: none; }
   body form#original-quote-form {
     background: #303032; }
     body form#original-quote-form div.overlay {

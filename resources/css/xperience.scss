@@ -84,7 +84,70 @@ body {
                         padding: 0 15px;
                     }
                     div.row {
+                        form#searchform {
+                            position: relative;
+                            width: 100%;
+                            margin-bottom: 45px;
+                            @media (max-width: 768px) {
+                                margin-bottom: 34px;
+                            }
+                            &:after {
+                                font-family: FontAwesome;
+                                font-size: 21px;
+                                position: absolute;
+                                top: 50%;
+                                right: 12.5px;
+                                content: '\f002';
+                                transform: translateY(-50%);
+                                pointer-events: none;
+                                color: $darkgrey;
+                                @media (max-width: 768px) {
+                                    font-size: 15.75px;
+                                    right: 9.375px;
+                                }
+                            }
+                            label[for='s'] {
+                                display: none;
+                            }
+                            input#s {
+                                font-size: 24px;
+                                line-height: 1;
+                                width: 100%;
+                                height: 50px;
+                                padding: 12.5px 45px 12px 12px;
+                                letter-spacing: .3px;
+                                color: $darkgrey;
+                                border: none;
+                                border-radius: 5px;
+                                outline: none;
+
+                                @include Bebas();
+                                appearance: none;
+                                @media (max-width: 768px) {
+                                    font-size: 18px;
+                                    height: 37.5px;
+                                    padding: 9.375px 33.75px 9.375px 9.375px;
+                                    letter-spacing: .225px;
+                                }
+                            }
+                            input#searchsubmit {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 45px;
+                                height: 50px;
+                                opacity: 0;
+                                background: transparent;
+                                @media (max-width: 768px) {
+                                    width: 33.75px;
+                                    height: 37.5px;
+                                }
+                            }
+                        }
                         div.col-md-8 {
+                            @media (max-width: 768px) {
+                                margin-bottom: 55px;
+                            }
                             h1 {
                                 font-size: 64px;
                                 line-height: 1.09;
@@ -98,6 +161,12 @@ body {
                                     padding-bottom: 15px;
                                     text-indent: -3px;
                                     letter-spacing: .525px;
+                                }
+                            }
+                            form#searchform {
+                                display: none;
+                                @media (max-width: 991px) {
+                                    display: block;
                                 }
                             }
                             article.featured-post {
@@ -117,6 +186,9 @@ body {
                                     left: 0;
                                     width: 100%;
                                     padding: 30px;
+                                    @media (max-width: 768px) {
+                                        padding: 20px;
+                                    }
                                     &:before {
                                         position: absolute;
                                         z-index: 0;
@@ -196,6 +268,9 @@ body {
                             div.other-articles {
                                 padding: 30px;
                                 background: rgba(white,.8);
+                                @media (max-width: 768px) {
+                                    padding: 20px;
+                                }
                                 article.standard-post {
                                     padding-bottom: 30px;
                                     &:last-of-type {
@@ -210,6 +285,10 @@ body {
                                         color: $textgrey;
 
                                         @include Bebas();
+                                        @media (max-width: 768px) {
+                                            font-size: 36px;
+                                            letter-spacing: .375px;
+                                        }
                                         a {
                                             line-height: inherit;
                                             color: inherit;
@@ -217,8 +296,14 @@ body {
                                     }
                                     p.publish-details {
                                         font-size: 16px;
+                                        margin-bottom: 10px;
                                         letter-spacing: .2px;
                                         color: $textgrey;
+                                        @media (max-width: 768px) {
+                                            font-size: 12px;
+                                            margin-bottom: 7px;
+                                            letter-spacing: .15px;
+                                        }
                                         a {
                                             color: inherit;
                                         }
@@ -230,6 +315,14 @@ body {
                                             width: calc(100% - 182px);
                                             letter-spacing: .2px;
                                             color: $textgrey;
+                                            @media (max-width: 768px) {
+                                                font-size: 14px;
+                                                margin: 10px 0 0;
+                                                letter-spacing: .15px;
+                                            }
+                                            @media (max-width: 667px) {
+                                                width: 100%;
+                                            }
                                             a {
                                                 text-decoration: underline;
                                                 color: black;
@@ -247,6 +340,11 @@ body {
                                             width: 167px;
                                             height: auto;
                                             margin: 5px 0 0 15px;
+                                            @media (max-width: 667px) {
+                                                float: none;
+                                                width: 100%;
+                                                margin: 5px 0 5px;
+                                            }
                                         }
                                     }
                                 }
@@ -258,73 +356,63 @@ body {
                                 padding-left: 15px;
                             }
                             form#searchform {
-                                position: relative;
-                                width: 100%;
-                                margin-bottom: 45px;
-                                &:after {
-                                    font-family: FontAwesome;
-                                    font-size: 21px;
-                                    position: absolute;
-                                    top: 50%;
-                                    right: 12.5px;
-                                    content: '\f002';
-                                    transform: translateY(-50%);
-                                    pointer-events: none;
-                                    color: $darkgrey;
-                                    @media (max-width: 768px) {
-                                        font-size: 15.75px;
-                                        right: 9.375px;
-                                    }
-                                }
-                                label[for='s'] {
+                                display: block;
+                                @media (max-width: 991px) {
                                     display: none;
-                                }
-                                input#s {
-                                    font-size: 24px;
-                                    line-height: 1;
-                                    width: 100%;
-                                    height: 50px;
-                                    padding: 12.5px 45px 12px 12px;
-                                    letter-spacing: .3px;
-                                    color: $darkgrey;
-                                    border: none;
-                                    border-radius: 5px;
-                                    outline: none;
-
-                                    @include Bebas();
-                                    appearance: none;
-                                    @media (max-width: 768px) {
-                                        font-size: 18px;
-                                        height: 37.5px;
-                                        padding: 9.375px 33.75px 9.375px 9.375px;
-                                        letter-spacing: .225px;
-                                    }
-                                }
-                                input#searchsubmit {
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    width: 45px;
-                                    height: 50px;
-                                    opacity: 0;
-                                    background: transparent;
-                                    @media (max-width: 768px) {
-                                        width: 33.75px;
-                                        height: 37.5px;
-                                    }
                                 }
                             }
                             article.featured-post-old {
+                                margin-bottom: 55px;
+                                @media (max-width: 768px) {
+                                    margin-bottom: 41px;
+                                }
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
                                 h2 {
                                     font-size: 36px;
                                     line-height: .97;
+                                    margin-bottom: 25px;
                                     letter-spacing: .4px;
                                     color: white;
 
                                     @include Bebas();
+                                    @media (max-width: 768px) {
+                                        font-size: 27px;
+                                        margin-bottom: 19px;
+                                        letter-spacing: .3px;
+                                    }
                                     a {
                                         line-height: inherit;
                                         color: inherit;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                div.entry {
+                                    width: 100%;
+                                    padding: 20px;
+                                    background: $midgrey;
+                                    p {
+                                        font-size: 16px;
+                                        letter-spacing: .2px;
+                                        color: $lightgrey;
+
+                                        @include Lato();
+                                        @media (max-width: 768px) {
+                                            font-size: 14px;
+                                            letter-spacing: .15px;
+                                        }
+                                        a {
+                                            text-decoration: underline;
+                                            color: white;
+                                            &.read-more {
+                                                display: none;
+                                            }
+                                        }
                                     }
                                 }
                             }
