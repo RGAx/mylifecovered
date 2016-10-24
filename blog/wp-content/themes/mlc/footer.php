@@ -11,19 +11,19 @@
         <div class="row">
             <div class="col-md-6">
                 <ul>
-                      <li><a id="mylifeCoveredHome" href="welcome.php?phoneNo=866-515-8992&src=calculateneed" wpvalue="home">Home</a></li>
-                      <li><a id="mylifeCoveredaboutUS" href="aboutus.php" wpvalue="about">About Us</a></li>
-                      <li><a id="mylifeCovered-contactUs" href="contactus.php" wpvalue="contact">Contact Us</a></li>
-                      <li><a id="mylifeCovered-privacyPolicy" href="privacypolicy.php" wpvalue="privacy_policy">Privacy Policy</a></li>
-                      <li><a id="mylifeCoveredTerms" href="terms.php" wpvalue="terms">Terms</a></li>
-                      <li><a id="mylifeCoveredLegalInformation" href="legalInformation.php" wpvalue="legalInfromation">Legal Information</a></li>
-                      <li><a id="mylifeCoveredPolicyForms" href="policyForms.php" wpvalue="policyForms">Policy Forms</a></li>
-                      <li><a id="mylifeCoveredFinancialRatings" href="financialRatings.php" wpvalue="financialRatings">Financial Ratings</a></li>
+                      <li><a id="mylifeCoveredHome" href="/welcome.php?" wpvalue="home">Home</a></li>
+                      <li><a id="mylifeCoveredaboutUS" href="/aboutus.php" wpvalue="about">About Us</a></li>
+                      <li><a id="mylifeCovered-contactUs" href="/contactus.php" wpvalue="contact">Contact Us</a></li>
+                      <li><a id="mylifeCovered-privacyPolicy" href="/privacypolicy.php" wpvalue="privacy_policy">Privacy Policy</a></li>
+                      <li><a id="mylifeCoveredTerms" href="/terms.php" wpvalue="terms">Terms</a></li>
+                      <li><a id="mylifeCoveredLegalInformation" href="/legalInformation.php" wpvalue="legalInfromation">Legal Information</a></li>
+                      <li><a id="mylifeCoveredPolicyForms" href="/policyForms.php" wpvalue="policyForms">Policy Forms</a></li>
+                      <li><a id="mylifeCoveredFinancialRatings" href="/financialRatings.php" wpvalue="financialRatings">Financial Ratings</a></li>
                   </ul>
             </div>
             <div class="col-md-6 text-right">
-                <a href="welcome.html" class="main_logo">
-                    <img src='../resources/images/logo.svg' /></a>
+                <a href="/welcome.php" class="main_logo">
+                    <img src='/resources/images/logo.svg' /></a>
                 </a>
                 <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> RGAx. All rights reserved.</small>
