@@ -813,7 +813,7 @@ body {
                                 justify-content: center;
                                 &.open {
                                     transform: translateY(0%);
-                                    pointer-events: initial;
+                                    pointer-events: auto;
                                     opacity: 1;
                                 }
                             }
@@ -872,7 +872,7 @@ body {
                             pointer-events: none;
                             &.open {
                                 transform: translateY(0%);
-                                pointer-events: initial;
+                                pointer-events: auto;
                                 opacity: 1;
                             }
                             &:hover {
@@ -1223,7 +1223,7 @@ body {
                 font-weight: bold;
                 width: 100%;
                 text-align: center;
-                white-space: initial;
+                white-space: normal;
                 @media (max-width: 1200px) {
                     width: 75%;
                     margin: 0 auto;
@@ -1369,7 +1369,7 @@ body {
         }
         &#calculator-report,
         &#needs-calculator {
-            background: initial;
+            background: transparent;
         }
         &#calculator-report {
             div.container {
