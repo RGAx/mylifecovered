@@ -38,8 +38,8 @@
 <!-- jQuery is called via the WordPress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
-<script src="../resources/js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="../resources/js/xperience.js"></script>
+<script src="/resources/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="/resources/js/xperience.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/_/js/ofi.browser.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
 <!-- FontAwesome -->
