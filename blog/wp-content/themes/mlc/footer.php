@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-6">
                 <ul>
-                      <li><a id="mylifeCoveredHome" href="/welcome.php?" wpvalue="home">Home</a></li>
+                      <li><a id="mylifeCoveredHome" href="/welcome.php" wpvalue="home">Home</a></li>
                       <li><a id="mylifeCoveredaboutUS" href="/aboutus.php" wpvalue="about">About Us</a></li>
                       <li><a id="mylifeCovered-contactUs" href="/contactus.php" wpvalue="contact">Contact Us</a></li>
                       <li><a id="mylifeCovered-privacyPolicy" href="/privacypolicy.php" wpvalue="privacy_policy">Privacy Policy</a></li>
