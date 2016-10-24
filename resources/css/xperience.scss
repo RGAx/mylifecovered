@@ -423,6 +423,57 @@ body {
             }
         }
     }
+    &.single {
+        div#body_wrapper {
+            div.blog-wrap {
+                div.container {
+                    div.row {
+                        div.col-md-8 {
+                        }
+                        div.col-md-4 {
+                            aside {
+                                div.rpwwt-widget {
+                                    div.recent-posts-widget-with-thumbnails {
+                                        ul {
+                                            li {
+                                                a {
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    img {
+                                                        width: 100%;
+                                                        display: block;
+                                                        height: auto;
+                                                        max-width: 100%;
+                                                        margin: 0;
+                                                        order: 2;
+                                                    }
+                                                    span.rpwwt-post-title {
+                                                        order: 1;
+                                                        font-size: 36px;
+                                                        line-height: .97;
+                                                        margin-bottom: 25px;
+                                                        letter-spacing: .4px;
+                                                        color: white;
+
+                                                        @include Bebas();
+                                                        @media (max-width: 768px) {
+                                                            font-size: 27px;
+                                                            margin-bottom: 19px;
+                                                            letter-spacing: .3px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     form#original-quote-form {
         background: $grey;
         div.overlay {
