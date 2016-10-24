@@ -5,7 +5,7 @@
  * @since HTML5 Reset 2.0
  */
  get_header(); ?>
- <div id="blog_landing" class="background-wrap">
+ <div id="blog_landing" class="blog-wrap background-wrap">
  	<div class="container">
  	    <div class="row">
  	        <div class="col-md-8">
