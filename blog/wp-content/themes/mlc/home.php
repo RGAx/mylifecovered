@@ -9,7 +9,7 @@ get_header(); ?>
  	<div class="container">
  	    <div class="row">
  	        <div class="col-md-8">
- 	        	<h1>Fitness For Life</h1>
+ 	        	<h1 class="category-title">Fitness For Life</h1>
  	        	<?php get_search_form(); ?>
  	        	<?php
  	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));

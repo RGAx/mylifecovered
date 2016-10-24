@@ -107,7 +107,7 @@ body {
       @media (max-width: 991px) {
         body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 {
           margin-bottom: 55px; } }
-      body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1 {
+      body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title {
         font-size: 64px;
         line-height: 1.09;
         padding-bottom: 20px;
@@ -118,7 +118,7 @@ body {
         font-style: normal;
         font-variant: normal; }
         @media (max-width: 768px) {
-          body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1 {
+          body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title {
             font-size: 48px;
             padding-bottom: 15px;
             text-indent: -3px;
@@ -261,6 +261,8 @@ body {
                 letter-spacing: .15px; } }
             body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a {
               color: inherit; }
+              body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post p.publish-details a:hover {
+                text-decoration: underline; }
           body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry {
             overflow: auto; }
             body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
@@ -357,11 +359,12 @@ body {
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin: 0 0 20px; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h1.title {
     font-size: 48px;
     line-height: .97;
-    margin: 20px 0 0;
+    margin: 0;
     padding: 0;
     letter-spacing: .5px;
     color: #4a4a4a;
@@ -373,6 +376,31 @@ body {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h1.title {
         font-size: 36px;
         letter-spacing: .375px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h1,
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h2,
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h3,
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h4,
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h5,
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h6 {
+    line-height: .97;
+    margin: 0 0 15px;
+    color: #4a4a4a;
+    font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h1 {
+    font-size: 48px; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h2 {
+    font-size: 38px; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h3 {
+    font-size: 29px; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h4 {
+    font-size: 22px; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h5 {
+    font-size: 16px; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry h6 {
+    font-size: 12px; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
     font-size: 18px;
     width: 100%;
@@ -386,6 +414,25 @@ body {
         font-size: 14px;
         margin-bottom: 23px;
         letter-spacing: .15px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry address {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+    letter-spacing: .2px;
+    color: #4a4a4a; }
+    @media (max-width: 768px) {
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry address {
+        font-size: 14px;
+        margin-bottom: 23px;
+        letter-spacing: .15px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ins {
+    color: white;
+    background: #ff3e3e; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry mark {
+    background: #9b9b9b; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry code {
+    color: #ff3e3e;
+    background: white; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry small {
     font-size: 70%;
     display: inline-block; }
@@ -403,12 +450,32 @@ body {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img {
         width: 100%;
         margin: 0 0 24px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry table {
+    font-size: 14px;
+    line-height: 1.1;
+    display: block;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+    background: transparent; }
+    @media (max-width: 768px) {
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry table {
+        margin-bottom: 23px; } }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry table th,
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry table td {
+      padding: 10px;
+      border: 1px solid #9b9b9b; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry blockquote {
+    margin-bottom: 30px;
+    border-left: 5px solid #9b9b9b; }
+    @media (max-width: 768px) {
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry blockquote {
+        margin-bottom: 23px; } }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .wp-caption {
     max-width: 100%;
-    margin: 10px 20px 20px; }
+    margin: 10px 0 20px; }
     @media (max-width: 768px) {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .wp-caption {
-        margin: 8px 15px 15px; } }
+        margin: 8px 0 15px; } }
     @media (max-width: 568px) {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .wp-caption {
         width: 100% !important;
@@ -438,7 +505,8 @@ body {
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul,
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ol {
     margin-bottom: 30px;
-    margin-left: 35px; }
+    margin-left: 35px;
+    color: #4a4a4a; }
     @media (max-width: 768px) {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul,
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ol {
@@ -454,7 +522,7 @@ body {
         body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul li,
         body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ol li {
           font-size: 14px;
-          margin-bottom: 23px; } }
+          margin-bottom: 11px; } }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ol li {
     margin-left: 20px;
     padding-left: 15px; }
@@ -465,11 +533,7 @@ body {
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul {
     list-style-type: none; }
     body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul li {
-      margin-left: 0;
-      text-indent: -20px; }
-      @media (max-width: 768px) {
-        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul li {
-          text-indent: -15px; } }
+      margin-left: 0; }
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry ul li:before {
         font-size: 20px;
         position: relative;
