@@ -70,8 +70,40 @@ body {
 
     @include Lato();
     // blog styles start here
+    &.category-fitness-for-life {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:nth-of-type(3) {
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.category-life-prepared {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:nth-of-type(4) {
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     &.blog,
-    &.single {
+    &.single,
+    &.archive,
+    &.search {
         div#body_wrapper {
             div.blog-wrap {
                 padding: 150px 0 95px;
@@ -149,19 +181,28 @@ body {
                             @media (max-width: 991px) {
                                 margin-bottom: 55px;
                             }
-                            h1 {
+                            h1.category-title {
                                 font-size: 64px;
                                 line-height: 1.09;
+                                margin-top: -14px;
                                 padding-bottom: 20px;
                                 text-indent: -4px;
                                 letter-spacing: .7px;
+                                text-transform: capitalize;
 
                                 @include Lato();
+                                @media (max-width: 1200px) {
+                                    margin-top: 0;
+                                }
                                 @media (max-width: 768px) {
                                     font-size: 48px;
                                     padding-bottom: 15px;
                                     text-indent: -3px;
                                     letter-spacing: .525px;
+                                }
+                                a {
+                                    line-height: inherit;
+                                    color: inherit;
                                 }
                             }
                             form#searchform {
@@ -307,13 +348,16 @@ body {
                                         }
                                         a {
                                             color: inherit;
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
                                         }
                                     }
                                     div.entry {
                                         overflow: auto;
                                         p {
                                             font-size: 18px;
-                                            width: calc(100% - 182px);
+                                            line-height: 1.5556;
                                             letter-spacing: .2px;
                                             color: $textgrey;
                                             @media (max-width: 768px) {
@@ -340,13 +384,49 @@ body {
                                             float: right;
                                             width: 167px;
                                             height: auto;
-                                            margin: 5px 0 0 15px;
+                                            margin: 5px 0 15px 15px;
                                             @media (max-width: 667px) {
                                                 float: none;
                                                 width: 100%;
                                                 margin: 5px 0 5px;
                                             }
                                         }
+                                    }
+                                }
+                            }
+                            div.wp_pagination {
+                                margin: 20px auto 0;
+                                text-align: center;
+                                span,
+                                a {
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                    display: inline-block;
+                                    margin: 5px;
+                                    padding: 10px 15px;
+                                    transition: all .15s ease-in-out;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    color: white;
+                                    border-radius: 5px;
+                                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                                    @include Bebas();
+                                }
+                                span {
+                                    cursor: default;
+                                    user-select: none;
+                                    background-color: $red;
+                                }
+                                .dots {
+                                    color: $lightgrey;
+                                    background-color: white;
+                                }
+                                a {
+                                    background-color: $lightgrey;
+                                    &:hover {
+                                        background-color: $textgrey;
                                     }
                                 }
                             }
@@ -423,7 +503,9 @@ body {
             }
         }
     }
-    &.single {
+    &.single,
+    &.archive,
+    &.search {
         div#body_wrapper {
             div.blog-wrap {
                 div.container {
@@ -435,11 +517,12 @@ body {
                                         display: block;
                                         width: 100%;
                                         height: auto;
+                                        margin: 0 0 20px;
                                     }
                                     h1.title {
                                         font-size: 48px;
                                         line-height: .97;
-                                        margin: 20px 0 0;
+                                        margin: 0;
                                         padding: 0;
                                         letter-spacing: .5px;
                                         color: $textgrey;
@@ -451,8 +534,39 @@ body {
                                         }
                                     }
                                     div.entry {
+                                        h1,
+                                        h2,
+                                        h3,
+                                        h4,
+                                        h5,
+                                        h6 {
+                                            line-height: .97;
+                                            margin: 0 0 15px;
+                                            color: $textgrey;
+
+                                            @include Bebas();
+                                        }
+                                        h1 {
+                                            font-size: 48px;
+                                        }
+                                        h2 {
+                                            font-size: 38px;
+                                        }
+                                        h3 {
+                                            font-size: 29px;
+                                        }
+                                        h4 {
+                                            font-size: 22px;
+                                        }
+                                        h5 {
+                                            font-size: 16px;
+                                        }
+                                        h6 {
+                                            font-size: 12px;
+                                        }
                                         p {
                                             font-size: 18px;
+                                            line-height: 1.5556;
                                             width: 100%;
                                             margin-bottom: 30px;
                                             letter-spacing: .2px;
@@ -465,6 +579,29 @@ body {
                                                 margin-bottom: 23px;
                                                 letter-spacing: .15px;
                                             }
+                                        }
+                                        address {
+                                            font-size: 18px;
+                                            width: 100%;
+                                            margin-bottom: 30px;
+                                            letter-spacing: .2px;
+                                            color: $textgrey;
+                                            @media (max-width: 768px) {
+                                                font-size: 14px;
+                                                margin-bottom: 23px;
+                                                letter-spacing: .15px;
+                                            }
+                                        }
+                                        ins {
+                                            color: white;
+                                            background: $red;
+                                        }
+                                        mark {
+                                            background: $lightgrey;
+                                        }
+                                        code {
+                                            color: $red;
+                                            background: white;
                                         }
                                         small {
                                             font-size: 70%;
@@ -486,11 +623,34 @@ body {
                                                 margin: 0 0 24px;
                                             }
                                         }
+                                        table {
+                                            font-size: 14px;
+                                            line-height: 1.1;
+                                            display: block;
+                                            margin-bottom: 30px;
+                                            color: $textgrey;
+                                            background: transparent;
+                                            @media (max-width: 768px) {
+                                                margin-bottom: 23px;
+                                            }
+                                            th,
+                                            td {
+                                                padding: 10px;
+                                                border: 1px solid $lightgrey;
+                                            }
+                                        }
+                                        blockquote {
+                                            margin-bottom: 30px;
+                                            border-left: 5px solid $lightgrey;
+                                            @media (max-width: 768px) {
+                                                margin-bottom: 23px;
+                                            }
+                                        }
                                         .wp-caption {
                                             max-width: 100%;
-                                            margin: 10px 20px 20px;
+                                            margin: 10px 0 20px;
                                             @media (max-width: 768px) {
-                                                margin: 8px 15px 15px;
+                                                margin: 8px 0 15px;
                                             }
                                             @media (max-width: 568px) {
                                                 width: 100% !important;
@@ -528,6 +688,7 @@ body {
                                         ol {
                                             margin-bottom: 30px;
                                             margin-left: 35px;
+                                            color: $textgrey;
                                             @media (max-width: 768px) {
                                                 margin-bottom: 23px;
                                                 margin-left: 26px;
@@ -539,7 +700,7 @@ body {
                                                 padding-left: 0;
                                                 @media (max-width: 768px) {
                                                     font-size: 14px;
-                                                    margin-bottom: 23px;
+                                                    margin-bottom: 11px;
                                                 }
                                             }
                                         }
@@ -557,10 +718,6 @@ body {
                                             list-style-type: none;
                                             li {
                                                 margin-left: 0;
-                                                text-indent: -20px;
-                                                @media (max-width: 768px) {
-                                                    text-indent: -15px;
-                                                }
                                                 &:before {
                                                     font-size: 20px;
                                                     position: relative;
@@ -578,6 +735,29 @@ body {
                                         a {
                                             text-decoration: underline;
                                             color: black;
+                                        }
+                                    }
+                                    div.tag-links-container {
+                                        display: block;
+                                        overflow: auto;
+                                        margin-top: 15px;
+                                        margin-left: -5px;
+                                        a.tag-link {
+                                            font-size: 14px;
+                                            line-height: 1.2;
+                                            display: inline-block;
+                                            margin: 5px;
+                                            padding: 10px 15px;
+                                            transition: all .15s ease-in-out;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            border-radius: 5px;
+                                            background: $red;
+                                            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
+
+                                            @include Bebas();
                                         }
                                     }
                                 }
@@ -2755,15 +2935,17 @@ body {
     }
     footer {
         background-color: $midgrey;
-        // box-shadow: inset 0 3px 6px 0 rgba(0, 0, 0, .5);
         div.container {
             div.row {
                 display: flex;
+                padding: 0 19px;
 
                 justify-content: space-between;
                 align-items: center;
                 flex-flow: row wrap;
                 @media (max-width: 1200px) {
+                    padding: 0;
+
                     justify-content: center;
                 }
                 &:before,

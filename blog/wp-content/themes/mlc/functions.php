@@ -113,11 +113,29 @@
 
 	// Navigation - update coming from twentythirteen
 	function post_navigation() {
-		echo '<div class="navigation">';
-		echo '	<div class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</div>';
-		echo '	<div class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</div>';
-		echo '</div>';
-	}
+       global $wp_query;
+
+       $total_pages = $wp_query->max_num_pages;
+
+       if($total_pages > 1) {
+           echo "<div class='wp_pagination'>";
+               $current_page = max(1, get_query_var('paged'));
+
+               echo paginate_links(array(
+                   'base' => get_pagenum_link(1) . '%_%',
+                   'format' => 'page/%#%',
+                   'current' => $current_page,
+                   'total' => $total_pages,
+                   'prev_text' => '<',
+                   'next_text' => '>'
+               ));
+           echo "</div>";
+       }
+       // echo '<div class="navigation">';
+       // echo '    <div class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</div>';
+       // echo '    <div class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</div>';
+       // echo '</div>';
+   }
 
 	// Posted On
 	function posted_on() {
@@ -175,4 +193,20 @@
 		return 'low';
 	}
 	add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+	add_action('pre_get_posts', 'exclude_featured_on_query', 10, 1);
+	function exclude_featured_on_query($query) {
+		if($query->is_main_query() && !is_admin() && !is_single() && !is_singular() && !is_post_type_archive() && !is_author()) {
+			$meta_query = $query->get('meta_query');
+			$meta_query[] = array(
+		        'key'		=> "featured",
+		        'value'		=> 0
+		    );
+
+			// update meta query
+			$query->set('meta_query', $meta_query);
+		}
+		return $query;
+	}
+
 ?>

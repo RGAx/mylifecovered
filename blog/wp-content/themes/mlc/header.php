@@ -144,10 +144,10 @@
                                 <a href="misconceptions.php">12 Common Misconceptions</a>
                             </li>
                             <li>
-                                <a href="#">Fitness for Life</a>
+                                <a href="/blog/category/fitness-for-life">Fitness for Life</a>
                             </li>
                             <li>
-                                <a href="#">Life Prepared</a>
+                                <a href="/blog/category/life-prepared">Life Prepared</a>
                             </li>
                         </ul>
                         <a href="#" id="open_menu">

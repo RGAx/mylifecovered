@@ -5,13 +5,17 @@
 * @since HTML5 Reset 2.0
 */
 get_header(); ?>
-<div id="blog_landing" class="blog-wrap background-wrap">
+<div id="blog_category" class="blog-wrap background-wrap">
  	<div class="container">
  	    <div class="row">
  	        <div class="col-md-8">
+	 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+				<h1 class="category-title"><?php single_cat_title(); ?></h1>
  	        	<?php get_search_form(); ?>
  	        	<?php
- 	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
+				$category_id = get_query_var('cat');
+
+ 	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true, "category"=>$category_id));
  	        	$featured_post = $featured_posts[0];
  	        	$featured_post_img = wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
 
@@ -52,8 +56,8 @@ get_header(); ?>
 			<div class="col-md-4">
 				<?php get_search_form(); ?>
 				<?php
-               if($current_page == 1) $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>1, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
-               else $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>0, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
+               	if($current_page == 1) $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>1, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true, "category"=>$category_id));
+               	else $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>0, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true, "category"=>$category_id));
 				foreach($sidebar_posts as $sidebar) {
 					$featured_post_old_img = wp_get_attachment_image_src( get_post_thumbnail_id( $sidebar ), 'full' );
 				?>
