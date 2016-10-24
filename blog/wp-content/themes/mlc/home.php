@@ -9,7 +9,6 @@ get_header(); ?>
  	<div class="container">
  	    <div class="row">
  	        <div class="col-md-8">
- 	        	<h1 class="category-title">Fitness For Life</h1>
  	        	<?php get_search_form(); ?>
  	        	<?php
  	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
@@ -59,10 +58,12 @@ get_header(); ?>
 					$featured_post_old_img = wp_get_attachment_image_src( get_post_thumbnail_id( $sidebar ), 'full' );
 				?>
 					<article class="featured-post-old" id="post-<?=$sidebar->ID; ?>">
-						<h2 class="title"><a href="<?=get_the_permalink($sidebar->ID) ?>"><?=$sidebar->post_title;?></a></h2>
-						<img src="<?=$featured_post_old_img[0];?>">
+						<a href="<?=get_the_permalink($sidebar->ID) ?>">
+							<h2 class="title"><?=$sidebar->post_title;?></h2>
+							<img src="<?=$featured_post_old_img[0];?>">
+						</a>
 						<div class="entry">
-							<?=the_excerpt(); ?>
+							<?=wpautop(wp_trim_words($sidebar->post_content, 35));?>
 						</div>
 					</article>
 				<?php
