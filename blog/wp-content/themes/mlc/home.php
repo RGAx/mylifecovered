@@ -15,6 +15,10 @@ get_header(); ?>
  	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
  	        	$featured_post = $featured_posts[0];
  	        	$featured_post_img = wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
+
+		       global $wp_query;
+               $current_page = max(1, get_query_var('paged'));
+               if($current_page == 1) {
  	        	?>
 				<article class="featured-post" id="post-<?=$featured_post->ID; ?>">
 					<img src="<?=$featured_post_img[0];?>">
@@ -26,6 +30,7 @@ get_header(); ?>
 						<a class="btn btn-primary" href="<?=get_the_permalink($featured_post->ID) ?>">Read More</a>
 					</div>
 				</article>
+				<?php } ?>
 				<div class="other-articles">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article class="standard-post" id="post-<?php the_ID(); ?>">
@@ -48,7 +53,8 @@ get_header(); ?>
 			<div class="col-md-4">
 				<?php get_search_form(); ?>
 				<?php
-				$sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>1, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
+               if($current_page == 1) $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>1, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
+               else $sidebar_posts = get_posts(array("posts_per_page"=>2,"offset"=>0, "post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
 				foreach($sidebar_posts as $sidebar) {
 					$featured_post_old_img = wp_get_attachment_image_src( get_post_thumbnail_id( $sidebar ), 'full' );
 				?>
