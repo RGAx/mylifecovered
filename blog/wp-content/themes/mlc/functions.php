@@ -195,6 +195,6 @@
 	  }
 	return $text;
 	}
-	remove_filter('get_the_excerpt', 'wp_trim_excerpt');
-	add_filter('get_the_excerpt', 'improved_trim_excerpt');
+	// remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+	// add_filter('get_the_excerpt', 'improved_trim_excerpt');
 ?>

@@ -70,7 +70,8 @@ body {
 
     @include Lato();
     // blog styles start here
-    &.blog {
+    &.blog,
+    &.single {
         div#body_wrapper {
             div.blog-wrap {
                 padding: 150px 0 95px;

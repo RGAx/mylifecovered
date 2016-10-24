@@ -1,11 +1,11 @@
 <?php
 /**
- * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
- */
- get_header(); ?>
- <div id="blog_landing" class="blog-wrap background-wrap">
+* @package WordPress
+* @subpackage HTML5-Reset-WordPress-Theme
+* @since HTML5 Reset 2.0
+*/
+get_header(); ?>
+<div id="blog_landing" class="blog-wrap background-wrap">
  	<div class="container">
  	    <div class="row">
  	        <div class="col-md-8">
