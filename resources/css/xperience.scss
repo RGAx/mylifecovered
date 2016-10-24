@@ -1448,19 +1448,21 @@ body {
                                         letter-spacing: .15px;
                                     }
                                     @media (max-width: 480px) {
+                                        width: calc(100% - 110px);
                                         padding-top: 0;
                                         text-align: left;
                                     }
                                 }
                                 div.text-right {
                                     @media (max-width: 480px) {
-                                        width: 150px;
+                                        width: 90px;
                                     }
                                     input {
                                         line-height: 1;
                                         height: 33px;
                                         @media (max-width: 480px) {
                                             font-size: 25px;
+                                            width: 32px;
                                             height: 25px;
                                         }
                                     }
@@ -1612,7 +1614,8 @@ body {
                                     bottom: auto;
                                     left: auto;
                                     float: left;
-                                    margin: 0;
+                                    margin: 0 auto 0 0;
+                                    text-align: left;
                                     letter-spacing: .2px;
 
                                     order: 1;

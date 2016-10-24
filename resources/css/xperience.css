@@ -1240,17 +1240,19 @@ body {
               letter-spacing: .15px; } }
           @media (max-width: 480px) {
             body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer span {
+              width: calc(100% - 110px);
               padding-top: 0;
               text-align: left; } }
         @media (max-width: 480px) {
           body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer div.text-right {
-            width: 150px; } }
+            width: 90px; } }
         body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer div.text-right input {
           line-height: 1;
           height: 33px; }
           @media (max-width: 480px) {
             body section#needs-calculator div.container div.row div.col-md-12 form div.incrementer div.text-right input {
               font-size: 25px;
+              width: 32px;
               height: 25px; } }
       body section#needs-calculator div.container div.row div.col-md-12 form div#children div.child {
         display: -webkit-box;
@@ -1404,7 +1406,8 @@ body {
                   bottom: auto;
                   left: auto;
                   float: left;
-                  margin: 0;
+                  margin: 0 auto 0 0;
+                  text-align: left;
                   letter-spacing: .2px;
                   -webkit-box-ordinal-group: 2;
                       -ms-flex-order: 1;
