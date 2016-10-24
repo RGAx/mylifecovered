@@ -114,6 +114,7 @@ body {
         body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 {
           margin-bottom: 55px; } }
       body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title {
+        color: #ff3e3e;
         font-size: 64px;
         line-height: 1.09;
         margin-top: -14px;
