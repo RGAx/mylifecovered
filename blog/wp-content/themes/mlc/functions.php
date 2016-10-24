@@ -113,11 +113,29 @@
 
 	// Navigation - update coming from twentythirteen
 	function post_navigation() {
-		echo '<div class="navigation">';
-		echo '	<div class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</div>';
-		echo '	<div class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</div>';
-		echo '</div>';
-	}
+       global $wp_query;
+
+       $total_pages = $wp_query->max_num_pages;
+
+       if($total_pages > 1) {
+           echo "<div class='wp_pagination'>";
+               $current_page = max(1, get_query_var('paged'));
+
+               echo paginate_links(array(
+                   'base' => get_pagenum_link(1) . '%_%',
+                   'format' => 'page/%#%',
+                   'current' => $current_page,
+                   'total' => $total_pages,
+                   'prev_text' => '<',
+                   'next_text' => '>'
+               ));
+           echo "</div>";
+       }
+       // echo '<div class="navigation">';
+       // echo '    <div class="next-posts">'.get_next_posts_link('&laquo; Older Entries').'</div>';
+       // echo '    <div class="prev-posts">'.get_previous_posts_link('Newer Entries &raquo;').'</div>';
+       // echo '</div>';
+   }
 
 	// Posted On
 	function posted_on() {

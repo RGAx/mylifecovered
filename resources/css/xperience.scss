@@ -316,7 +316,6 @@ body {
                                         overflow: auto;
                                         p {
                                             font-size: 18px;
-                                            width: calc(100% - 182px);
                                             letter-spacing: .2px;
                                             color: $textgrey;
                                             @media (max-width: 768px) {
@@ -343,13 +342,54 @@ body {
                                             float: right;
                                             width: 167px;
                                             height: auto;
-                                            margin: 5px 0 0 15px;
+                                            margin: 5px 0 15px 15px;
                                             @media (max-width: 667px) {
                                                 float: none;
                                                 width: 100%;
                                                 margin: 5px 0 5px;
                                             }
                                         }
+                                    }
+                                }
+                            }
+                            .wp_pagination {
+                                display: flex;
+                                margin: 20px auto 0;
+
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                span,
+                                a {
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    line-height: 1.2;
+                                    display: block;
+                                    margin: 5px;
+                                    padding: 10px 15px;
+                                    transition: all .15s ease-in-out;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    color: white;
+                                    border-radius: 5px;
+                                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                                    @include Bebas();
+                                }
+                                span {
+                                    cursor: default;
+                                    user-select: none;
+                                    background-color: $red;
+                                }
+                                .dots {
+                                    color: $lightgrey;
+                                    background-color: white;
+                                }
+                                a {
+                                    background-color: $lightgrey;
+                                    &:hover {
+                                        background-color: $textgrey;
                                     }
                                 }
                             }

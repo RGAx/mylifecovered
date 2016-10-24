@@ -267,7 +267,6 @@ body {
             overflow: auto; }
             body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry p {
               font-size: 18px;
-              width: calc(100% - 182px);
               letter-spacing: .2px;
               color: #4a4a4a; }
               @media (max-width: 768px) {
@@ -290,12 +289,60 @@ body {
               float: right;
               width: 167px;
               height: auto;
-              margin: 5px 0 0 15px; }
+              margin: 5px 0 15px 15px; }
               @media (max-width: 667px) {
                 body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img {
                   float: none;
                   width: 100%;
                   margin: 5px 0 5px; } }
+      body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px auto 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination span,
+        body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination span,
+        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a {
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 1.2;
+          display: block;
+          margin: 5px;
+          padding: 10px 15px;
+          -webkit-transition: all .15s ease-in-out;
+          transition: all .15s ease-in-out;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          font-variant: normal; }
+        body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination span, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination span {
+          cursor: default;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+          background-color: #ff3e3e; }
+        body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination .dots, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination .dots {
+          color: #9b9b9b;
+          background-color: white; }
+        body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a {
+          background-color: #9b9b9b; }
+          body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 .wp_pagination a:hover {
+            background-color: #4a4a4a; }
       body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 {
         padding-left: 35px; }
         @media (max-width: 1200px) {

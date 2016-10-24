@@ -63,6 +63,9 @@ get_header(); ?>
 				}
 				?>
 			</div>
+			<div class="col-md-8">
+				<?php post_navigation(); ?>
+			</div>
 		</div>
 	</div>
 </div>
