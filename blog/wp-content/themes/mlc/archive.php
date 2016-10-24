@@ -11,7 +11,7 @@ get_header(); ?>
  	        <div class="col-md-8">
 	 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 				<?php /* If this is a category archive */ if (is_category()) { ?>
-					<h1 class="category-title">'<?php single_cat_title(); ?>'</h1>
+					<h1 class="category-title"><?php single_cat_title(); ?>'</h1>
 
 				<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
 					<h1 class="category-title">'<?php single_tag_title(); ?>'</h1>
