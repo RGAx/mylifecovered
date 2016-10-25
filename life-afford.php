@@ -17,7 +17,20 @@
             				<h4>I know how much I can afford</h4>
             				<p>See our full <a href="calculator.php">Calculator</a>.</p>
             				<form>
-            					<input type="text" placeholder="Amount">
+            					<select name="coverageAmount" id="coverageAmount" class="coverageamt-select">
+                                    <option value="">Amount</option>
+                                    <option value="25">$25</option>
+                                    <option value="30">$30</option>
+                                    <option value="35">$35</option>
+                                    <option value="40">$40</option>
+                                    <option value="45">$45</option>
+                                    <option value="50">$50</option>
+                                    <option value="60">$60</option>
+                                    <option value="70">$70</option>
+                                    <option value="80">$80</option>
+                                    <option value="90">$90</option>
+                                    <option value="100">$100</option>
+                                </select>
             					<span>/ month</span>
             					<input type="submit" value="Go">
             				</form>

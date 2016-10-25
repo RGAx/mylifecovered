@@ -1,6 +1,7 @@
 <?php require_once('header.html'); ?>
 
 <div id="calculator" class="background-wrap">
+    <div class="overlay"></div>
     <section class="quote-header text-center">
         <div class="container">
             <div class="row">
