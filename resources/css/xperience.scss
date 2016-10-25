@@ -841,11 +841,16 @@ body {
         background-position: top center;
         background-size: cover;
         &#quote_form,
-        &#quote_recommended,
-        &#calculator {
+        &#quote_recommended {
             background: $grey;
             div.overlay {
                 display: none;
+            }
+        }
+        &#calculator {
+            background-image: url('../images/bg-pylobox.jpg');
+            div.overlay {
+                background: rgba(40, 44, 49, .75);
             }
         }
         &#landing {
@@ -1291,18 +1296,9 @@ body {
             }
         }
         &#calculateneed_hero,
-        &#iknowwhatiwant_hero {
-            background-image: url('../images/bg-pylo-color.jpg');
-            background-position: top center;
-            div.overlay {
-                background: rgba(40, 44, 49, .75);
-            }
-            div.col-md-12 {
-                max-width: 1130px;
-            }
-        }
+        &#iknowwhatiwant_hero,
         &#affordability_hero {
-            background-image: url('../images/warmup-set.jpg');
+            background-image: url('../images/bg-pylo-color.jpg');
             background-position: top center;
             div.overlay {
                 background: rgba(40, 44, 49, .75);
@@ -1593,6 +1589,9 @@ body {
                             width: 100%;
                             max-width: 560px;
                             margin: 0 auto;
+                            margin-bottom: 75px;
+                            padding: 0 20px;
+                            background: $grey;
                             div.inline-text {
                                 input[type='text'] {
                                     width: 132px;
@@ -1827,7 +1826,7 @@ body {
                                     line-height: 1;
                                     width: 200px;
                                     margin-top: 28px;
-                                    margin-bottom: 74px;
+                                    margin-bottom: 28px;
                                     padding: 11px;
                                     letter-spacing: .3px;
                                     border-radius: 5px;
@@ -2934,6 +2933,7 @@ body {
         }
     }
     footer {
+        position: relative;
         background-color: $midgrey;
         div.container {
             div.row {

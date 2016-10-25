@@ -707,10 +707,14 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; }
-    body div.background-wrap#quote_form, body div.background-wrap#quote_recommended, body div.background-wrap#calculator {
+    body div.background-wrap#quote_form, body div.background-wrap#quote_recommended {
       background: #303032; }
-      body div.background-wrap#quote_form div.overlay, body div.background-wrap#quote_recommended div.overlay, body div.background-wrap#calculator div.overlay {
+      body div.background-wrap#quote_form div.overlay, body div.background-wrap#quote_recommended div.overlay {
         display: none; }
+    body div.background-wrap#calculator {
+      background-image: url("../images/bg-pylobox.jpg"); }
+      body div.background-wrap#calculator div.overlay {
+        background: rgba(40, 44, 49, 0.75); }
     body div.background-wrap#landing {
       background-image: url("../images/deadlift-2.jpg"); }
       @media (max-width: 530px) {
@@ -1124,19 +1128,12 @@ body {
                 body section.cover div.col-md-12 div.form-wrapper a.secondary-container h5 {
                   font-size: 18px;
                   letter-spacing: .225px; } }
-    body section#calculateneed_hero, body section#iknowwhatiwant_hero {
+    body section#calculateneed_hero, body section#iknowwhatiwant_hero, body section#affordability_hero {
       background-image: url("../images/bg-pylo-color.jpg");
       background-position: top center; }
-      body section#calculateneed_hero div.overlay, body section#iknowwhatiwant_hero div.overlay {
+      body section#calculateneed_hero div.overlay, body section#iknowwhatiwant_hero div.overlay, body section#affordability_hero div.overlay {
         background: rgba(40, 44, 49, 0.75); }
-      body section#calculateneed_hero div.col-md-12, body section#iknowwhatiwant_hero div.col-md-12 {
-        max-width: 1130px; }
-    body section#affordability_hero {
-      background-image: url("../images/warmup-set.jpg");
-      background-position: top center; }
-      body section#affordability_hero div.overlay {
-        background: rgba(40, 44, 49, 0.75); }
-      body section#affordability_hero div.col-md-12 {
+      body section#calculateneed_hero div.col-md-12, body section#iknowwhatiwant_hero div.col-md-12, body section#affordability_hero div.col-md-12 {
         max-width: 1130px; }
     @media (max-width: 768px) {
       body section#calculateneed_hero p.heading br {
@@ -1363,7 +1360,10 @@ body {
     body section#needs-calculator div.container div.row div.col-md-12 form {
       width: 100%;
       max-width: 560px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 75px;
+      padding: 0 20px;
+      background: #303032; }
       body section#needs-calculator div.container div.row div.col-md-12 form div.inline-text input[type='text'] {
         width: 132px; }
         @media (max-width: 768px) {
@@ -1600,7 +1600,7 @@ body {
                 line-height: 1;
                 width: 200px;
                 margin-top: 28px;
-                margin-bottom: 74px;
+                margin-bottom: 28px;
                 padding: 11px;
                 letter-spacing: .3px;
                 border-radius: 5px; }
@@ -2605,6 +2605,7 @@ body {
       font-size: 12px;
       line-height: 20px; }
   body footer {
+    position: relative;
     background-color: #3b3c3e; }
     body footer div.container div.row {
       display: -webkit-box;
