@@ -503,6 +503,7 @@ body {
     display: inline-block; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry img {
     display: block;
+    width: auto;
     max-width: 100%;
     height: auto;
     margin: 10px 20px 20px; }
