@@ -151,34 +151,104 @@
 
 	function sc_dashboard_widgets() {
 
-		wp_add_dashboard_widget(
-	                 'sc_dashboard_widget',         // Widget slug.
-	                 'Fauxgerty Site Management Tips',         // Title.
-	                 'sc_dashboard_widget_function' // Display function.
-	        );
-	}
-	add_action( 'wp_dashboard_setup', 'sc_dashboard_widgets' );
-
-	/**
-	 * Create the function to output the contents of our Dashboard Widget.
-	 */
-	function sc_dashboard_widget_function() {
-
-		// Display whatever it is you want to show.
-		?>
-		<style>
-		html body #dashboard-widgets h4 {
-			border-bottom: 1px solid #222;
-			padding-bottom: 5px;
-			margin-top: 24px;
+			wp_add_dashboard_widget(
+		                 'sc_dashboard_widget',         // Widget slug.
+		                 'Migo IQ Site Management Tips',         // Title.
+		                 'sc_dashboard_widget_function' // Display function.
+		        );
 		}
-		</style>
-<!-- 		<h2>General Instructions</h2>
-		<p>You can get anywhere you need to go in the backend by using the menu to your left. Most update to page copy will take place under the 'Pages' menu.</p>
-		<h4>Collection Slides</h4>
-		<p>The collection slide menu will allow you to control the vertical images displayed on the Primary Collection page (and any future collection you add). Use the 'Featured Image' on the bottom right of a slide to set the main image. Any text associated with that slide can go in the main editor towards the top. There are two input fields at the bottom to allow you to include a link in the copy. Finally, be sure to set which collection this slide is associated with in the middle right panel.</p>
- -->		<?php
-	}
+		add_action( 'wp_dashboard_setup', 'sc_dashboard_widgets' );
+
+		/**
+		 * Create the function to output the contents of our Dashboard Widget.
+		 */
+		function sc_dashboard_widget_function() {
+
+			// Display whatever it is you want to show.
+			?>
+			<style>
+			html body #dashboard-widgets h4 {
+				border-bottom: 1px solid #222;
+				padding-bottom: 5px;
+				margin-top: 24px;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			html body #dashboard-widgets p a {
+				color: #ff3e3e;
+				text-decoration: underline;
+			}
+			html body #dashboard-widgets p b {
+				font-style: italic;
+			}
+			html body #dashboard-widgets .postbox-container {
+				display: block;
+				width: 100% !important;
+			}
+			html body #dashboard-widgets .postbox-container .inside {
+				padding: 20px;
+			}
+			html body #dashboard-widgets #postbox-container-1 #dashboard_right_now,
+			html body #dashboard-widgets #postbox-container-1 #dashboard_activity,
+			html body #dashboard-widgets #postbox-container-1 #rg_forms_dashboard {
+				display: none;
+			}
+			html body #dashboard-widgets #postbox-container-2 {
+				display: none;
+			}
+			</style>
+			<h2>General Instructions</h2>
+			<p>Hello there! This is the dashboard of your handcrafted Wordpress site by Switzer Creative. Let's take a little tour and get familiar with all of your site's capabilities.</p>
+			<p>You can get everywhere you need by using the menu to your left.</p>
+			<h4>Posts</h4>
+			<p>To add or edit a blog post, visit this link.</p>
+			<p>All posts should receive the following:</p>
+			<ul>
+				<li>Title</li>
+				<li>Category</li>
+				<li>Tags</li>
+				<li>Featured Image (if available)</li>
+			</ul>
+			<p>You will also need to specify whether a post is "featured" or not by checking or unchecking the box at the top of the post page.</p>
+			<h4>Appearance</h4>
+			<p>The social media information used on your site is pulled from the <b>Theme Options</b> section found in the <b>Appearance</b> tab to your left. Updating the info is as simple as typing in the change and hitting <b>Save Options</b>.</p>
+			<h4>Users</h4>
+			<p>If you want to give one of your team members access to this dashboard, simply click "Users", select <b>Add New</b>, and enter their information. In most cases, you will set their <b>Role</b> to <b>Page Manager</b>. This is also where you can edit your own user information.</p>
+			<p>New users should be instructed to select a secure password, ideally with 8 or more characters including numbers, symbols, and a mixture of uppercase &amp; lowercase.</p>
+			<?php
+		}
+
+		// For client users, removes unnecessary sections from dashboard
+		function clean_dashboard() {
+			//Means they're not a super admin.
+			if(!current_user_can('activate_plugins')) {
+				remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+		        remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+		        remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+		        remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
+		        remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+		        remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+		        remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+		        remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+		        remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');//since 3.8
+	    		remove_meta_box( 'wpseo-dashboard-overview', 'dashboard', 'side' );
+				remove_menu_page( 'edit-comments.php' );          //Comments
+				remove_menu_page( 'tools.php' );                  //Tools
+				remove_menu_page( 'plugins.php' );                //Plugins
+				remove_submenu_page( 'themes', 'customize' ); //Appearance submenus
+				remove_submenu_page( 'themes.php', 'themes.php' );       //Appearance submenus
+				remove_submenu_page( 'themes.php', 'widgets.php' );      //Appearance submenus
+				remove_submenu_page( 'themes.php', 'nav-menus.php' );    //Appearance submenus
+				remove_submenu_page( 'themes.php', 'theme-editor.php' ); //Appearance submenus
+				remove_submenu_page( 'index.php', 'update-core.php' );	//Home submenus
+				remove_submenu_page( 'options-general.php', 'options-writing.php' );  //Settings submenus
+				remove_submenu_page( 'options-general.php', 'options-reading.php' );  //Settings submenus
+				remove_submenu_page( 'options-general.php', 'options-discussion.php' );  //Settings submenus
+				remove_submenu_page( 'options-general.php', 'options-media.php' );  //Settings submenus
+				remove_submenu_page( 'options-general.php', 'options-permalink.php' );  //Settings submenus
+			}
+		}
+		add_action( 'admin_menu', 'clean_dashboard', 200 );
 
 	function remove_menus(){
 		// remove_menu_page( 'edit.php' );                   //Posts
