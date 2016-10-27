@@ -153,7 +153,7 @@
 
 			wp_add_dashboard_widget(
 		                 'sc_dashboard_widget',         // Widget slug.
-		                 'Migo IQ Site Management Tips',         // Title.
+		                 'My Life Covered blog management tips',         // Title.
 		                 'sc_dashboard_widget_function' // Display function.
 		        );
 		}
