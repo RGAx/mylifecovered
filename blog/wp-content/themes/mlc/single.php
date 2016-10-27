@@ -61,7 +61,17 @@ get_header(); ?>
  	        			<img src="<?=$other_post_img[0];?>">
  	        			<?php } ?>
  	        			<h1 class="title"><?php the_title(); ?></h1>
- 	        			<p class='publish-details'><?php echo get_the_date(); ?> Author: <a class="" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a></p>
+ 	        			<p class='publish-details'>
+ 	        				<?php
+ 	        					echo get_the_date();
+								$author = get_field( 'author' );
+								if ($author) {
+							?>
+								Author: <?=$author;?>
+							<?php
+								}
+							?>
+ 	        			</p>
  	        			<div class="entry">
  	        				<?=the_content(); ?>
  	        			</div>
