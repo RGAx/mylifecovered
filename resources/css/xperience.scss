@@ -192,7 +192,7 @@ body {
                                 text-transform: capitalize;
 
                                 @include Lato();
-                                @media (max-width: 1200px) {
+                                @media (max-width: 991px) {
                                     margin-top: 0;
                                 }
                                 @media (max-width: 768px) {
@@ -354,7 +354,7 @@ body {
                                             }
                                         }
                                     }
-                                    div.entry {
+                                    div.entry.excerpt {
                                         overflow: auto;
                                         p {
                                             font-size: 18px;
@@ -738,6 +738,52 @@ body {
                                             text-decoration: underline;
                                             color: black;
                                         }
+                                        sup {
+                                            font-size: 12px;
+                                            top: .7em !important;
+                                            padding: 3px;
+                                            color: $red;
+                                            @media (max-width: 768px) {
+                                                padding: 5px;
+                                            }
+                                        }
+                                        div.footnote_container_prepare {
+                                            padding: 15px 0 !important;
+                                            p {
+                                                border-bottom-color: rgba($grey,.15) !important;
+                                                span {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        div#footnote_references_container {
+                                            table.footnote-reference-container {
+                                                margin-bottom: 0;
+                                                tbody {
+                                                    tr {
+                                                        td {
+                                                            font-size: 18px;
+                                                            line-height: 1.5556;
+                                                            padding: 0;
+                                                            border: none;
+                                                            @media (max-width: 768px) {
+                                                                font-size: 14px;
+                                                            }
+                                                            &.footnote_plugin_index {
+                                                                font-size: 13px;
+                                                                padding: 0 5px 0 0;
+                                                                @media (max-width: 768px) {
+                                                                    font-size: 10px;
+                                                                }
+                                                            }
+                                                            &.footnote_plugin_link {
+                                                                display: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                     div.tag-links-container {
                                         display: block;
@@ -779,7 +825,7 @@ body {
                                                         display: block;
                                                         width: 100%;
                                                         max-width: 100%;
-                                                        height: auto;
+                                                        height: 100%;
                                                         margin: 0;
 
                                                         order: 2;
