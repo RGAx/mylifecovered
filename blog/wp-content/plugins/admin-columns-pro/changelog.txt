@@ -1,5 +1,11 @@
 == Changelog ==
 
+= 3.8.8 =
+Release Date: October 11th, 2016
+* [Fixed] ACF Inline Edit ajax search fix due ACF method removal (temporary)
+* [Fixed] ACF Sorting on User list did not work
+* [Added] Added screenreader labels for filter dropdowns
+
 = 3.8.7 =
 Release Date: July 6th, 2016
 
