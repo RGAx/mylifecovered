@@ -188,6 +188,7 @@
 			html body #dashboard-widgets .postbox-container .inside {
 				padding: 20px;
 			}
+			html body #dashboard-widgets #postbox-container-1 #wpseo-dashboard-overview,
 			html body #dashboard-widgets #postbox-container-1 #dashboard_right_now,
 			html body #dashboard-widgets #postbox-container-1 #dashboard_activity,
 			html body #dashboard-widgets #postbox-container-1 #rg_forms_dashboard {
