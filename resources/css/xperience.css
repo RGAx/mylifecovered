@@ -125,7 +125,7 @@ body {
         font-weight: normal;
         font-style: normal;
         font-variant: normal; }
-        @media (max-width: 1200px) {
+        @media (max-width: 991px) {
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 h1.category-title {
             margin-top: 0; } }
         @media (max-width: 768px) {
@@ -624,6 +624,38 @@ body {
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry a {
     text-decoration: underline;
     color: black; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup {
+    font-size: 12px;
+    top: .7em !important;
+    padding: 3px;
+    color: #ff3e3e; }
+    @media (max-width: 768px) {
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup {
+        padding: 5px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare {
+    padding: 15px 0 !important; }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p {
+      border-bottom-color: rgba(48, 48, 50, 0.15) !important; }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p span, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p span, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p span {
+        display: none; }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container {
+    margin-bottom: 0; }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td {
+      font-size: 18px;
+      line-height: 1.5556;
+      padding: 0;
+      border: none; }
+      @media (max-width: 768px) {
+        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td {
+          font-size: 14px; } }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index {
+        font-size: 13px;
+        padding: 0 5px 0 0; }
+        @media (max-width: 768px) {
+          body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_index {
+            font-size: 10px; } }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_link, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_link, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div#footnote_references_container table.footnote-reference-container tbody tr td.footnote_plugin_link {
+        display: none; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container {
     display: block;
     overflow: auto;
@@ -658,7 +690,7 @@ body {
       display: block;
       width: 100%;
       max-width: 100%;
-      height: auto;
+      height: 100%;
       margin: 0;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
