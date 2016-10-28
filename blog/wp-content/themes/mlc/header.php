@@ -96,13 +96,13 @@
 	<!-- concatenate and minify for production -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
-	<link rel="stylesheet" href="/resources/css/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/css/myLifeCoveredRGility.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="/resources/css/mylifecovered-metcon.min.css">
-    <link rel="stylesheet" href="/resources/css/xperience.css?v=2.1.5">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/mylifecovered-metcon.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.1.5">
     <!--[if IE 9]>
-        <link rel="stylesheet" href="resources/css/ie9.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/ie9.css">
         <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- <script src="https://use.typekit.net/qns3hng.js"></script> -->
@@ -127,13 +127,13 @@
     <![endif]-->
     <div id="body_wrapper">
         <div id="wOverlayId" class="whiteOverlay"></div>
-        <div id="loading" class="loading"><img src="/resources/images/loading_spinner.svg" width="70" height="70" alt="Loading"></div>
+        <div id="loading" class="loading"><img src="<?php echo get_template_directory_uri(); ?>/_/images/loading_spinner.svg" width="70" height="70" alt="Loading"></div>
         <section id="top-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <a id="#myLifeCoveredHeader" href="/welcome.php" class="open-home-page-copy">
-    						<img class="logo" src="/resources/images/logo.svg" alt="">
+    						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/_/images/logo.svg" alt="">
     						<span class="logo-phno">866-248-6037</span>
     					</a>
                         <ul id="top_nav_menu">

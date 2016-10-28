@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-6 text-right">
                 <a href="/welcome.php" class="main_logo">
-                    <img src='/resources/images/logo.svg' /></a>
+                    <img src='<?php echo get_template_directory_uri(); ?>/_/images/logo.svg' /></a>
                 </a>
                 <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
                 <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> RGAx. All rights reserved.</small>
@@ -38,8 +38,8 @@
 <!-- jQuery is called via the WordPress-friendly way via functions.php -->
 
 <!-- this is where we put our custom functions -->
-<script src="/resources/js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/resources/js/xperience.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/_/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/xperience.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/_/js/ofi.browser.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script>
 <!-- FontAwesome -->
