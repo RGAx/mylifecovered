@@ -132,16 +132,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a id="#myLifeCoveredHeader" href="/welcome.php" class="open-home-page-copy">
+                        <a id="#myLifeCoveredHeader" href="https://www.mylifecovered.net/" class="open-home-page-copy">
     						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/_/images/logo.svg" alt="">
     						<span class="logo-phno">866-248-6037</span>
     					</a>
                         <ul id="top_nav_menu">
                             <li>
-                                <a href="basics.php">Insurance Basics</a>
+                                <a href="https://www.mylifecovered.net/myLifeCovered/basics.do">Insurance Basics</a>
                             </li>
                             <li>
-                                <a href="misconceptions.php">12 Common Misconceptions</a>
+                                <a href="https://www.mylifecovered.net/myLifeCovered/misconceptions.do">12 Common Misconceptions</a>
                             </li>
                             <li>
                                 <a href="/blog/category/fitness-for-life">Fitness for Life</a>
