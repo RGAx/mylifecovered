@@ -11,18 +11,18 @@
         <div class="row">
             <div class="col-md-6">
                 <ul>
-                      <li><a id="mylifeCoveredHome" href="/welcome.php" wpvalue="home">Home</a></li>
-                      <li><a id="mylifeCoveredaboutUS" href="/aboutus.php" wpvalue="about">About Us</a></li>
-                      <li><a id="mylifeCovered-contactUs" href="/contactus.php" wpvalue="contact">Contact Us</a></li>
-                      <li><a id="mylifeCovered-privacyPolicy" href="/privacypolicy.php" wpvalue="privacy_policy">Privacy Policy</a></li>
-                      <li><a id="mylifeCoveredTerms" href="/terms.php" wpvalue="terms">Terms</a></li>
-                      <li><a id="mylifeCoveredLegalInformation" href="/legalInformation.php" wpvalue="legalInfromation">Legal Information</a></li>
-                      <li><a id="mylifeCoveredPolicyForms" href="/policyForms.php" wpvalue="policyForms">Policy Forms</a></li>
-                      <li><a id="mylifeCoveredFinancialRatings" href="/financialRatings.php" wpvalue="financialRatings">Financial Ratings</a></li>
+                      <li><a id="mylifeCoveredHome" href="https://www.mylifecovered.net/" wpvalue="home">Home</a></li>
+                      <li><a id="mylifeCoveredaboutUS" href="https://www.mylifecovered.net/myLifeCovered/aboutus.do" wpvalue="about">About Us</a></li>
+                      <li><a id="mylifeCovered-contactUs" href="https://www.mylifecovered.net/myLifeCovered/contactus.do" wpvalue="contact">Contact Us</a></li>
+                      <li><a id="mylifeCovered-privacyPolicy" href="https://www.mylifecovered.net/myLifeCovered/privacypolicy.do" wpvalue="privacy_policy">Privacy Policy</a></li>
+                      <li><a id="mylifeCoveredTerms" href="https://www.mylifecovered.net/myLifeCovered/terms.do" wpvalue="terms">Terms</a></li>
+                      <li><a id="mylifeCoveredLegalInformation" href="https://www.mylifecovered.net/myLifeCovered/legalInformation.do" wpvalue="legalInfromation">Legal Information</a></li>
+                      <li><a id="mylifeCoveredPolicyForms" href="https://www.mylifecovered.net/myLifeCovered/policyForms.do" wpvalue="policyForms">Policy Forms</a></li>
+                      <li><a id="mylifeCoveredFinancialRatings" href="https://www.mylifecovered.net/myLifeCovered/financialRatings.do" wpvalue="financialRatings">Financial Ratings</a></li>
                   </ul>
             </div>
             <div class="col-md-6 text-right">
-                <a href="/welcome.php" class="main_logo">
+                <a href="https://www.mylifecovered.net/" class="main_logo">
                     <img src='<?php echo get_template_directory_uri(); ?>/_/images/logo.svg' /></a>
                 </a>
                 <span>Brought to you by <a id="#mylifeCovered-riversAgency" href="http://www.tworiversagency.com" target="_blank" class="secondary">Two Rivers Agency</a>
