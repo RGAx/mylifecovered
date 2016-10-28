@@ -20,18 +20,18 @@
 <li><code>life-need.do</code></li>
 <li><code>life-afford.do</code></li>
 <li>This is the error I see for the font loading issue:</li>
-<li>Typekit: <code>the domain &quot;devweb01.eastus.cloudapp.azure.com&quot; isn't in the list of published domains for kit &quot;qns3hng&quot;.</code></li>
+<li><code>Typekit: the domain &quot;devweb01.eastus.cloudapp.azure.com&quot; isn't in the list of published domains for kit &quot;qns3hng&quot;.</code></li>
 <li>Entering data and clicking GO on the three new path pages (<code>life-help.do</code>, <code>life-need.do</code>, <code>life-afford.do</code>) does not redirect to the Quote Form. It appends a string to the URL (for example, <code>life-afford.do?coverageAmount=50</code>), but the page does not advance.</li>
 <li>The new styles are not being called for the three old vanity URL landing pages. I made the following changes to each file (<code>welcomeDropdown.jsp</code>, <code>welcomeCalculateNeed.jsp</code>, <code>welcomeTwentyFiveDollars.jsp</code>) to fix the issue:</li>
 <li>Set <code>xperience.css</code> as the main CSS file after <code>mylifecovered-metcon.min.css</code>, not <code>styles.css</code> or <code>nav.css</code></li>
 <li>Changed the IDs of the <code>&lt;section id=&quot;hero&quot; class=&quot;section-photo cover&quot;&gt;</code> element in each file to match the new CSS</li>
 <li>Got rid of <code>remodal.css</code> and <code>remodal-default-theme.css</code> because they are not being used</li>
-<li>Replaces an <code>&lt;html&gt;</code> tag with a <code>&lt;/div&gt;</code> tag at the top of <code>footer.jsp</code></li>
-<li>Mohan, if you will give me access to your GitHub at https://github.com/mohankumarac12/MyLifeCovered, I will commit my changes so you have them</li>
+<li>Replaced an <code>&lt;html&gt;</code> tag with a <code>&lt;/div&gt;</code> tag at the top of <code>footer.jsp</code></li>
+<li><strong>Mohan, if you will give me access to your GitHub at https://github.com/mohankumarac12/MyLifeCovered, I will commit my changes so you have them</strong></li>
 <li>On <code>calculator.do</code>, the button labeled Quick Facts is linking to <code>quote-form.do</code>, which does not exist. I believe it should instead just load the main Quote form.</li>
 <li>When first landing on the multicarrier quote, the Amount of Coverage number at the bottom says $700,000 no matter what coverage amount is selected on the previous screen</li>
 <li>On the multicarrier quote, all dollar amounts should have two decimal places (for example, $11.50/mo instead of $11.5/mo)</li>
-<li>On the multicarrier quote, the Lincoln Life premium isn&#8217;t updating; it stay suck at $59/mo unless you adjust the Number of Years to Maintain Coverage. Is this correct?</li>
+<li>On the multicarrier quote, the Lincoln Life premium isn&#8217;t updating when dragging the Amount of Coverage slider; it stays suck at $59/mo unless you adjust the Number of Years to Maintain Coverage. Is this correct?</li>
 <li>On the multicarrier quote, no phone numbers are displaying after the word Call</li>
 </ul>
 
