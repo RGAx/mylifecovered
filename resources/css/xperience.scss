@@ -311,6 +311,39 @@ body {
                 }
             }
         }
+        &#about-us,
+        &#contact-us,
+        &#privacy-policy,
+        &#terms-of-service,
+        &#legal-information,
+        &#financial-ratings,
+        &#policy-forms, {
+            background: $grey;
+            div.overlay {
+                display: none;
+            }
+            p {
+                font-size: 20px;
+                line-height: 1.55;
+                margin-bottom: 31px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &#financial-ratings {
+            div.col-md-8 {
+                width: 100%;
+                margin: 0 auto;
+                table {
+                    th,
+                    td {
+                        line-height: 1;
+                        padding: 6px 8px;
+                    }
+                }
+            }
+        }
         &.cover {
             padding-top: 250px;
             padding-bottom: 125px;

@@ -249,6 +249,23 @@ body {
           body section#top-header div.container div.row div.col-md-12 a#close_menu i {
             font-size: 25px;
             display: block; }
+    body section#about-us, body section#contact-us, body section#privacy-policy, body section#terms-of-service, body section#legal-information, body section#financial-ratings, body section#policy-forms {
+      background: #303032; }
+      body section#about-us div.overlay, body section#contact-us div.overlay, body section#privacy-policy div.overlay, body section#terms-of-service div.overlay, body section#legal-information div.overlay, body section#financial-ratings div.overlay, body section#policy-forms div.overlay {
+        display: none; }
+      body section#about-us p, body section#contact-us p, body section#privacy-policy p, body section#terms-of-service p, body section#legal-information p, body section#financial-ratings p, body section#policy-forms p {
+        font-size: 20px;
+        line-height: 1.55;
+        margin-bottom: 31px; }
+        body section#about-us p:last-of-type, body section#contact-us p:last-of-type, body section#privacy-policy p:last-of-type, body section#terms-of-service p:last-of-type, body section#legal-information p:last-of-type, body section#financial-ratings p:last-of-type, body section#policy-forms p:last-of-type {
+          margin-bottom: 0; }
+    body section#financial-ratings div.col-md-8 {
+      width: 100%;
+      margin: 0 auto; }
+      body section#financial-ratings div.col-md-8 table th,
+      body section#financial-ratings div.col-md-8 table td {
+        line-height: 1;
+        padding: 6px 8px; }
     body section.cover {
       padding-top: 250px;
       padding-bottom: 125px; }
