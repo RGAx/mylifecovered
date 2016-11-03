@@ -109,6 +109,9 @@ body {
             div.blog-wrap {
                 padding: 150px 0 95px;
                 background-image: url('../images/rings.jpg');
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
                 div.overlay {
                     display: none;
                 }
