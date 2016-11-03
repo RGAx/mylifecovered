@@ -42,7 +42,10 @@ body {
       border-bottom: 2px solid #ff3e3e !important; } }
   body.error404 div#body_wrapper div.blog-wrap, body.blog div#body_wrapper div.blog-wrap, body.single div#body_wrapper div.blog-wrap, body.archive div#body_wrapper div.blog-wrap, body.search div#body_wrapper div.blog-wrap {
     padding: 150px 0 95px;
-    background-image: url("../images/rings.jpg"); }
+    background-image: url("../images/rings.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
     body.error404 div#body_wrapper div.blog-wrap div.overlay, body.blog div#body_wrapper div.blog-wrap div.overlay, body.single div#body_wrapper div.blog-wrap div.overlay, body.archive div#body_wrapper div.blog-wrap div.overlay, body.search div#body_wrapper div.blog-wrap div.overlay {
       display: none; }
     body.error404 div#body_wrapper div.blog-wrap div.container, body.blog div#body_wrapper div.blog-wrap div.container, body.single div#body_wrapper div.blog-wrap div.container, body.archive div#body_wrapper div.blog-wrap div.container, body.search div#body_wrapper div.blog-wrap div.container {
