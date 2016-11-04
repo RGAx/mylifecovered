@@ -38,9 +38,9 @@ body {
   body.error404 div#body_wrapper div.blog-wrap, body.blog div#body_wrapper div.blog-wrap, body.single div#body_wrapper div.blog-wrap, body.archive div#body_wrapper div.blog-wrap, body.search div#body_wrapper div.blog-wrap {
     padding: 150px 0 95px;
     background-image: url("../images/rings.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-size: cover; }
     body.error404 div#body_wrapper div.blog-wrap div.overlay, body.blog div#body_wrapper div.blog-wrap div.overlay, body.single div#body_wrapper div.blog-wrap div.overlay, body.archive div#body_wrapper div.blog-wrap div.overlay, body.search div#body_wrapper div.blog-wrap div.overlay {
       display: none; }
     body.error404 div#body_wrapper div.blog-wrap div.container, body.blog div#body_wrapper div.blog-wrap div.container, body.single div#body_wrapper div.blog-wrap div.container, body.archive div#body_wrapper div.blog-wrap div.container, body.search div#body_wrapper div.blog-wrap div.container {
@@ -666,52 +666,57 @@ body {
       font-weight: normal;
       font-style: normal;
       font-variant: normal; }
-  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a {
-    display: flex;
-    flex-wrap: wrap; }
-    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img {
-      display: block;
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li {
+    margin-bottom: 55px; }
+    @media (max-width: 768px) {
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li {
+        margin-bottom: 41px; } }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a {
+      display: flex;
+      flex-wrap: wrap; }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        order: 2; }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title {
+        font-size: 36px;
+        line-height: .97;
+        margin-bottom: 25px;
+        letter-spacing: .4px;
+        color: white;
+        order: 1;
+        font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-variant: normal; }
+        @media (max-width: 768px) {
+          body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title {
+            font-size: 27px;
+            margin-bottom: 19px;
+            letter-spacing: .3px; } }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt {
+      font-size: 16px;
       width: 100%;
-      max-width: 100%;
-      height: 100%;
-      margin: 0;
-      order: 2; }
-    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title {
-      font-size: 36px;
-      line-height: .97;
-      margin-bottom: 25px;
-      letter-spacing: .4px;
-      color: white;
-      order: 1;
-      font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+      padding: 20px;
+      letter-spacing: .2px;
+      color: #9b9b9b;
+      background: #3b3c3e;
+      font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-style: normal;
       font-variant: normal; }
       @media (max-width: 768px) {
-        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li a span.rpwwt-post-title {
-          font-size: 27px;
-          margin-bottom: 19px;
-          letter-spacing: .3px; } }
-  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt {
-    font-size: 16px;
-    width: 100%;
-    padding: 20px;
-    letter-spacing: .2px;
-    color: #9b9b9b;
-    background: #3b3c3e;
-    font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal; }
-    @media (max-width: 768px) {
-      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt {
-        font-size: 14px;
-        letter-spacing: .15px; } }
-    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a {
-      text-decoration: underline;
-      color: white; }
-      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more {
-        display: none; }
+        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt {
+          font-size: 14px;
+          letter-spacing: .15px; } }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a {
+        text-decoration: underline;
+        color: white; }
+        body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li div.rpwwt-post-excerpt a.read-more {
+          display: none; }
   body.error404 div#blog_404 {
     display: flex;
     min-height: calc(100vh - 148px);
@@ -779,6 +784,7 @@ body {
           padding: 0; } }
       body section#top-header div.container div.row div.col-md-12 {
         display: flex;
+        overflow: auto;
         justify-content: space-between;
         align-items: center; }
         @media (max-width: 768px) {
@@ -787,6 +793,7 @@ body {
             padding: 0; } }
         body section#top-header div.container div.row div.col-md-12 a.open-home-page-copy {
           line-height: 1;
+          float: left;
           width: 250px;
           padding: 0 0 0 20px !important; }
           @media (max-width: 768px) {
@@ -801,6 +808,7 @@ body {
               font-size: 15px; } }
         body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu {
           display: flex !important;
+          float: right;
           width: auto !important;
           list-style-type: none;
           text-align: center !important;
@@ -828,6 +836,9 @@ body {
                 transform: translateY(0%);
                 pointer-events: auto;
                 opacity: 1; } }
+          @media (max-width: 1200px) {
+            body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li {
+              width: 100%; } }
           body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li a {
             font-size: 19px;
             display: block;
@@ -854,6 +865,7 @@ body {
           @media (max-width: 1200px) {
             body section#top-header div.container div.row div.col-md-12 a#open_menu {
               display: block;
+              float: right;
               padding: 15px; } }
   @media (max-width: 1200px) and (max-width: 768px) {
     body section#top-header div.container div.row div.col-md-12 a#open_menu {

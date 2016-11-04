@@ -109,9 +109,9 @@ body {
             div.blog-wrap {
                 padding: 150px 0 95px;
                 background-image: url('../images/rings.jpg');
-                background-size: cover;
-                background-position: center center;
                 background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
                 div.overlay {
                     display: none;
                 }
@@ -820,6 +820,10 @@ body {
                                     div.recent-posts-widget-with-thumbnails {
                                         ul {
                                             li {
+                                                margin-bottom: 55px;
+                                                @media (max-width: 768px) {
+                                                    margin-bottom: 41px;
+                                                }
                                                 a {
                                                     display: flex;
 
@@ -956,6 +960,7 @@ body {
                     }
                     div.col-md-12 {
                         display: flex;
+                        overflow: auto;
 
                         justify-content: space-between;
                         align-items: center;
@@ -965,6 +970,7 @@ body {
                         }
                         a.open-home-page-copy {
                             line-height: 1;
+                            float: left;
                             width: 250px;
                             padding: 0 0 0 20px !important;
                             @media (max-width: 768px) {
@@ -983,6 +989,7 @@ body {
                         }
                         ul#top_nav_menu {
                             display: flex !important;
+                            float: right;
                             width: auto !important;
                             list-style-type: none;
                             text-align: center !important;
@@ -1014,6 +1021,9 @@ body {
                                 }
                             }
                             li {
+                                @media (max-width: 1200px) {
+                                    width: 100%;
+                                }
                                 a {
                                     font-size: 19px;
                                     display: block;
@@ -1043,6 +1053,7 @@ body {
                             display: none;
                             @media (max-width: 1200px) {
                                 display: block;
+                                float: right;
                                 padding: 15px;
                                 @media (max-width: 768px) {
                                     margin-right: -15px;
