@@ -109,9 +109,9 @@ body {
             div.blog-wrap {
                 padding: 150px 0 95px;
                 background-image: url('../images/rings.jpg');
-                background-size: cover;
-                background-position: center center;
                 background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
                 div.overlay {
                     display: none;
                 }
@@ -820,6 +820,10 @@ body {
                                     div.recent-posts-widget-with-thumbnails {
                                         ul {
                                             li {
+                                                margin-bottom: 55px;
+                                                @media (max-width: 768px) {
+                                                    margin-bottom: 41px;
+                                                }
                                                 a {
                                                     display: flex;
 
