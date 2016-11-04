@@ -313,6 +313,7 @@ body {
                 width: 220px; } }
         body section.cover div.col-md-12 div.form-wrapper {
           display: flex;
+          overflow: auto;
           width: 100%;
           max-width: 500px;
           margin: 20px auto 0;
@@ -404,6 +405,7 @@ body {
                     margin-left: 15px; } }
           body section.cover div.col-md-12 div.form-wrapper a.secondary-container {
             display: block;
+            float: left;
             width: 50%;
             padding: 10px 45px;
             transition: all .3s ease; }
@@ -412,6 +414,7 @@ body {
                 padding: 10px 34px; } }
             @media (max-width: 450px) {
               body section.cover div.col-md-12 div.form-wrapper a.secondary-container {
+                float: none;
                 width: 100%;
                 padding: 15px; } }
             body section.cover div.col-md-12 div.form-wrapper a.secondary-container:first-of-type {
@@ -889,6 +892,7 @@ body {
         body section.tiles div.container div.row div.col-md-12 {
           display: flex;
           float: none;
+          overflow: auto;
           padding: 0;
           justify-content: center;
           align-items: stretch; }
@@ -896,6 +900,8 @@ body {
             body section.tiles div.container div.row div.col-md-12 {
               flex-wrap: wrap; } }
           body section.tiles div.container div.row div.col-md-12 a.tile {
+            display: block;
+            float: left;
             width: 50%;
             padding: 34px;
             transition: all .3s ease;
@@ -903,6 +909,7 @@ body {
             background: #222223; }
             @media (max-width: 620px) {
               body section.tiles div.container div.row div.col-md-12 a.tile {
+                float: none;
                 padding: 34px 70px; } }
             @media (max-width: 530px) {
               body section.tiles div.container div.row div.col-md-12 a.tile {
@@ -947,29 +954,33 @@ body {
       body section#landing_tiles div.container {
         width: 100%;
         max-width: 1310px; }
-        body section#landing_tiles div.container div.col-md-12 a.tile {
-          width: 275px;
-          background: #3b3c3e;
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
-          @media (max-width: 620px) {
-            body section#landing_tiles div.container div.col-md-12 a.tile {
-              width: 100%;
-              max-width: 350px;
-              margin-bottom: 20px; } }
-          body section#landing_tiles div.container div.col-md-12 a.tile#blood {
-            margin-right: 4.6875%; }
-            @media (max-width: 768px) {
-              body section#landing_tiles div.container div.col-md-12 a.tile#blood {
-                margin-right: 20px; } }
+        body section#landing_tiles div.container div.col-md-12 {
+          max-width: 580px;
+          margin: 0 auto; }
+          body section#landing_tiles div.container div.col-md-12 a.tile {
+            width: 275px;
+            margin-bottom: 5px;
+            background: #3b3c3e;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
             @media (max-width: 620px) {
-              body section#landing_tiles div.container div.col-md-12 a.tile#blood {
-                margin-right: 0; } }
-          body section#landing_tiles div.container div.col-md-12 a.tile h3 {
-            padding-bottom: 15px;
-            border-bottom: 2px dotted #9b9b9b; }
-            @media (max-width: 768px) {
-              body section#landing_tiles div.container div.col-md-12 a.tile h3 {
-                padding-bottom: 11px; } }
+              body section#landing_tiles div.container div.col-md-12 a.tile {
+                width: 100%;
+                max-width: 350px;
+                margin-bottom: 20px; } }
+            body section#landing_tiles div.container div.col-md-12 a.tile#blood {
+              margin-right: 4.6875%; }
+              @media (max-width: 768px) {
+                body section#landing_tiles div.container div.col-md-12 a.tile#blood {
+                  margin-right: 20px; } }
+              @media (max-width: 620px) {
+                body section#landing_tiles div.container div.col-md-12 a.tile#blood {
+                  margin-right: 0; } }
+            body section#landing_tiles div.container div.col-md-12 a.tile h3 {
+              padding-bottom: 15px;
+              border-bottom: 2px dotted #9b9b9b; }
+              @media (max-width: 768px) {
+                body section#landing_tiles div.container div.col-md-12 a.tile h3 {
+                  padding-bottom: 11px; } }
     body section#quote-page {
       padding: 150px 0 0; }
       body section#quote-page div.container {

@@ -431,6 +431,7 @@ body {
                 }
                 div.form-wrapper {
                     display: flex;
+                    overflow: auto;
                     width: 100%;
                     max-width: 500px;
                     margin: 20px auto 0;
@@ -523,6 +524,7 @@ body {
                     }
                     a.secondary-container {
                         display: block;
+                        float: left;
                         width: 50%;
                         padding: 10px 45px;
                         transition: all .3s ease;
@@ -530,6 +532,7 @@ body {
                             padding: 10px 34px;
                         }
                         @media (max-width: 450px) {
+                            float: none;
                             width: 100%;
                             padding: 15px;
                         }
@@ -1173,6 +1176,7 @@ body {
                     div.col-md-12 {
                         display: flex;
                         float: none;
+                        overflow: auto;
                         padding: 0;
 
                         justify-content: center;
@@ -1181,12 +1185,15 @@ body {
                             flex-wrap: wrap;
                         }
                         a.tile {
+                            display: block;
+                            float: left;
                             width: 50%;
                             padding: 34px;
                             transition: all .3s ease;
                             text-align: center;
                             background: $darkgrey;
                             @media (max-width: 620px) {
+                                float: none;
                                 padding: 34px 70px;
                             }
                             @media (max-width: 530px) {
@@ -1245,8 +1252,11 @@ body {
                 width: 100%;
                 max-width: 1310px;
                 div.col-md-12 {
+                    max-width: 580px;
+                    margin: 0 auto;
                     a.tile {
                         width: 275px;
+                        margin-bottom: 5px;
                         background: $midgrey;
                         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
                         @media (max-width: 620px) {
