@@ -988,6 +988,22 @@ body {
               @media (max-width: 768px) {
                 body section#landing_tiles div.container div.col-md-12 a.tile h3 {
                   padding-bottom: 11px; } }
+    body section.child-tiles div.container div.row div.col-md-12 a.tile:hover {
+      opacity: 1;
+      color: white;
+      background: #303032 !important; }
+      body section.child-tiles div.container div.row div.col-md-12 a.tile:hover h3 {
+        border-bottom: 2px solid #ff3e3e; }
+    body section.child-tiles div.container div.row div.col-md-12 a.tile h3 {
+      display: inline;
+      transition: all .3s ease;
+      border-bottom: 2px solid transparent; }
+    body section.child-tiles div.container div.row div.col-md-12 a.tile.active:hover {
+      opacity: 1;
+      color: white;
+      background: #ff3e3e !important; }
+      body section.child-tiles div.container div.row div.col-md-12 a.tile.active:hover h3 {
+        border-bottom: 2px solid #ff3e3e; }
     body section#quote-page {
       padding: 150px 0 0; }
       body section#quote-page div.container {
