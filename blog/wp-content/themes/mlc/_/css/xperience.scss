@@ -1089,12 +1089,8 @@ body {
         background-color: $midgrey;
         div.container {
             div.row {
-                display: flex;
+                overflow: auto;
                 padding: 0 19px;
-
-                justify-content: space-between;
-                align-items: center;
-                flex-flow: row wrap;
                 @media (max-width: 1200px) {
                     padding: 0;
 
@@ -1106,25 +1102,34 @@ body {
                 }
                 div.col-md-6 {
                     width: auto;
+                    &:first-of-type {
+                        margin-top: 25px;
+                        @media (max-width: 1200px) {
+                            margin-top: 0;
+                        }
+                    }
                     @media (max-width: 1200px) {
+                        float: none;
                         width: 100%;
                     }
                     &.text-right {
-                        display: flex;
+                        float: right;
                         width: 300px;
-
-                        justify-content: flex-end;
-                        flex-wrap: wrap;
+                        margin: 0;
                         @media (max-width: 1200px) {
                             float: none;
+                            margin: 0 auto;
                             margin-top: 10px;
+                            padding-top: 20px;
                             text-align: center;
-
-                            justify-content: center;
                         }
                         a.main_logo {
                             display: block;
                             width: 200px;
+                            margin-left: 70px;
+                            @media (max-width: 1200px) {
+                                margin: 0 auto;
+                            }
                             img {
                                 width: 100%;
                             }
