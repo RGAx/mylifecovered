@@ -180,7 +180,6 @@ body {
               background: rgba(255, 62, 62, 0.97);
               -webkit-box-align: center;
                   -ms-flex-align: center;
-                          -ms-grid-row-align: center;
                       align-items: center;
               -webkit-box-pack: center;
                   -ms-flex-pack: center;
@@ -1960,18 +1959,8 @@ body {
     position: relative;
     background-color: #3b3c3e; }
     body footer div.container div.row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 0 19px;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+      overflow: auto;
+      padding: 0 19px; }
       @media (max-width: 1200px) {
         body footer div.container div.row {
           padding: 0;
@@ -1982,30 +1971,33 @@ body {
         display: none !important; }
       body footer div.container div.row div.col-md-6 {
         width: auto; }
+        body footer div.container div.row div.col-md-6:first-of-type {
+          margin-top: 25px; }
+          @media (max-width: 1200px) {
+            body footer div.container div.row div.col-md-6:first-of-type {
+              margin-top: 0; } }
         @media (max-width: 1200px) {
           body footer div.container div.row div.col-md-6 {
+            float: none;
             width: 100%; } }
         body footer div.container div.row div.col-md-6.text-right {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
+          float: right;
           width: 300px;
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
+          margin: 0; }
           @media (max-width: 1200px) {
             body footer div.container div.row div.col-md-6.text-right {
               float: none;
+              margin: 0 auto;
               margin-top: 10px;
-              text-align: center;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center; } }
+              padding-top: 20px;
+              text-align: center; } }
           body footer div.container div.row div.col-md-6.text-right a.main_logo {
             display: block;
-            width: 200px; }
+            width: 200px;
+            margin-left: 70px; }
+            @media (max-width: 1200px) {
+              body footer div.container div.row div.col-md-6.text-right a.main_logo {
+                margin: 0 auto; } }
             body footer div.container div.row div.col-md-6.text-right a.main_logo img {
               width: 100%; }
           body footer div.container div.row div.col-md-6.text-right span {
