@@ -114,6 +114,12 @@ body {
                 display: none;
             }
         }
+        &#everplans {
+            background-image: url('../images/kettlebell.jpg');
+            div.overlay {
+                display: none;
+            }
+        }
         &.life-landing {
             background-image: url('../images/pullup.jpg');
             background-position: 0 100%;
@@ -1188,31 +1194,24 @@ body {
 
                         justify-content: center;
                         align-items: stretch;
-                        @media (max-width: 620px) {
+                        @media (max-width: 685px) {
                             flex-wrap: wrap;
                         }
                         a.tile {
                             display: block;
                             float: left;
-                            width: 50%;
+                            width: calc(100% / 3);
                             padding: 34px;
                             transition: all .3s ease;
                             text-align: center;
                             background: $darkgrey;
-                            @media (max-width: 620px) {
+                            @media (max-width: 685px) {
                                 float: none;
                                 padding: 34px 70px;
                             }
-                            @media (max-width: 530px) {
-                                padding: 34px 60px;
-                            }
-                            @media (max-width: 500px) {
+                            @media (max-width: 685px) {
                                 width: 100%;
                                 padding: 34px;
-                            }
-                            &#genome,
-                            &#emergency {
-                                display: none;
                             }
                             &:hover,
                             &.active {
@@ -1227,10 +1226,12 @@ body {
                                 margin: 0;
                                 letter-spacing: .3px;
                                 color: white;
-                                @media (max-width: 768px) {
+                                @media (max-width: 840px) {
                                     font-size: 23px;
                                     letter-spacing: .225px;
-                                    br {
+                                }
+                                br {
+                                    @media (max-width: 685px) {
                                         display: none;
                                     }
                                 }
@@ -1239,7 +1240,7 @@ body {
                                 font-size: 18px;
                                 padding-top: 13px;
                                 letter-spacing: .2px;
-                                @media (max-width: 768px) {
+                                @media (max-width: 840px) {
                                     font-size: 14px;
                                     padding-top: 10px;
                                     letter-spacing: .15px;
@@ -1259,24 +1260,25 @@ body {
                 width: 100%;
                 max-width: 1310px;
                 div.col-md-12 {
-                    max-width: 580px;
+                    max-width: 885px;
                     margin: 0 auto;
                     a.tile {
                         width: 275px;
                         margin-bottom: 5px;
                         background: $midgrey;
                         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
-                        @media (max-width: 620px) {
+                        @media (max-width: 685px) {
                             width: 100%;
                             max-width: 350px;
                             margin-bottom: 20px;
                         }
-                        &#blood {
+                        &#blood,
+                        &#life {
                             margin-right: 4.6875%;
                             @media (max-width: 768px) {
                                 margin-right: 20px;
                             }
-                            @media (max-width: 620px) {
+                            @media (max-width: 685px) {
                                 margin-right: 0;
                             }
                         }
@@ -1296,6 +1298,14 @@ body {
                 div.row {
                     div.col-md-12 {
                         a.tile {
+                            border-right: 1px solid #3b3c3e;
+                            @media (max-width: 685px) {
+                                border-right: 0;
+                                border-bottom: 1px solid #3b3c3e;
+                            }
+                            &:last-of-type {
+                                border-right: 0;
+                            }
                             &:hover {
                                 opacity: 1;
                                 color: white;
@@ -1308,6 +1318,11 @@ body {
                                 display: inline;
                                 transition: all .3s ease;
                                 border-bottom: 2px solid transparent;
+                                br {
+                                    @media (min-width: 1250px) {
+                                        display: none;
+                                    }
+                                }
                             }
                             &.active {
                                 &:hover {
