@@ -47,7 +47,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
-    				<a href="blood.php" id="blood" class="tile active">
+    				<a href="blood.php" id="blood" class="tile">
                         <h3>Athletic <br>Blood Profile</h3>
                     </a>
                     <a href="life-help.php" id="life" class="tile active">
