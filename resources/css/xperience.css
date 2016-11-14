@@ -52,10 +52,21 @@ body {
       body div.background-wrap#calculator div.overlay {
         background: rgba(40, 44, 49, 0.75); }
     body div.background-wrap#landing {
-      background-image: url("../images/deadlift-2.jpg"); }
+      background-image: url("../images/deadlift-color.jpg"); }
       @media (max-width: 530px) {
         body div.background-wrap#landing {
           background-position: 70% 100%; } }
+      body div.background-wrap#landing:after {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        background: black;
+        background: rgba(40, 44, 49, 0.5); }
       body div.background-wrap#landing div.overlay {
         display: none; }
     body div.background-wrap#life_help div.overlay, body div.background-wrap#life_need div.overlay, body div.background-wrap#life_afford div.overlay {
@@ -758,17 +769,20 @@ body {
             margin-top: 19px;
             padding: 17px 34px;
             letter-spacing: .225px; } }
-    @media (max-width: 768px) {
-      body section#landing_hero {
-        padding-top: 218px;
-        padding-bottom: 143px; } }
-    body section#landing_hero div.col-md-12 {
-      max-width: 1040px !important; }
-      body section#landing_hero div.col-md-12 p {
-        display: block;
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto; }
+    body section#landing_hero {
+      position: relative;
+      z-index: 1; }
+      @media (max-width: 768px) {
+        body section#landing_hero {
+          padding-top: 218px;
+          padding-bottom: 143px; } }
+      body section#landing_hero div.col-md-12 {
+        max-width: 1040px !important; }
+        body section#landing_hero div.col-md-12 p {
+          display: block;
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto; }
     body section.quote-header {
       padding-top: 135px;
       padding-bottom: 20px; }
@@ -1183,6 +1197,8 @@ body {
                   padding-top: 10px;
                   letter-spacing: .15px; } }
     body section#landing_tiles {
+      position: relative;
+      z-index: 1;
       padding: 0 20px 75px; }
       @media (max-width: 768px) {
         body section#landing_tiles {
