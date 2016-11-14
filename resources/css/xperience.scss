@@ -94,9 +94,21 @@ body {
             }
         }
         &#landing {
-            background-image: url('../images/deadlift-2.jpg');
+            background-image: url('../images/deadlift-color.jpg');
             @media (max-width: 530px) {
                 background-position: 70% 100%;
+            }
+            &:after {
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                content: '';
+                background: black;
+                background: rgba(40, 44, 49, .5);
             }
             div.overlay {
                 display: none;
@@ -900,6 +912,8 @@ body {
             }
         }
         &#landing_hero {
+            position: relative;
+            z-index: 1;
             @media (max-width: 768px) {
                 padding-top: 218px;
                 padding-bottom: 143px;
@@ -1414,6 +1428,8 @@ body {
             }
         }
         &#landing_tiles {
+            position: relative;
+            z-index: 1;
             padding: 0 20px 75px;
             @media (max-width: 768px) {
                 padding: 0 20px 56px;
