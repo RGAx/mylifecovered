@@ -629,6 +629,9 @@ body {
               width: 130px; }
             body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
               width: 68px; }
+          body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote sup {
+            font-size: 80%;
+            top: -.4em; }
       body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container {
         width: 100%;
         margin-top: 30px; }
