@@ -1,13 +1,56 @@
 <?php require_once('header.html'); ?>
 
-	<section id="affordability_hero" class="section-photo cover">
+	<section id="affordability_hero" class="section-photo cover text-center">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Think of this as your <br>life insurance warmup set.</h1>
-                    <p class="heading">Even with a policy for as low as $25 per month, you could make a huge difference for your family.</p>
-                    <a href="quoteForTwentyFiveDollars.do" id="" class="btn btn-primary margin-top-s" onclick="quoteVisiblity('twentyFiveDollars')">See what $25 a month gets you...</a>
+                    <h1>See how much you may qualify to save on life insurance, paying as low as $25 per month!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="form-wrapper">
+                            <div class="primary-container">
+                                <form>
+                                    <div class="select-wrapper">
+                                        <label for="affordablePremium">Preferred Payment</label>
+                                        <select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
+                                            <!-- <option value="">Amount</option> -->
+                                            <option value="25">$25 per month</option>
+                                            <option value="50">$50 per month</option>
+                                            <option value="100">$100 per month</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <label for="affordableAge">Age Range</label>
+                                        <select name="affordableAge" id="affordableAge" class="coverageamt-select afford-dropdown">
+                                            <!-- <option value="">Age</option> -->
+                                            <option value="25-29">25-29</option>
+                                            <option value="30-34">30-34</option>
+                                            <option value="35-39">35-39</option>
+                                            <option value="40-44">40-44</option>
+                                            <option value="45-49">40-49</option>
+                                            <option value="50+">50+</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <label for="affordableGender">Gender</label>
+                                        <select name="affordableGender" id="affordableGender" class="coverageamt-select afford-dropdown">
+                                            <!-- <option value="">Gender</option> -->
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="secondary-container">
+                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$550,000</span> in coverage and save close to <span id="totalSavings" class="quoted-amount">$10</span> per month over standard premium rates.<sup>*</sup>
+                            </div>
+                            <div class="gobutton-container">
+                                <input type="button" class="btn btn-primary" value="Start My Quote" id="main-affordable-form" wpvalue="continue" onclick="return validatePremiumMlc();">
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

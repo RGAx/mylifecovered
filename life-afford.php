@@ -17,22 +17,29 @@
             				<h4>I know how much I can afford</h4>
             				<p>See our full <a href="calculator.php">Calculator</a>.</p>
             				<form>
-            					<select name="coverageAmount" id="coverageAmount" class="coverageamt-select">
-                                    <option value="">Amount</option>
-                                    <option value="25">$25</option>
-                                    <option value="30">$30</option>
-                                    <option value="35">$35</option>
-                                    <option value="40">$40</option>
-                                    <option value="45">$45</option>
-                                    <option value="50">$50</option>
-                                    <option value="60">$60</option>
-                                    <option value="70">$70</option>
-                                    <option value="80">$80</option>
-                                    <option value="90">$90</option>
-                                    <option value="100">$100</option>
+            					<select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
+                                    <!-- <option value="">Amount</option> -->
+                                    <option value="25">$25 per month</option>
+                                    <option value="50">$50 per month</option>
+                                    <option value="100">$100 per month</option>
                                 </select>
-            					<span>/ month</span>
-            					<input type="submit" value="Go">
+                                <select name="affordableAge" id="affordableAge" class="coverageamt-select afford-dropdown">
+                                    <!-- <option value="">Age</option> -->
+                                    <option value="25-29">25-29</option>
+                                    <option value="30-34">30-34</option>
+                                    <option value="35-39">35-39</option>
+                                    <option value="40-44">40-44</option>
+                                    <option value="45-49">40-49</option>
+                                    <option value="50+">50+</option>
+                                </select>
+                                <select name="affordableGender" id="affordableGender" class="coverageamt-select afford-dropdown">
+                                    <!-- <option value="">Gender</option> -->
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+            					<!-- <span>/ month</span> -->
+            					<!-- <input type="submit" value="Go"> -->
+                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$550,000</span> in coverage and save close to <span id="totalSavings" class="quoted-amount">$10</span> per month over standard premium rates.<sup>*</sup>
             				</form>
             			</div>
             			<a href="life-help.php" class="secondary-container">
