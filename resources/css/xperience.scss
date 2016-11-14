@@ -135,11 +135,11 @@ body {
                         }
                     }
                     div.form-wrapper {
-                        max-width: 620px;
+                        max-width: 650px;
                         div.primary-container {
                             form {
                                 select {
-                                    width: 170px;
+                                    width: 180px;
 
                                     appearance: menulist;
                                     &:nth-of-type(2) {
@@ -147,12 +147,12 @@ body {
                                     }
                                     @media (max-width: 768px) {
                                         font-size: 15px;
-                                        width: 128px;
+                                        width: 135px;
                                     }
                                     @media (max-width: 590px) {
                                         display: block;
                                         width: 100%;
-                                        max-width: 170px;
+                                        max-width: 180px;
                                         margin: 0 auto 10px !important;
                                     }
                                 }
@@ -161,14 +161,37 @@ body {
                                     margin: 20px 0 0;
                                     span.quoted-amount {
                                         font-size: 20px;
+                                        line-height: 1;
+                                        display: inline-block;
                                         padding: 4px 6px;
+                                        text-align: center;
                                         color: $darkgrey;
                                         border-radius: 5px;
                                         background: $lightgrey;
+                                        &#totalCoverage {
+                                            width: 90px;
+                                            @media (max-width: 768px) {
+                                                width: 70px;
+                                            }
+                                        }
+                                        &#totalSavings {
+                                            width: 48px;
+                                            @media (max-width: 768px) {
+                                                width: 37px;
+                                            }
+                                        }
                                         @media (max-width: 768px) {
                                             font-size: 15px;
+                                            padding: 3px 5px;
                                         }
                                     }
+                                    sup {
+                                        font-size: 80%;
+                                        top: -.4em;
+                                    }
+                                }
+                                input.btn {
+                                    margin-top: 30px;
                                 }
                             }
                         }
@@ -642,7 +665,7 @@ body {
                             @include Lato();
                         }
                         div.form-wrapper {
-                            max-width: 748px;
+                            max-width: 775px;
                             background: transparent;
                             box-shadow: none;
                             div.primary-container {
@@ -704,8 +727,16 @@ body {
                                     margin: 0;
                                     span.quoted-amount {
                                         font-weight: 700;
-                                        padding: 5px 8px;
+                                        line-height: 1;
+                                        display: inline-block;
+                                        padding: 5px 8px 7px;
                                         background: black;
+                                        &#totalCoverage {
+                                            width: 130px;
+                                        }
+                                        &#totalSavings {
+                                            width: 68px;
+                                        }
                                     }
                                 }
                             }
