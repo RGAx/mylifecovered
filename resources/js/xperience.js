@@ -353,13 +353,16 @@ $(document).ready(function() {
     // path when the dropdowns are changed
     var affordDropdown = $('select.afford-dropdown');
 
-    var coverage = 550000;
+    var premium = 0;
+    var age = 0;
+    var gender = 0;
     var savings = 19;
+    var coverage = 550000;
 
     function getCoverage() {
-        var premium = $("#affordablePremium").val();
-        var age = $("#affordableAge").val();
-        var gender = $("#affordableGender").val();
+        premium = $("#affordablePremium").val();
+        age = $("#affordableAge").val();
+        gender = $("#affordableGender").val();
         var coverageObj = tempTable[premium][age][gender];
 
         coverage = coverageObj.coverage;
