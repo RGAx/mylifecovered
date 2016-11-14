@@ -17,35 +17,35 @@
                                         <label for="affordablePremium">Preferred Payment</label>
                                         <select name="affordablePremium" id="affordablePremium" class="coverageamt-select afford-dropdown">
                                             <!-- <option value="">Amount</option> -->
-                                            <option value="25">$25 per month</option>
-                                            <option value="50">$50 per month</option>
-                                            <option value="100">$100 per month</option>
+                                            <option value="twentyfive">$25 per month</option>
+                                            <option value="fifty">$50 per month</option>
+                                            <option value="onehundred">$100 per month</option>
                                         </select>
                                     </div>
                                     <div class="select-wrapper">
                                         <label for="affordableAge">Age Range</label>
                                         <select name="affordableAge" id="affordableAge" class="coverageamt-select afford-dropdown">
                                             <!-- <option value="">Age</option> -->
-                                            <option value="25-29">25-29</option>
-                                            <option value="30-34">30-34</option>
-                                            <option value="35-39">35-39</option>
-                                            <option value="40-44">40-44</option>
-                                            <option value="45-49">40-49</option>
-                                            <option value="50+">50+</option>
+                                            <option value="twentyfive">25-29</option>
+                                            <option value="thirty">30-34</option>
+                                            <option value="thirtyfive">35-39</option>
+                                            <option value="forty">40-44</option>
+                                            <option value="fortyfive">40-49</option>
+                                            <option value="fifty">50+</option>
                                         </select>
                                     </div>
                                     <div class="select-wrapper">
                                         <label for="affordableGender">Gender</label>
                                         <select name="affordableGender" id="affordableGender" class="coverageamt-select afford-dropdown">
                                             <!-- <option value="">Gender</option> -->
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
                                         </select>
                                     </div>
                                 </form>
                             </div>
                             <div class="secondary-container">
-                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$550,000</span> in coverage and save close to <span id="totalSavings" class="quoted-amount">$10</span> per month over standard premium rates.<sup>*</sup>
+                                <p id="initialQuote">Based on the above, you may qualify for about <span id="totalCoverage" class="quoted-amount">$550,000</span> in coverage, and save close to <span id="totalSavings" class="quoted-amount">$10</span> per month over standard premium rates.<sup>*</sup>
                             </div>
                             <div class="gobutton-container">
                                 <input type="button" class="btn btn-primary" value="Start My Quote" id="main-affordable-form" wpvalue="continue" onclick="return validatePremiumMlc();">

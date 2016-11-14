@@ -82,9 +82,9 @@ body {
         max-width: 800px;
         margin: 0 auto 40px; }
     body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper {
-      max-width: 620px; }
+      max-width: 650px; }
       body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
-        width: 170px;
+        width: 180px;
         -webkit-appearance: menulist;
            -moz-appearance: menulist;
                 appearance: menulist; }
@@ -93,25 +93,44 @@ body {
         @media (max-width: 768px) {
           body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
             font-size: 15px;
-            width: 128px; } }
+            width: 135px; } }
         @media (max-width: 590px) {
           body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form select {
             display: block;
             width: 100%;
-            max-width: 170px;
+            max-width: 180px;
             margin: 0 auto 10px !important; } }
       body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote {
         line-height: 1.7;
         margin: 20px 0 0; }
         body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount {
           font-size: 20px;
+          line-height: 1;
+          display: inline-block;
           padding: 4px 6px;
+          text-align: center;
           color: #222223;
           border-radius: 5px;
           background: #9b9b9b; }
+          body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount#totalCoverage {
+            width: 90px; }
+            @media (max-width: 768px) {
+              body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount#totalCoverage {
+                width: 70px; } }
+          body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount#totalSavings {
+            width: 48px; }
+            @media (max-width: 768px) {
+              body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount#totalSavings {
+                width: 37px; } }
           @media (max-width: 768px) {
             body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount {
-              font-size: 15px; } }
+              font-size: 15px;
+              padding: 3px 5px; } }
+        body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote sup {
+          font-size: 80%;
+          top: -.4em; }
+      body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form input.btn {
+        margin-top: 30px; }
     body div.background-wrap#life_afford form input[type='text'] {
       width: 136px; }
       @media (max-width: 768px) {
@@ -543,7 +562,7 @@ body {
       font-style: normal;
       font-variant: normal; }
     body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper {
-      max-width: 748px;
+      max-width: 775px;
       background: transparent;
       box-shadow: none; }
       body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.primary-container {
@@ -602,8 +621,14 @@ body {
           margin: 0; }
           body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount {
             font-weight: 700;
-            padding: 5px 8px;
+            line-height: 1;
+            display: inline-block;
+            padding: 5px 8px 7px;
             background: black; }
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalCoverage {
+              width: 130px; }
+            body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.secondary-container p#initialQuote span.quoted-amount#totalSavings {
+              width: 68px; }
       body section#affordability_hero div.container div.row div.col-md-12 div.form-wrapper div.gobutton-container {
         width: 100%;
         margin-top: 30px; }
