@@ -329,15 +329,15 @@ body {
         line-height: 1;
         padding: 6px 8px; }
     body section.cover {
-      padding-top: 250px;
+      padding-top: 200px;
       padding-bottom: 125px; }
       @media (max-width: 768px) {
         body section.cover {
-          padding-top: 188px;
+          padding-top: 150px;
           padding-bottom: 94px; } }
       @media (max-width: 500px) {
         body section.cover {
-          padding-top: 141px;
+          padding-top: 100px;
           padding-bottom: 70px; } }
       body section.cover div.col-md-12 {
         float: none;
