@@ -103,6 +103,9 @@ body {
       body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote {
         line-height: 1.7;
         margin: 20px 0 0; }
+        @media (max-width: 369px) {
+          body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote {
+            line-height: 2; } }
         body div.background-wrap#life_afford section.cover div.col-md-12 div.form-wrapper div.primary-container form p#initialQuote span.quoted-amount {
           font-size: 20px;
           line-height: 1;
