@@ -76,6 +76,7 @@ body {
         }
     }
     div.background-wrap {
+        position: relative;
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
@@ -193,7 +194,6 @@ body {
                             padding: 0;
                         }
                         a.open-home-page-copy {
-                            line-height: 1;
                             float: left;
                             width: 250px;
                             padding: 0 0 0 20px !important;
@@ -206,6 +206,8 @@ body {
                                 height: auto;
                             }
                             span.logo-phno {
+                                display: block;
+                                margin-top: -8px;
                                 @media (max-width: 768px) {
                                     font-size: 15px;
                                 }
@@ -692,13 +694,9 @@ body {
             }
         }
         &.main-section {
-            padding: 150px 0;
-            // border-top: 2px solid $lightgrey;
-            @media (max-width: 768px) {
-                padding: 100px 0;
-            }
+            padding: 100px 0;
             div.overlay {
-                background: $midgrey !important;
+                background: $grey !important;
             }
             div.container {
                 div.row {
@@ -1919,8 +1917,10 @@ body {
                 div.col-md-6 {
                     width: auto;
                     &:first-of-type {
+                        width: calc(100% - 300px);
                         margin-top: 25px;
                         @media (max-width: 1200px) {
+                            width: 100%;
                             margin-top: 0;
                         }
                     }
@@ -1962,11 +1962,15 @@ body {
                     }
                     ul {
                         display: flex;
+                        width: 100%;
                         list-style: none;
 
                         -webkit-padding-start: 0;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
+                        @media (max-width: 1200px) {
+                            justify-content: center;
+                        }
                         @media (max-width: 995px) {
                             flex-direction: column;
                         }
@@ -1978,6 +1982,7 @@ body {
                                 margin: 0;
                             }
                             a {
+                                font-size: 15px;
                                 transition: all .3s ease;
                                 border-top: 1px solid transparent;
                                 border-bottom: 1px solid transparent;
