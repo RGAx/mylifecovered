@@ -11,7 +11,7 @@ get_header(); ?>
  	        <div class="col-md-8">
  	        	<?php get_search_form(); ?>
  	        	<?php
- 	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"published", "meta_key"=>"featured", "meta_value"=>true));
+ 	        	$featured_posts = get_posts(array("posts_per_page"=>1,"post_type"=>"post", "post_status"=>"publish", "meta_key"=>"featured", "meta_value"=>true));
  	        	$featured_post = $featured_posts[0];
  	        	$featured_post_img = wp_get_attachment_image_src( get_post_thumbnail_id( $featured_post ), 'full' );
 
