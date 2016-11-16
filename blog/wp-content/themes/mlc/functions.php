@@ -265,19 +265,19 @@
 	}
 	add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 
-	add_action('pre_get_posts', 'exclude_featured_on_query', 10, 1);
-	function exclude_featured_on_query($query) {
-		if($query->is_main_query() && !is_admin() && !is_single() && !is_singular() && !is_post_type_archive() && !is_author() && !is_search() && !is_tag()) {
-			$meta_query = $query->get('meta_query');
-			$meta_query[] = array(
-		        'key'		=> "featured",
-		        'value'		=> 0
-		    );
+	// add_action('pre_get_posts', 'exclude_featured_on_query', 10, 1);
+	// function exclude_featured_on_query($query) {
+	// 	if($query->is_main_query() && !is_admin() && !is_single() && !is_singular() && !is_post_type_archive() && !is_author() && !is_search() && !is_tag()) {
+	// 		$meta_query = $query->get('meta_query');
+	// 		$meta_query[] = array(
+	// 	        'key'		=> "featured",
+	// 	        'value'		=> 0
+	// 	    );
 
-			// update meta query
-			$query->set('meta_query', $meta_query);
-		}
-		return $query;
-	}
+	// 		// update meta query
+	// 		$query->set('meta_query', $meta_query);
+	// 	}
+	// 	return $query;
+	// }
 
 ?>

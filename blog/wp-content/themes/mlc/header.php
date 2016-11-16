@@ -35,7 +35,7 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 
 	<!-- Behavioral Meta Data -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Core Meta Data -->
 	<meta name="author" content="My Life Covered">
@@ -100,7 +100,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/mylifecovered-metcon.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.1.9">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.1.13">
     <!--[if IE 9]>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/ie9.css">
         <![endif]-->
