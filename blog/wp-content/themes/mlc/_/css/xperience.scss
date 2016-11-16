@@ -4,6 +4,7 @@ $midgrey: #3b3c3e;
 $darkgrey: #222223;
 $textgrey: #4a4a4a;
 $red: #ff3e3e;
+$darkred: #f92525;
 
 @mixin placeholder {
     ::-webkit-input-placeholder {
@@ -291,6 +292,7 @@ body {
                                         height: 50px;
                                         margin-top: 25px;
                                         padding: 12.5px;
+                                        transition: all .3s ease;
                                         letter-spacing: .3px;
                                         opacity: 1;
                                         border: none;
@@ -300,6 +302,10 @@ body {
 
                                         @include Bebas();
                                         appearance: none;
+                                        &:hover {
+                                            background: $darkred;
+                                            box-shadow: none;
+                                        }
                                         @media (max-width: 768px) {
                                             font-size: 18px;
                                             width: 113px;
@@ -444,6 +450,104 @@ body {
                                 display: block;
                                 @media (max-width: 991px) {
                                     display: none;
+                                }
+                            }
+                            div.wp_subscribe {
+                                margin-bottom: 55px;
+                                @media (max-width: 768px) {
+                                    margin-bottom: 41px;
+                                }
+                                div.wp-subscribe {
+                                    background: $midgrey;
+                                    h4.title {
+                                        font-size: 36px;
+                                        line-height: .97;
+                                        margin: 0;
+                                        letter-spacing: .4px;
+                                        color: white;
+
+                                        @include Bebas();
+                                        @media (max-width: 768px) {
+                                            font-size: 27px;
+                                            margin-bottom: 19px;
+                                            letter-spacing: .3px;
+                                        }
+                                    }
+                                    p.text {
+                                        font-size: 16px;
+                                        display: block;
+                                        margin: 5px 0 25px;
+                                        letter-spacing: .2px;
+                                        color: $lightgrey;
+
+                                        @include Lato();
+                                        @media (max-width: 768px) {
+                                            font-size: 14px;
+                                            letter-spacing: .15px;
+                                        }
+                                    }
+                                    form {
+                                        @include placeholder() {
+                                            color: $lightgrey;
+                                        }
+                                        input.email-field {
+                                            font-size: 24px;
+                                            line-height: 1;
+                                            width: 100%;
+                                            height: 50px;
+                                            margin: 0;
+                                            padding: 12.5px 12px 12px;
+                                            text-align: center;
+                                            letter-spacing: .3px;
+                                            color: $darkgrey;
+                                            border: none;
+                                            border-radius: 5px;
+                                            outline: none;
+                                            background: white;
+
+                                            @include Bebas();
+                                            appearance: none;
+                                            @media (max-width: 768px) {
+                                                font-size: 18px;
+                                                height: 37.5px;
+                                                padding: 9.375px 33.75px 9.375px 9.375px;
+                                                letter-spacing: .225px;
+                                            }
+                                        }
+                                        input.submit {
+                                            font-size: 24px;
+                                            line-height: 1;
+                                            height: 50px;
+                                            margin: 7px 0 0;
+                                            padding: 12.5px;
+                                            transition: all .3s ease;
+                                            letter-spacing: .3px;
+                                            opacity: 1;
+                                            color: white;
+                                            border: none;
+                                            border-radius: 5px;
+                                            outline: none;
+                                            background: $red;
+                                            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+
+                                            @include Bebas();
+                                            appearance: none;
+                                            &:hover {
+                                                background: $darkred;
+                                                box-shadow: none;
+                                            }
+                                            @media (max-width: 768px) {
+                                                font-size: 18px;
+                                                height: 37.5px;
+                                                padding: 9.375px;
+                                                letter-spacing: .225px;
+                                            }
+                                        }
+                                    }
+                                    p.footer-text {
+                                        font-size: 11px;
+                                        color: $lightgrey;
+                                    }
                                 }
                             }
                             article.featured-post-old {
@@ -819,6 +923,7 @@ body {
                                             margin: 5px;
                                             padding: 10px 15px;
                                             transition: all .15s ease-in-out;
+                                            transition: all .3s ease;
                                             text-align: center;
                                             text-decoration: none;
                                             text-transform: uppercase;
@@ -828,6 +933,10 @@ body {
                                             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
 
                                             @include Bebas();
+                                            &:hover {
+                                                background: $darkred;
+                                                box-shadow: none;
+                                            }
                                         }
                                     }
                                 }
@@ -940,6 +1049,7 @@ body {
                     line-height: 1;
                     height: 50px;
                     padding: 12.5px;
+                    transition: all .3s ease;
                     letter-spacing: .3px;
                     opacity: 1;
                     border: none;
@@ -949,6 +1059,10 @@ body {
 
                     @include Bebas();
                     appearance: none;
+                    &:hover {
+                        background: $darkred;
+                        box-shadow: none;
+                    }
                     @media (max-width: 768px) {
                         font-size: 18px;
                         height: 37.5px;
