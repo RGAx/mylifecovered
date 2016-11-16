@@ -25,8 +25,8 @@
     					<p>Learn how your healthy and fit lifestyle could qualify you for up to 50% lower life insurance premiums.</p>
     				</a>
                     <a href="everplans.php" id="everplans" class="tile">
-                        <h3>Everplans: Life & <br>Legacy Planning</h3>
-                        <p>Learn how to better prepare fianances, will and affairs for your family in the event anything should happen to you.</p>
+                        <h3>Life & Legacy <br>Planning</h3>
+                        <p>Prepare yourself and your loved ones in the event anything should happen to you.</p>
                     </a>
     			</div>
     		</div>

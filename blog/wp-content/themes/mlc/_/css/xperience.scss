@@ -944,6 +944,7 @@ body {
         padding: 0;
         background: transparent;
         &#top-header {
+            z-index: 2;
             padding: 30px 0;
             @media (max-width: 768px) {
                 padding: 20px 15px;
