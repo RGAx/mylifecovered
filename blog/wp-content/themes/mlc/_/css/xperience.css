@@ -637,6 +637,25 @@ body {
     @media (max-width: 768px) {
       body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry sup {
         padding: 5px; } }
+  body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 0;
+    margin-bottom: 30px;
+    padding-bottom: 56.25%; }
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container iframe,
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container object,
+    body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container embed, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container iframe,
+    body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container object,
+    body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container embed, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container iframe,
+    body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container object,
+    body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.embed-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare {
     padding: 15px 0 !important; }
     body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry div.footnote_container_prepare p {
