@@ -679,11 +679,13 @@ body {
                                         }
                                         .alignleft {
                                             float: left;
+                                            margin-right: 20px;
                                             margin-left: 0;
                                         }
                                         .alignright {
                                             float: right;
                                             margin-right: 0;
+                                            margin-left: 20px;
                                         }
                                         .aligncenter {
                                             width: 100% !important;
