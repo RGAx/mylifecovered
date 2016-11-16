@@ -566,10 +566,12 @@ body {
           margin: 8px 0 0; } }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignleft, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignleft, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignleft {
     float: left;
+    margin-right: 20px;
     margin-left: 0; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignright, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignright, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .alignright {
     float: right;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: 20px; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .aligncenter, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .aligncenter, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry .aligncenter {
     width: 100% !important;
     margin: 0 auto 20px; }
