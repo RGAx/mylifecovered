@@ -16,7 +16,6 @@ get_header(); ?>
                if($current_page == 1) {
  	        	?>
 				<?php } ?>
-				<div class="other-articles">
 				<?php $counter = 0; ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php
@@ -34,7 +33,8 @@ get_header(); ?>
 								<a class="btn btn-primary" href="<?=get_the_permalink($post->ID) ?>">Read More</a>
 							</div>
 						</article>
-					<?php } else { ?>
+					<?php } else {
+						if($counter == 2) echo "<div class='other-articles'>"; ?>
 						<article class="standard-post" id="post-<?php the_ID(); ?>">
 							<h2 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 							<p class='publish-details'>
