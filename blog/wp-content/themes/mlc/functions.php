@@ -265,6 +265,12 @@
 	}
 	add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
 
+	// Wrap embeds in a div for styling
+    add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
+    function my_embed_oembed_html($html, $url, $attr, $post_id) {
+      return '<div class="embed-container">' . $html . '</div>';
+    }
+
 	// add_action('pre_get_posts', 'exclude_featured_on_query', 10, 1);
 	// function exclude_featured_on_query($query) {
 	// 	if($query->is_main_query() && !is_admin() && !is_single() && !is_singular() && !is_post_type_archive() && !is_author() && !is_search() && !is_tag()) {
