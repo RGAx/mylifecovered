@@ -54,7 +54,7 @@
                         <h3>Term Life <br>Insurance</h3>
                     </a>
                     <a href="everplans.php" id="emergency" class="tile">
-                        <h3>Everplans: Life & <br>Legacy Planning</h3>
+                        <h3>Life & Legacy <br>Planning</h3>
                     </a>
     			</div>
     		</div>

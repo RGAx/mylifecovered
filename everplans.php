@@ -8,7 +8,7 @@
                 <div class="col-md-12">
                     <h1>You train to be prepared. <br>Be prepared for the unknown.</h1>
                     <p>Create a secure, digital archive of everything your loved ones will need should something happen to you.</p>
-                    <a href="https://www.everplans.com/" class="btn btn-primary">Learn More</a>
+                    <a href="http://try.everplans.com/ilp/partners/mylifecovered" class="btn btn-primary">Try It Free</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
     					<h3>Term Life <br>Insurance</h3>
     				</a>
     				<a href="everplans.php" id="emergency" class="tile active">
-    					<h3>Everplans: Life & <br>Legacy Planning</h3>
+    					<h3>Life & Legacy <br>Planning</h3>
     				</a>
     			</div>
     		</div>
