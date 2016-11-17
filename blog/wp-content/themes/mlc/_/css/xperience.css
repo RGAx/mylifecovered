@@ -56,10 +56,10 @@ body {
       body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform {
         position: relative;
         width: 100%;
-        margin-bottom: 45px; }
+        margin-bottom: 25px; }
         @media (max-width: 768px) {
           body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform {
-            margin-bottom: 34px; } }
+            margin-bottom: 20px; } }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform:after {
           font-family: FontAwesome;
           font-size: 21px;
@@ -217,6 +217,8 @@ body {
             height: 50px;
             margin-top: 25px;
             padding: 12.5px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
             letter-spacing: .3px;
             opacity: 1;
             border: none;
@@ -230,6 +232,9 @@ body {
             -webkit-appearance: none;
                -moz-appearance: none;
                     appearance: none; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn:hover {
+              background: #f92525;
+              box-shadow: none; }
             @media (max-width: 768px) {
               body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper a.btn {
                 font-size: 18px;
@@ -363,6 +368,136 @@ body {
           @media (max-width: 991px) {
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform {
               display: none; } }
+        body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
+          text-align: center;
+          margin-bottom: 25px;
+          display: none; }
+          @media (max-width: 768px) {
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
+              margin-bottom: 20px; } }
+          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a {
+            background: #3b3c3e;
+            border-radius: 5px;
+            color: white;
+            padding: 15px 0 13px;
+            width: 50px;
+            display: inline-block;
+            margin: 0 10px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover {
+              background: #ff3e3e;
+              box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i {
+              font-size: 20px;
+              color: inherit; }
+        body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe {
+          display: none;
+          margin-bottom: 55px; }
+          @media (max-width: 768px) {
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe {
+              margin-bottom: 41px; } }
+          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe {
+            background: #3b3c3e; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title {
+              font-size: 36px;
+              line-height: .97;
+              margin: 0;
+              letter-spacing: .4px;
+              color: white;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title {
+                  font-size: 27px;
+                  margin-bottom: 19px;
+                  letter-spacing: .3px; } }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text {
+              font-size: 16px;
+              display: block;
+              margin: 5px 0 25px;
+              letter-spacing: .2px;
+              color: #9b9b9b;
+              font-family: Lato, 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal; }
+              @media (max-width: 768px) {
+                body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.text {
+                  font-size: 14px;
+                  letter-spacing: .15px; } }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-webkit-input-placeholder, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-webkit-input-placeholder, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-webkit-input-placeholder, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-webkit-input-placeholder, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-webkit-input-placeholder {
+              color: #9b9b9b; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-moz-placeholder, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-moz-placeholder, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-moz-placeholder, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-moz-placeholder, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-moz-placeholder {
+              color: #9b9b9b; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-moz-placeholder, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-moz-placeholder, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-moz-placeholder, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-moz-placeholder, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form ::-moz-placeholder {
+              color: #9b9b9b; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-ms-input-placeholder, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-ms-input-placeholder, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-ms-input-placeholder, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-ms-input-placeholder, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form :-ms-input-placeholder {
+              color: #9b9b9b; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field {
+              font-size: 24px;
+              line-height: 1;
+              width: 100%;
+              height: 50px;
+              margin: 0;
+              padding: 12.5px 12px 12px;
+              text-align: center;
+              letter-spacing: .3px;
+              color: #222223;
+              border: none;
+              border-radius: 5px;
+              outline: none;
+              background: white;
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal;
+              -webkit-appearance: none;
+                 -moz-appearance: none;
+                      appearance: none; }
+              @media (max-width: 768px) {
+                body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.email-field {
+                  font-size: 18px;
+                  height: 37.5px;
+                  padding: 9.375px 33.75px 9.375px 9.375px;
+                  letter-spacing: .225px; } }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit {
+              font-size: 24px;
+              line-height: 1;
+              height: 50px;
+              margin: 7px 0 0;
+              padding: 12.5px;
+              -webkit-transition: all .3s ease;
+              transition: all .3s ease;
+              letter-spacing: .3px;
+              opacity: 1;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              outline: none;
+              background: #ff3e3e;
+              box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+              font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-variant: normal;
+              -webkit-appearance: none;
+                 -moz-appearance: none;
+                      appearance: none; }
+              body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit:hover {
+                background: #f92525;
+                box-shadow: none; }
+              @media (max-width: 768px) {
+                body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe form input.submit {
+                  font-size: 18px;
+                  height: 37.5px;
+                  padding: 9.375px;
+                  letter-spacing: .225px; } }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.footer-text, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.footer-text, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.footer-text, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.footer-text, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe p.footer-text {
+              font-size: 11px;
+              color: #9b9b9b; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 article.featured-post-old, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 article.featured-post-old, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 article.featured-post-old, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 article.featured-post-old, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 article.featured-post-old {
           margin-bottom: 55px; }
           @media (max-width: 768px) {
@@ -693,6 +828,8 @@ body {
       padding: 10px 15px;
       -webkit-transition: all .15s ease-in-out;
       transition: all .15s ease-in-out;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -704,6 +841,9 @@ body {
       font-weight: normal;
       font-style: normal;
       font-variant: normal; }
+      body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container a.tag-link:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container a.tag-link:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.tag-links-container a.tag-link:hover {
+        background: #f92525;
+        box-shadow: none; }
   body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 aside div.rpwwt-widget div.recent-posts-widget-with-thumbnails ul li {
     margin-bottom: 55px; }
     @media (max-width: 768px) {
@@ -798,6 +938,8 @@ body {
         line-height: 1;
         height: 50px;
         padding: 12.5px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
         letter-spacing: .3px;
         opacity: 1;
         border: none;
@@ -811,6 +953,9 @@ body {
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none; }
+        body.error404 div#blog_404 div.col-md-8 a.btn:hover {
+          background: #f92525;
+          box-shadow: none; }
         @media (max-width: 768px) {
           body.error404 div#blog_404 div.col-md-8 a.btn {
             font-size: 18px;

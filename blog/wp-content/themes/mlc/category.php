@@ -69,8 +69,20 @@ get_header(); ?>
 			</div>
 			<div class="col-md-4">
 				<?php get_search_form(); ?>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+					    <i class="fa fa-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/mylifecovered/" target="_blank">
+					    <i class="fa fa-instagram"></i>
+					</a>
+					<a href="http://blog.mylifecovered.net/feed/" target="_blank">
+					    <i class="fa fa-rss"></i>
+					</a>
+				</div>
+				<?php get_sidebar(); ?>
 				<?php
-               	$sidebar_posts = get_posts(array("posts_per_page"=>3,"offset"=>0, "post_type"=>"post", "post_status"=>"publish", "meta_key"=>"featured", "meta_value"=>true));
+				$sidebar_posts = get_posts(array("posts_per_page"=>3,"offset"=>0, "post_type"=>"post", "post_status"=>"publish", "meta_key"=>"featured", "meta_value"=>true));
 				foreach($sidebar_posts as $sidebar) {
 					$featured_post_old_img = wp_get_attachment_image_src( get_post_thumbnail_id( $sidebar ), 'full' );
 				?>
