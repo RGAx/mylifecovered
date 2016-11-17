@@ -93,7 +93,7 @@ get_header(); ?>
  	        	</div>
  	        </div>
  	        <div class="col-md-4">
-				<?php require_once('side.php'); ?>
+				<?php get_sidebar(); ?>
 			</div>
  	    </div>
  	</div>
