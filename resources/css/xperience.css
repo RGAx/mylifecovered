@@ -56,7 +56,7 @@ body {
       @media (max-width: 530px) {
         body div.background-wrap#landing {
           background-position: 70% 100%; } }
-      body div.background-wrap#landing:after {
+      body div.background-wrap#landing:before {
         position: absolute;
         z-index: 0;
         top: 0;
@@ -173,7 +173,6 @@ body {
     padding: 0;
     background: transparent; }
     body section#top-header {
-      z-index: 2;
       padding: 30px 0; }
       @media (max-width: 768px) {
         body section#top-header {
@@ -771,8 +770,7 @@ body {
             padding: 17px 34px;
             letter-spacing: .225px; } }
     body section#landing_hero {
-      position: relative;
-      z-index: 1; }
+      position: relative; }
       @media (max-width: 768px) {
         body section#landing_hero {
           padding-top: 218px;
@@ -1199,7 +1197,6 @@ body {
                   letter-spacing: .15px; } }
     body section#landing_tiles {
       position: relative;
-      z-index: 1;
       padding: 0 20px 75px; }
       @media (max-width: 768px) {
         body section#landing_tiles {
