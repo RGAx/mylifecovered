@@ -125,10 +125,7 @@ body {
                         form#searchform {
                             position: relative;
                             width: 100%;
-                            margin-bottom: 30px;
-                            @media (max-width: 768px) {
-                                margin-bottom: 20px;
-                            }
+                            margin-bottom: 20px;
                             &:after {
                                 font-family: FontAwesome;
                                 font-size: 21px;
@@ -453,12 +450,9 @@ body {
                                 }
                             }
                             div.social-icons {
-                                // display: none;
-                                margin-bottom: 30px;
+                                display: none;
+                                margin-bottom: 20px;
                                 text-align: center;
-                                @media (max-width: 768px) {
-                                    margin-bottom: 20px;
-                                }
                                 a {
                                     display: inline-block;
                                     width: 50px;
@@ -480,10 +474,10 @@ body {
                                 }
                             }
                             div.wp_subscribe {
-                                // display: none;
-                                margin-bottom: 55px;
+                                display: none;
+                                margin-bottom: 40px;
                                 @media (max-width: 768px) {
-                                    margin-bottom: 41px;
+                                    margin-bottom: 30px;
                                 }
                                 div.wp-subscribe {
                                     background: $midgrey;

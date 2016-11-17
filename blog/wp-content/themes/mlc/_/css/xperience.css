@@ -56,10 +56,7 @@ body {
       body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform {
         position: relative;
         width: 100%;
-        margin-bottom: 30px; }
-        @media (max-width: 768px) {
-          body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform {
-            margin-bottom: 20px; } }
+        margin-bottom: 20px; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform:after {
           font-family: FontAwesome;
           font-size: 21px;
@@ -369,11 +366,9 @@ body {
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform {
               display: none; } }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
-          margin-bottom: 30px;
+          display: none;
+          margin-bottom: 20px;
           text-align: center; }
-          @media (max-width: 768px) {
-            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
-              margin-bottom: 20px; } }
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a {
             display: inline-block;
             width: 50px;
@@ -392,10 +387,11 @@ body {
               font-size: 20px;
               color: inherit; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe {
-          margin-bottom: 55px; }
+          display: none;
+          margin-bottom: 40px; }
           @media (max-width: 768px) {
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe {
-              margin-bottom: 41px; } }
+              margin-bottom: 30px; } }
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe {
             background: #3b3c3e; }
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe div.wp-subscribe h4.title {
