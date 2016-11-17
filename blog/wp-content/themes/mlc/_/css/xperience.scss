@@ -125,9 +125,9 @@ body {
                         form#searchform {
                             position: relative;
                             width: 100%;
-                            margin-bottom: 45px;
+                            margin-bottom: 25px;
                             @media (max-width: 768px) {
-                                margin-bottom: 34px;
+                                margin-bottom: 20px;
                             }
                             &:after {
                                 font-family: FontAwesome;
@@ -452,7 +452,34 @@ body {
                                     display: none;
                                 }
                             }
+                            div.social-icons {
+                                text-align: center;
+                                margin-bottom: 25px;
+                                display: none;
+                                @media (max-width: 768px) {
+                                    margin-bottom: 20px;
+                                }
+                                a {
+                                    background: $midgrey;
+                                    border-radius: 5px;
+                                    color: white;
+                                    padding: 15px 0 13px;
+                                    width: 50px;
+                                    display: inline-block;
+                                    margin: 0 10px;
+                                    transition: all .3s ease;
+                                    &:hover {
+                                        background: $red;
+                                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+                                    }
+                                    i {
+                                        font-size: 20px;
+                                        color: inherit;
+                                    }
+                                }
+                            }
                             div.wp_subscribe {
+                                display: none;
                                 margin-bottom: 55px;
                                 @media (max-width: 768px) {
                                     margin-bottom: 41px;
