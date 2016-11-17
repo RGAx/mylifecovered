@@ -98,7 +98,7 @@ body {
             @media (max-width: 530px) {
                 background-position: 70% 100%;
             }
-            &:after {
+            &:before {
                 position: absolute;
                 z-index: 0;
                 top: 0;
@@ -252,7 +252,6 @@ body {
         padding: 0;
         background: transparent;
         &#top-header {
-            z-index: 2;
             padding: 30px 0;
             @media (max-width: 768px) {
                 padding: 20px 15px;
@@ -920,7 +919,6 @@ body {
         }
         &#landing_hero {
             position: relative;
-            z-index: 1;
             @media (max-width: 768px) {
                 padding-top: 218px;
                 padding-bottom: 143px;
@@ -1431,7 +1429,6 @@ body {
         }
         &#landing_tiles {
             position: relative;
-            z-index: 1;
             padding: 0 20px 75px;
             @media (max-width: 768px) {
                 padding: 0 20px 56px;
