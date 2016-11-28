@@ -327,17 +327,17 @@ body {
                                         padding-bottom: 0;
                                     }
                                     h2.title {
-                                        font-size: 48px;
+                                        font-size: 36px;
                                         line-height: .97;
                                         margin: 0;
                                         padding: 0;
-                                        letter-spacing: .5px;
+                                        letter-spacing: .4px;
                                         color: $textgrey;
 
                                         @include Bebas();
                                         @media (max-width: 768px) {
-                                            font-size: 36px;
-                                            letter-spacing: .375px;
+                                            font-size: 27px;
+                                            letter-spacing: .35px;
                                         }
                                         a {
                                             line-height: inherit;
@@ -386,6 +386,17 @@ body {
                                                     }
                                                 }
                                             }
+                                        }
+                                        h1,
+                                        h2,
+                                        h3,
+                                        h4,
+                                        h5,
+                                        h6 {
+                                            color: $textgrey;
+                                        }
+                                        h3 {
+                                            font-size: 27px;
                                         }
                                         img {
                                             display: block;

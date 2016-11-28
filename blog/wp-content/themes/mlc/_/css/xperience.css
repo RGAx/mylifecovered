@@ -251,11 +251,11 @@ body {
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post:last-of-type {
             padding-bottom: 0; }
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title {
-            font-size: 48px;
+            font-size: 36px;
             line-height: .97;
             margin: 0;
             padding: 0;
-            letter-spacing: .5px;
+            letter-spacing: .4px;
             color: #4a4a4a;
             font-family: bebas-neue, Helvetica, Helvetica, Arial, sans-serif;
             font-weight: normal;
@@ -263,8 +263,8 @@ body {
             font-variant: normal; }
             @media (max-width: 768px) {
               body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title {
-                font-size: 36px;
-                letter-spacing: .375px; } }
+                font-size: 27px;
+                letter-spacing: .35px; } }
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post h2.title a {
               line-height: inherit;
               color: inherit; }
@@ -304,6 +304,35 @@ body {
                   text-decoration: none; }
                   body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt p a.read-more:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt p a.read-more:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt p a.read-more:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt p a.read-more:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt p a.read-more:hover {
                     text-decoration: underline; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h1,
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h2,
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3,
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h4,
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h5,
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h6, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h1,
+            body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h2,
+            body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3,
+            body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h4,
+            body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h5,
+            body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h6, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h1,
+            body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h2,
+            body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3,
+            body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h4,
+            body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h5,
+            body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h6, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h1,
+            body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h2,
+            body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3,
+            body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h4,
+            body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h5,
+            body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h6, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h1,
+            body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h2,
+            body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3,
+            body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h4,
+            body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h5,
+            body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h6 {
+              color: #4a4a4a; }
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt h3 {
+              font-size: 27px; }
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt img, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt img, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt img, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt img, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.other-articles article.standard-post div.entry.excerpt img {
               display: block;
               float: right;
