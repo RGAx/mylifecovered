@@ -375,3 +375,105 @@ body section#top-header div.container div.row div.col-md-12 a#tel_link {
     width:80%;
     text-align:right;
     }
+    
+    /*#class_category .rate-name {
+    margin-top: -46px;
+    margin-bottom: 20px; }*/
+    
+    .life-help-calculate {
+    margin-top: -9px; }
+    
+    input#annualIncomeId {
+    text-align: left!important; 
+        color: #9b9b9b;}
+    
+    input#main-coverage-form {
+    margin-top: -9px; }
+    
+    div#lifeneed-error {
+    margin-top: 10px; }
+    
+    #lifeafford-error {
+    	margin-top: -28px; 
+    	 }
+    
+    form#main-affordable-form {
+    margin-top: 0px; }
+    
+    .foot-note {
+    font-size: 11px;
+    display: inline-block;
+    line-height: 17px;
+    border-top: 1px solid white;
+    margin-top: 5px; }
+    
+    span.foot-notestart {
+    font-size: 20px; }
+    
+    #lifehelp-error {
+    margin-top: 10px; }
+    
+    input#calc-coverage {
+    width: 192px; }
+    
+    input#main-affordable-form {
+    margin-top: -9px; }
+    
+    span.last-checkbox{
+    	position:absolute;
+    	    font-size: 14px;
+    }
+    
+    input#quote-form-submit {
+    margin-top: 14%; }
+    
+    input.life-helpinput {
+    color: #9b9b9b; }
+    
+    section#unsubscribe {
+    min-height: 700px;
+    padding: 20% 0;
+	}
+    input#email {
+    width: 255px;
+    /* font-size: 18px; */
+    /* font-weight: normal; */
+    line-height: 1;
+    /* float: right; */
+    padding: 11px 11px;
+    text-align: right;
+    letter-spacing: .2px;
+     color: #4a4a4a; 
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-appearance: none;
+}
+
+p.unsubscribe {
+    text-align: center;
+    margin-top: 22px;
+}
+
+input.btn.btn-primary.unsub-submitbtn {
+    margin-top: -7px;
+    margin-left: 8px; }
+
+.unsub-main {
+	background:none!important;
+	}
+#unsubscribe p.successMsg {
+    margin-top: 37px;
+    width: 300px;
+    margin-left: 38%;
+    text-align: center;
+    color: rgb(78, 169, 78);
+}
+div#main_affordable_amount {
+    padding: 30px 31px;
+}
+    
