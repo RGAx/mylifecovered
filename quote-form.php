@@ -171,7 +171,12 @@
                             <div class="inline-checkbox">
                                 <input type="checkbox" name="allow_marketing" id="calc-allow_marketing" checked="">
                                 <label for="calc-allow_marketing"></label>
-                                By providing your contact information above, you agree to this website's Privacy Policy, and you consent to receive offers and marketing communications at the email address or telephone numbers you provided, including autodialed, pre-recorded calls, SMS or MMS messages.
+                                <span class="last-checkbox"> By providing your contact
+                                information above, you agree to this website's Privacy Policy,
+                                and you consent to receive offers and marketing communications
+                                at the email address or telephone numbers you provided,
+                                including autodialed, pre-recorded calls, SMS or MMS messages.
+                                </span>
                             </div>
                             <div class="text-center">
                                 <input type="button" class="btn btn-primary" value="See Your Quote" id="quote-form-submit" wpvalue="next" onclick="validateQuote('iKnowWhatINeed')">
