@@ -393,11 +393,11 @@ body {
                                     }
                                     div.entry.excerpt {
                                         overflow: auto;
+                                        color: $textgrey;
                                         p {
                                             font-size: 18px;
                                             line-height: 1.5556;
                                             letter-spacing: .2px;
-                                            color: $textgrey;
                                             @media (max-width: 768px) {
                                                 font-size: 14px;
                                                 margin: 10px 0 0;
@@ -406,14 +406,14 @@ body {
                                             @media (max-width: 667px) {
                                                 width: 100%;
                                             }
-                                            a {
-                                                text-decoration: underline;
-                                                color: black;
-                                                &.read-more {
-                                                    text-decoration: none;
-                                                    &:hover {
-                                                        text-decoration: underline;
-                                                    }
+                                        }
+                                        a {
+                                            text-decoration: underline;
+                                            color: black;
+                                            &.read-more {
+                                                text-decoration: none;
+                                                &:hover {
+                                                    text-decoration: underline;
                                                 }
                                             }
                                         }
