@@ -180,6 +180,30 @@ body {
                                 }
                             }
                         }
+                        div.social-icons {
+                            // display: none;
+                            margin-bottom: 20px;
+                            text-align: center;
+                            a {
+                                display: inline-block;
+                                width: 50px;
+                                height: 50px;
+                                margin: 0 10px;
+                                padding: 16px 0 12px;
+                                transition: all .3s ease;
+                                color: white;
+                                border-radius: 5px;
+                                background: $midgrey;
+                                &:hover {
+                                    background: $red;
+                                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+                                }
+                                i {
+                                    font-size: 20px;
+                                    color: inherit;
+                                }
+                            }
+                        }
                         div.col-md-8 {
                             @media (max-width: 991px) {
                                 margin-bottom: 55px;
@@ -214,16 +238,22 @@ body {
                                     display: block;
                                 }
                             }
+                            div.social-icons {
+                                display: none;
+                                @media (max-width: 991px) {
+                                    display: block;
+                                }
+                            }
                             article.featured-post {
                                 position: relative;
                                 img {
-                                    font-family: 'object-fit: cover';
                                     display: block;
                                     width: 100%;
                                     height: auto;
                                     min-height: 250px;
 
                                     object-fit: cover;
+                                    font-family: 'object-fit: cover';
                                 }
                                 div.content-wrapper {
                                     position: absolute;
@@ -462,27 +492,9 @@ body {
                                 }
                             }
                             div.social-icons {
-                                display: none;
-                                margin-bottom: 20px;
-                                text-align: center;
-                                a {
-                                    display: inline-block;
-                                    width: 50px;
-                                    height: 50px;
-                                    margin: 0 10px;
-                                    padding: 16px 0 12px;
-                                    transition: all .3s ease;
-                                    color: white;
-                                    border-radius: 5px;
-                                    background: $midgrey;
-                                    &:hover {
-                                        background: $red;
-                                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
-                                    }
-                                    i {
-                                        font-size: 20px;
-                                        color: inherit;
-                                    }
+                                display: block;
+                                @media (max-width: 991px) {
+                                    display: none;
                                 }
                             }
                             div.wp_subscribe {

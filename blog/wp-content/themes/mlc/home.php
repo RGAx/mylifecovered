@@ -10,6 +10,17 @@ get_header(); ?>
  	    <div class="row">
  	        <div class="col-md-8">
  	        	<?php get_search_form(); ?>
+ 	        	<div class="social-icons">
+			        <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+			            <i class="fa fa-facebook"></i>
+			        </a>
+			        <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+			            <i class="fa fa-instagram"></i>
+			        </a>
+			        <a href="https://feeds.feedburner.com/MyLifeCovered" target="_blank">
+			            <i class="fa fa-rss"></i>
+			        </a>
+			    </div>
  	        	<?php
 		       global $wp_query;
                $current_page = max(1, get_query_var('paged'));

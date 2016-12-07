@@ -12,6 +12,17 @@ get_header(); ?>
 	 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 				<h1 class="category-title"><?php single_cat_title(); ?></h1>
  	        	<?php get_search_form(); ?>
+ 	        	<div class="social-icons">
+			        <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+			            <i class="fa fa-facebook"></i>
+			        </a>
+			        <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+			            <i class="fa fa-instagram"></i>
+			        </a>
+			        <a href="https://feeds.feedburner.com/MyLifeCovered" target="_blank">
+			            <i class="fa fa-rss"></i>
+			        </a>
+			    </div>
  	        	<?php
 				$category_id = get_query_var('cat');
 
