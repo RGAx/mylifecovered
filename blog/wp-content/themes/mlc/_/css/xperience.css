@@ -110,6 +110,26 @@ body {
             body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform input#searchsubmit, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform input#searchsubmit, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform input#searchsubmit, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform input#searchsubmit, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform input#searchsubmit {
               width: 33.75px;
               height: 37.5px; } }
+      body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons {
+        margin-bottom: 20px;
+        text-align: center; }
+        body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons a {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          margin: 0 10px;
+          padding: 16px 0 12px;
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          color: white;
+          border-radius: 5px;
+          background: #3b3c3e; }
+          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons a:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons a:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons a:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons a:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons a:hover {
+            background: #ff3e3e;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons a i, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons a i, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons a i, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons a i, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons a i {
+            font-size: 20px;
+            color: inherit; }
       @media (max-width: 991px) {
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 {
           margin-bottom: 55px; } }
@@ -142,16 +162,21 @@ body {
         @media (max-width: 991px) {
           body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 form#searchform {
             display: block; } }
+      body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons {
+        display: none; }
+        @media (max-width: 991px) {
+          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 div.social-icons {
+            display: block; } }
       body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post {
         position: relative; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post img, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post img, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post img, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post img, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post img {
-          font-family: 'object-fit: cover';
           display: block;
           width: 100%;
           height: auto;
           min-height: 250px;
           -o-object-fit: cover;
-             object-fit: cover; }
+             object-fit: cover;
+          font-family: 'object-fit: cover'; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper {
           position: absolute;
           top: 0;
@@ -395,26 +420,10 @@ body {
             body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 form#searchform {
               display: none; } }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
-          display: none;
-          margin-bottom: 20px;
-          text-align: center; }
-          body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin: 0 10px;
-            padding: 16px 0 12px;
-            -webkit-transition: all .3s ease;
-            transition: all .3s ease;
-            color: white;
-            border-radius: 5px;
-            background: #3b3c3e; }
-            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a:hover {
-              background: #ff3e3e;
-              box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
-            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons a i {
-              font-size: 20px;
-              color: inherit; }
+          display: block; }
+          @media (max-width: 991px) {
+            body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.social-icons {
+              display: none; } }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-4 div.wp_subscribe {
           display: none;
           margin-bottom: 40px; }
