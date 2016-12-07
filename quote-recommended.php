@@ -3,6 +3,13 @@
 <div id="quote_recommended" class="background-wrap">
 	<section id="quote-page" class="cover main-section" style="">
 	    <div class="overlay"></div>
+	    <section>
+			<div class="row">
+				<div class="col-md-12">
+					<span class="success-text" style="display: none;"></span>
+				</div>
+			</div>
+		</section>
 	    <div class="container">
 	    	<div id="original-quote" class="column online">
 		    	<form action="" id="original-quote-form" name="originalQuoteForm">
