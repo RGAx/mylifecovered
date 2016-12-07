@@ -391,11 +391,11 @@ $(document).ready(function() {
 function checkOffset() {
     var rangeSliders = $('#range_sliders');
     if (rangeSliders.length) {
-        if (rangeSliders.offset().top + rangeSliders.height() >= $('footer').offset().top - 1) {
-            rangeSliders.css('position', 'relative');
+        if (rangeSliders.offset().top + rangeSliders.height() >= $('footer').offset().top - 10) {
+            rangeSliders.addClass('unfix');
         }
         if ($(document).scrollTop() + window.innerHeight < $('footer').offset().top) {
-            rangeSliders.css('position', 'fixed').css('width', '100%').css('bottom', '0').css('zIndex', '99');
+            rangeSliders.removeClass('unfix');
         }
     }
 }
