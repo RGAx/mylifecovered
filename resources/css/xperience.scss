@@ -2140,11 +2140,6 @@ body {
             div.row {
                 overflow: auto;
                 padding: 0 19px;
-                @media (max-width: 1200px) {
-                    padding: 0;
-
-                    justify-content: center;
-                }
                 &:before,
                 &:after {
                     display: none !important;
@@ -2181,7 +2176,7 @@ body {
                     &.text-right {
                         float: none;
                         width: 300px;
-                        margin: 10px auto 0;
+                        margin: 0 auto;
                         text-align: center;
                         a.main_logo {
                             display: block;
@@ -2202,7 +2197,6 @@ body {
                         }
                     }
                     ul {
-                        // display: flex;
                         width: 100%;
                         padding: 0;
                         list-style: none;
@@ -2214,9 +2208,6 @@ body {
                             display: inline-block;
                             float: none;
                             margin: 0 10px;
-                            &:last-of-type {
-                                // margin-right: 0;
-                            }
                             @media (max-width: 830px) {
                                 display: block;
                                 margin: 0;
