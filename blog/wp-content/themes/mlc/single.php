@@ -42,10 +42,10 @@ get_header(); ?>
  	        		if ( !empty($category_display) ){
  	        		    if ( $useCatLink == true && !empty($category_link) ){
  	        			echo '<h1 class="category-title">';
- 	        			echo '<a href="'.$category_link.'">'.htmlspecialchars($category_display).'</a>';
+ 	        			echo '<a href="'.$category_link.'">'.($category_display).'</a>';
  	        			echo '</h1>';
  	        		    } else {
- 	        			echo '<h1 class="category-title">'.htmlspecialchars($category_display).'</h1>';
+ 	        			echo '<h1 class="category-title">'.($category_display).'</h1>';
  	        		    }
  	        		}
  	        	}
