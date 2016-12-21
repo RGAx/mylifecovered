@@ -11,6 +11,17 @@ get_header(); ?>
  	        <div class="col-md-8">
 	 			<h1 class="category-title">'<?php echo esc_html( get_search_query( false ) ); ?>'</h1>
  	        	<?php get_search_form(); ?>
+ 	        	<div class="social-icons">
+			        <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+			            <i class="fa fa-facebook"></i>
+			        </a>
+			        <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+			            <i class="fa fa-instagram"></i>
+			        </a>
+			        <a href="https://feeds.feedburner.com/MyLifeCovered" target="_blank">
+			            <i class="fa fa-rss"></i>
+			        </a>
+			    </div>
 				<div class="other-articles">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<article class="standard-post" id="post-<?php the_ID(); ?>">
