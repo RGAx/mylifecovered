@@ -56,7 +56,7 @@ body {
       body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform {
         position: relative;
         width: 100%;
-        margin-bottom: 30px; }
+        margin-bottom: 40px; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.blog div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.single div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.archive div#body_wrapper div.blog-wrap div.container div.row form#searchform:after, body.search div#body_wrapper div.blog-wrap div.container div.row form#searchform:after {
           font-family: FontAwesome;
           font-size: 21px;
@@ -111,7 +111,7 @@ body {
               width: 33.75px;
               height: 37.5px; } }
       body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         text-align: center; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.blog div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.single div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.archive div#body_wrapper div.blog-wrap div.container div.row div.social-icons a, body.search div#body_wrapper div.blog-wrap div.container div.row div.social-icons a {
           display: inline-block;
@@ -175,8 +175,8 @@ body {
           height: auto;
           min-height: 250px;
           -o-object-fit: cover;
-             object-fit: cover;
-          font-family: 'object-fit: cover'; }
+          object-fit: cover;
+          font-family: "object-fit: cover"; }
         body.error404 div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.blog div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.single div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.archive div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper, body.search div#body_wrapper div.blog-wrap div.container div.row div.col-md-8 article.featured-post div.content-wrapper {
           position: absolute;
           top: 0;
@@ -1096,6 +1096,11 @@ body {
           @media (max-width: 1200px) {
             body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li {
               width: 100%; } }
+          @media (min-width: 1201px) {
+            body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li:last-of-type {
+              margin-left: 20px;
+              padding-left: 20px;
+              border-left: 1px solid white; } }
           body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li a {
             font-size: 19px;
             display: block;
