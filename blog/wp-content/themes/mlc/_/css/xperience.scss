@@ -84,7 +84,52 @@ body {
 
     @include Lato();
     // blog styles start here
-    &.category-fitness-for-life {
+    &.home {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:last-of-type {
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.category-diet-nutrition {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:nth-of-type(1) {
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.category-fitness {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:nth-of-type(2) {
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.category-health {
         section#top-header {
             ul#top_nav_menu {
                 li {
@@ -99,11 +144,27 @@ body {
             }
         }
     }
-    &.category-life-prepared {
+    &.category-know-your-body {
         section#top-header {
             ul#top_nav_menu {
                 li {
                     &:nth-of-type(4) {
+                        display: none;
+                        a {
+                            @media (min-width: 1201px) {
+                                border-bottom: 2px solid $red !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.category-life-prepared {
+        section#top-header {
+            ul#top_nav_menu {
+                li {
+                    &:nth-of-type(5) {
                         a {
                             @media (min-width: 1201px) {
                                 border-bottom: 2px solid $red !important;
