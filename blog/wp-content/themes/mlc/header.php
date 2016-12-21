@@ -106,7 +106,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/mylifecovered-metcon.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.2.11">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.3.0">
     <!--[if IE 9]>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/ie9.css">
         <![endif]-->
@@ -162,13 +162,22 @@
     					</a>
                         <ul id="top_nav_menu">
                             <li>
-                                <a href="https://www.mylifecovered.net/myLifeCovered/basics.do">Insurance Basics</a>
+                                <a href="/category/diet-nutrition">Diet &amp; Nutrition</a>
                             </li>
                             <li>
-                                <a href="https://www.mylifecovered.net/myLifeCovered/misconceptions.do">12 Common Misconceptions</a>
+                                <a href="/category/fitness">Fitness</a>
                             </li>
                             <li>
-                                <a href="/">Blog</a>
+                                <a href="/category/health">Health</a>
+                            </li>
+                            <li>
+                                <a href="/category/know-your-body">Know Your Body</a>
+                            </li>
+                            <li>
+                                <a href="/category/life-prepared">Life Prepared</a>
+                            </li>
+                            <li>
+                                <a href="/">All Articles</a>
                             </li>
                         </ul>
                         <a href="#" id="open_menu">
