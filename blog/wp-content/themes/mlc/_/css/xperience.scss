@@ -149,7 +149,6 @@ body {
             ul#top_nav_menu {
                 li {
                     &:nth-of-type(4) {
-                        display: none;
                         a {
                             @media (min-width: 1201px) {
                                 border-bottom: 2px solid $red !important;
@@ -1279,6 +1278,9 @@ body {
                             li {
                                 @media (max-width: 1200px) {
                                     width: 100%;
+                                }
+                                &:nth-of-type(4) {
+                                    display: none;
                                 }
                                 &:last-of-type {
                                     @media (min-width: 1201px) {
