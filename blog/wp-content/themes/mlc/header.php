@@ -106,7 +106,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/myLifeCoveredRGility.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/mylifecovered-metcon.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.3.1">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/xperience.css?v=2.3.2">
     <!--[if IE 9]>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_/css/ie9.css">
         <![endif]-->
