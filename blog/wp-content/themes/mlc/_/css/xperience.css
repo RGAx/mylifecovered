@@ -1108,8 +1108,6 @@ body {
           @media (max-width: 1200px) {
             body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li {
               width: 100%; } }
-          body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li:nth-of-type(4) {
-            display: none; }
           @media (min-width: 1201px) {
             body section#top-header div.container div.row div.col-md-12 ul#top_nav_menu li:last-of-type {
               margin-left: 20px;
