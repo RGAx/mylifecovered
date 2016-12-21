@@ -35,10 +35,24 @@ body {
   font-style: normal;
   font-variant: normal; }
   @media (min-width: 1201px) {
-    body.category-fitness-for-life section#top-header ul#top_nav_menu li:nth-of-type(3) a {
+    body.home section#top-header ul#top_nav_menu li:last-of-type a {
       border-bottom: 2px solid #ff3e3e !important; } }
   @media (min-width: 1201px) {
-    body.category-life-prepared section#top-header ul#top_nav_menu li:nth-of-type(4) a {
+    body.category-diet-nutrition section#top-header ul#top_nav_menu li:nth-of-type(1) a {
+      border-bottom: 2px solid #ff3e3e !important; } }
+  @media (min-width: 1201px) {
+    body.category-fitness section#top-header ul#top_nav_menu li:nth-of-type(2) a {
+      border-bottom: 2px solid #ff3e3e !important; } }
+  @media (min-width: 1201px) {
+    body.category-health section#top-header ul#top_nav_menu li:nth-of-type(3) a {
+      border-bottom: 2px solid #ff3e3e !important; } }
+  body.category-know-your-body section#top-header ul#top_nav_menu li:nth-of-type(4) {
+    display: none; }
+    @media (min-width: 1201px) {
+      body.category-know-your-body section#top-header ul#top_nav_menu li:nth-of-type(4) a {
+        border-bottom: 2px solid #ff3e3e !important; } }
+  @media (min-width: 1201px) {
+    body.category-life-prepared section#top-header ul#top_nav_menu li:nth-of-type(5) a {
       border-bottom: 2px solid #ff3e3e !important; } }
   body.error404 div#body_wrapper div.blog-wrap, body.blog div#body_wrapper div.blog-wrap, body.single div#body_wrapper div.blog-wrap, body.archive div#body_wrapper div.blog-wrap, body.search div#body_wrapper div.blog-wrap {
     padding: 150px 0 95px;
