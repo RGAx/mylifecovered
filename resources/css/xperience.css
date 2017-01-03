@@ -179,6 +179,7 @@ body {
     padding: 0;
     background: transparent; }
     body section#top-header {
+      z-index: 101;
       padding: 30px 0; }
       @media (max-width: 768px) {
         body section#top-header {
