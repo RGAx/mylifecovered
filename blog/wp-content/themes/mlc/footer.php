@@ -9,7 +9,7 @@
   <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 sitemap">
                 <ul>
                       <li><a id="mylifeCoveredHome" href="https://www.mylifecovered.net/" wpvalue="home">Home</a></li>
                       <li><a id="mylifeCoveredaboutUS" href="https://www.mylifecovered.net/myLifeCovered/aboutus.do" wpvalue="about">About Us</a></li>
@@ -21,7 +21,18 @@
                       <li><a id="mylifeCoveredFinancialRatings" href="https://www.mylifecovered.net/myLifeCovered/financialRatings.do" wpvalue="financialRatings">Financial Ratings</a></li>
                   </ul>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-12 social-icons">
+                  <a href="https://www.facebook.com/MyLifeCovered/" target="_blank">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/mylifecovered/" target="_blank">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://feeds.feedburner.com/MyLifeCovered" target="_blank">
+                      <i class="fa fa-rss" aria-hidden="true"></i>
+                  </a>
+            </div>
+            <div class="col-md-12 text-right">
                 <a href="https://www.mylifecovered.net/" class="main_logo">
                     <img src='<?php echo get_template_directory_uri(); ?>/_/images/logo.svg' /></a>
                 </a>
