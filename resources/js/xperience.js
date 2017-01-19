@@ -458,20 +458,20 @@ $(document).ready(function() {
 
         $('#landing_tiles a').removeClass('active');
     }
-    var int = setInterval(slideSwitchNext, 5000);
+    var int = setInterval(slideSwitchNext, 8500);
 
     $('#landing a.next').click(function() {
         slideSwitchNext();
         clearInterval(int);
         setTimeout(function() {
-            int = setInterval(slideSwitchNext, 5000);
+            int = setInterval(slideSwitchNext, 8500);
         });
     });
     $('#landing a.prev').click(function() {
         slideSwitchPrev();
         clearInterval(int);
         setTimeout(function() {
-            int = setInterval(slideSwitchNext, 5000);
+            int = setInterval(slideSwitchNext, 8500);
         });
     });
 
