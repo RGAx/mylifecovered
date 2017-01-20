@@ -64,6 +64,28 @@ textarea {
     outline: none;
 }
 
+div.social-icons {
+    text-align: center;
+    a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        padding: 16px 0 12px;
+        transition: all .3s ease;
+        color: white;
+        border-radius: 5px;
+        background: $darkgrey;
+        &:hover {
+            background: $red;
+        }
+        i {
+            font-size: 20px;
+            color: inherit;
+        }
+    }
+}
+
 body {
     font-weight: normal;
     background: $midgrey;
@@ -121,6 +143,24 @@ body {
                 transform: translateY(-50%);
                 opacity: .5;
                 color: white;
+                @media (max-width: 1000px) {
+                    top: 300px;
+                }
+                @media (max-width: 768px) {
+                    top: 250px;
+                }
+                @media (max-width: 685px) {
+                    font-size: 40px;
+                    top: 160px;
+                    padding: 10px;
+                    transform: none;
+                }
+                @media (max-width: 545px) {
+                    top: 200px;
+                }
+                @media (max-width: 400px) {
+                    top: 225px;
+                }
                 &:hover {
                     cursor: pointer;
                     opacity: 1;
@@ -380,11 +420,37 @@ body {
                                 }
                             }
                         }
+                        div.social-icons {
+                            margin: 0 auto;
+                            @media (max-width: 550px) {
+                                position: fixed;
+                                top: auto;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                padding: 10px 0;
+                                border-top: 1px solid $darkgrey;
+                                background: $midgrey;
+                            }
+                            a {
+                                @media (max-width: 550px) {
+                                    width: 37.5px;
+                                    height: 37.5px;
+                                    padding: 12px 0 9px;
+                                }
+                                i {
+                                    @media (max-width: 550px) {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
                         ul#top_nav_menu {
                             display: flex !important;
                             float: right;
                             width: auto !important;
-                            margin-left: auto;
+                            // margin-left: auto;
                             list-style-type: none;
                             text-align: center !important;
 
@@ -1006,14 +1072,22 @@ body {
         }
         &#landing_hero {
             position: relative;
-            @media (max-width: 768px) {
-                padding-top: 218px;
-                padding-bottom: 143px;
+            padding-top: 150px;
+            padding-bottom: 75px;
+            @media (max-width: 685px) {
+                padding-top: 110px;
+                padding-bottom: 30px;
             }
             div.container {
                 div.row {
                     div.col-md-12 {
                         max-width: 1040px !important;
+                        @media (max-width: 1000px) {
+                            padding: 0 65px;
+                        }
+                        @media (max-width: 685px) {
+                            padding: 0 50px;
+                        }
                         ul#text_slider {
                             position: relative;
                             padding: 0;
@@ -1032,11 +1106,20 @@ body {
                                 &.last-active {
                                     z-index: 9;
                                 }
+                                h1 {
+                                    @media (max-width: 685px) {
+                                        font-size: 40px;
+                                        margin-bottom: 15px;
+                                    }
+                                }
                                 p {
                                     display: block;
                                     width: 100%;
                                     max-width: 800px;
                                     margin: 0 auto;
+                                    @media (max-width: 685px) {
+                                        font-size: 16px;
+                                    }
                                 }
                             }
                         }
@@ -1548,8 +1631,8 @@ body {
         &#landing_tiles {
             position: relative;
             padding: 0 20px 75px;
-            @media (max-width: 768px) {
-                padding: 0 20px 56px;
+            @media (max-width: 685px) {
+                padding: 0 20px 10px;
             }
             div.container {
                 width: 100%;
@@ -2285,24 +2368,8 @@ body {
                     }
                     &.social-icons {
                         margin: 40px 0 30px;
-                        text-align: center;
-                        a {
-                            display: inline-block;
-                            width: 50px;
-                            height: 50px;
-                            margin: 0 10px;
-                            padding: 16px 0 12px;
-                            transition: all .3s ease;
-                            color: white;
-                            border-radius: 5px;
-                            background: $darkgrey;
-                            &:hover {
-                                background: $red;
-                            }
-                            i {
-                                font-size: 20px;
-                                color: inherit;
-                            }
+                        @media (max-width: 550px) {
+                            display: none;
                         }
                     }
                     &.text-right {
@@ -2310,6 +2377,9 @@ body {
                         width: 300px;
                         margin: 0 auto;
                         text-align: center;
+                        @media (max-width: 550px) {
+                            margin-bottom: 55px;
+                        }
                         a.main_logo {
                             display: block;
                             width: 200px;
