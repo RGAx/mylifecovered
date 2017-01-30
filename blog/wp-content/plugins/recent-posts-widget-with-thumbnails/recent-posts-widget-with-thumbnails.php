@@ -3,7 +3,7 @@
 Plugin Name: Recent Posts Widget With Thumbnails
 Plugin URI:  http://wordpress.org/plugins/recent-posts-widget-with-thumbnails/
 Description: Small and fast plugin to display in the sidebar a list of linked titles and thumbnails of the most recent postings
-Version:     4.13
+Version:     4.13.3
 Author:      Martin Stehle
 Author URI:  http://stehle-internet.de
 Text Domain: recent-posts-widget-with-thumbnails
@@ -48,7 +48,7 @@ class Recent_Posts_Widget_With_Thumbnails extends WP_Widget {
 				$widget_desc = 'فهرست سایت شما ارسال جدید، با عنوان قابل کلیک و عکسها';
 				break;
 			case 'de':
-				$widget_name = 'Letzte Beitr&auml;ge mit Vorschaubildern';
+				$widget_name = 'Neueste Beitr&auml;ge mit Vorschaubildern';
 				$widget_desc = 'Liste deiner aktuellsten Beitr&auml;ge, mit klickbaren &Uuml;berschriften und Vorschaubildern.';
 				break;
 			case 'pl':
@@ -64,7 +64,7 @@ class Recent_Posts_Widget_With_Thumbnails extends WP_Widget {
 				$widget_desc = 'List of your site&#8217;s most recent posts, with clickable title and thumbnails.';
 		}
 		$this->plugin_slug				= 'recent-posts-widget-with-thumbnails';
-		$this->plugin_version			= '4.13';
+		$this->plugin_version			= '4.13.3';
 		$this->default_number_posts		= 5;
 		$this->default_thumb_dimensions	= 'custom';
 		$this->default_thumb_width		= absint( round( get_option( 'thumbnail_size_w', 110 ) / 2 ) );
@@ -234,7 +234,7 @@ class Recent_Posts_Widget_With_Thumbnails extends WP_Widget {
 			$text = ', ';
 			$this->comma_text = __( $text );
 			$text = 'By %s';
-			$this->author_text = __( $text );
+			$this->author_text = _x( $text, 'theme author' );
 
 			// print list
 			include 'includes/widget.php';

@@ -3,8 +3,8 @@ Contributors: Hinjiriyo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TKZZ3US2R56RY
 Tags: arabic, aspect ratio, author, category, categories, category, current post, excerpt, extended, featured, featured images, first post image, height, image, images, listed posts, post date, post categories, post category, post title, random, recent posts, sticky, thumb, thumbnail, thumbnails, thumbs, widget, widgets, width, persian, farsi, russian
 Requires at least: 2.9
-Tested up to: 4.6
-Stable tag: 4.13
+Tested up to: 4.7.1
+Stable tag: 4.13.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,40 +101,40 @@ The plugin considers the output of actions hooked on:
 
 To design the list and its items you can use these CSS selectors:
 
-The elements which contain the posts list:
+The elements which contain the posts lists:
 `.rpwwt-widget`
 
 The lists which contain the list items:
 `.rpwwt-widget ul`
 
-All list items in the list:
+All list items in the lists:
 `.rpwwt-widget ul li`
 
-All list items of sticky posts in the list:
+All list items of sticky posts in the lists:
 `.rpwwt-widget ul li.rpwwt-sticky`
 
-All links in the list; every link contains the image and the post title:
+All links in the lists; every link contains the image and the post title:
 `.rpwwt-widget ul li a`
 
-All images in the list (use that to set the margins around images):
+All images in the lists (use that to set the margins around images):
 `.rpwwt-widget ul li a img`
 
-All post titles in the list:
+All post titles in the lists:
 `.rpwwt-widget ul li a span.rpwwt-post-title`
 
-All post author in the list:
+All post author in the lists:
 `.rpwwt-widget ul li div.rpwwt-post-author`
 
-All post categories in the list:
+All post categories in the lists:
 `.rpwwt-widget ul li div.rpwwt-post-categories`
 
-All post dates in the list:
+All post dates in the lists:
 `.rpwwt-widget ul li div.rpwwt-post-date`
 
-All post excerpts in the list: 
+All post excerpts in the lists: 
 `.rpwwt-widget ul li div.rpwwt-post-excerpt`
 
-All numbers of comments in the list: 
+All numbers of comments in the lists: 
 `.rpwwt-widget ul li div.rpwwt-post-comments-number`
 
 == Installation ==
@@ -202,6 +202,15 @@ If you want to contribute a translation of the plugin in your language it would 
 2. The second screenshot shows the widget on the Widget Management Page in the backend.
 
 == Changelog ==
+
+= 4.13.3 =
+* Revised translation of author line
+
+= 4.13.2 =
+* Revised widget template for more conformity to WP standard widget output
+
+= 4.13.1 =
+* Tested successfully with WordPress 4.7
 
 = 4.13 =
 * Added option to print the post category slugs as class names at LI elements
@@ -390,6 +399,15 @@ Successfully tested with WordPress 4.0
 * The plugin was released.
 
 == Upgrade Notice ==
+
+= 4.13.3 =
+Revised translation of author line
+
+= 4.13.2 =
+Revised widget template
+
+= 4.13.1 =
+Tested successfully with WordPress 4.7
 
 = 4.13 =
 Added category names option, updated german translation

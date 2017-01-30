@@ -1,5 +1,5 @@
+<?php echo $before_widget; ?>
 <div id="rpwwt-<?php echo $args[ 'widget_id' ];?>" class="rpwwt-widget">
-	<?php echo $before_widget; ?>
 	<?php if ( $title ) echo $before_title . $title . $after_title; ?>
 	<ul>
 	<?php while ( $r->have_posts() ) : $r->the_post(); ?>
@@ -72,5 +72,5 @@
 		?></li>
 	<?php endwhile; ?>
 	</ul>
-	<?php echo $after_widget; ?>
-</div>
+</div><!-- .rpwwt-widget -->
+<?php echo $after_widget; ?>
