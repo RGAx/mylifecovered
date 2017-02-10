@@ -156,7 +156,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <a id="#myLifeCoveredHeader" href="https://www.mylifecovered.net/" class="open-home-page-copy">
+                        <a id="#myLifeCoveredHeader" href="https://www.mylifecovered.com/" class="open-home-page-copy">
     						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/_/images/logo.svg" alt="">
     						<span class="logo-phno">888-248-6037</span>
     					</a>
